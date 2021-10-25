@@ -213,7 +213,7 @@ F 1 "IRF7404" H 4905 3155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4900 3125 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4700 3200 50  0001 L CNN
 	1    4700 3200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 3650 1300 2    50   ~ 0
 SIG1
@@ -352,7 +352,7 @@ F 1 "IRF7404" H 4905 1055 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4900 1025 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4700 1100 50  0001 L CNN
 	1    4700 1100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q2
@@ -451,7 +451,7 @@ F 1 "IRF7404" H 6455 1055 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6450 1025 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 6250 1100 50  0001 L CNN
 	1    6250 1100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q4
@@ -538,7 +538,7 @@ F 1 "IRF7404" H 8005 1055 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8000 1025 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7800 1100 50  0001 L CNN
 	1    7800 1100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q6
@@ -637,7 +637,7 @@ F 1 "IRF7404" H 9555 1055 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 1025 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 9350 1100 50  0001 L CNN
 	1    9350 1100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q8
@@ -736,7 +736,7 @@ F 1 "IRF7404" H 11105 1055 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 1025 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 10900 1100 50  0001 L CNN
 	1    10900 1100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q10
@@ -833,7 +833,7 @@ F 1 "IRF7404" H 4905 2105 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4900 2075 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4700 2150 50  0001 L CNN
 	1    4700 2150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q12
@@ -932,7 +932,7 @@ F 1 "IRF7404" H 6455 2105 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6450 2075 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 6250 2150 50  0001 L CNN
 	1    6250 2150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q14
@@ -1027,7 +1027,7 @@ F 1 "IRF7404" H 8005 2105 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8000 2075 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7800 2150 50  0001 L CNN
 	1    7800 2150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7450 2150 7550 2150
@@ -1076,7 +1076,7 @@ F 1 "IRF7404" H 9555 2105 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 2075 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 9350 2150 50  0001 L CNN
 	1    9350 2150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9000 2150 9100 2150
@@ -1129,7 +1129,7 @@ F 1 "IRF7404" H 11105 2105 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11100 2075 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 10900 2150 50  0001 L CNN
 	1    10900 2150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10550 2150 10650 2150
@@ -1211,7 +1211,7 @@ F 1 "IRF7404" H 6455 3155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6450 3125 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 6250 3200 50  0001 L CNN
 	1    6250 3200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q20
@@ -1303,7 +1303,7 @@ F 1 "IRF7404" H 8005 3155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8000 3125 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7800 3200 50  0001 L CNN
 	1    7800 3200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q22
@@ -1384,7 +1384,7 @@ F 1 "IRF7404" H 9555 3155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 3125 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 9350 3200 50  0001 L CNN
 	1    9350 3200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Transistor_FET:2N7002 Q24

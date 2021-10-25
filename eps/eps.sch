@@ -1476,4 +1476,26 @@ F 3 "" H 8650 3100 50  0001 C CNN
 	1    8650 3100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Regulator_Switching:ADP2303ARDZ-3.3 U?
+U 1 1 61773BE3
+P 6700 4800
+F 0 "U?" H 6700 5267 50  0000 C CNN
+F 1 "ADP2303ARDZ-3.3" H 6700 5176 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6850 4450 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP2302_2303.pdf" H 6500 5400 50  0001 C CNN
+	1    6700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:ADP2303ARDZ-5.0 U?
+U 1 1 61775A47
+P 8750 4900
+F 0 "U?" H 8750 5367 50  0000 C CNN
+F 1 "ADP2303ARDZ-5.0" H 8750 5276 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 8900 4550 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP2302_2303.pdf" H 8550 5500 50  0001 C CNN
+	1    8750 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
