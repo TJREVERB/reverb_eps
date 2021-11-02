@@ -1,0 +1,1005 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR?
+U 1 1 61A47D01
+P 3050 2500
+AR Path="/61A47D01" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47D01" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 3050 2350 50  0001 C CNN
+F 1 "+12V" V 3065 2628 50  0000 L CNN
+F 2 "" H 3050 2500 50  0001 C CNN
+F 3 "" H 3050 2500 50  0001 C CNN
+	1    3050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A47D07
+P 6150 3550
+AR Path="/61A47D07" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47D07" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 6150 3400 50  0001 C CNN
+F 1 "+3.3V" V 6165 3678 50  0000 L CNN
+F 2 "" H 6150 3550 50  0001 C CNN
+F 3 "" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47D0D
+P 2050 3000
+AR Path="/61A47D0D" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D0D" Ref="R1"  Part="1" 
+F 0 "R1" V 1950 3000 50  0000 C CNN
+F 1 "100R" V 2050 3000 50  0000 C CNN
+F 2 "" V 1980 3000 50  0001 C CNN
+F 3 "~" H 2050 3000 50  0001 C CNN
+	1    2050 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47D13
+P 2600 2650
+AR Path="/61A47D13" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D13" Ref="R5"  Part="1" 
+F 0 "R5" H 2500 2650 50  0000 C CNN
+F 1 "10K" V 2600 2650 50  0000 C CNN
+F 2 "" V 2530 2650 50  0001 C CNN
+F 3 "~" H 2600 2650 50  0001 C CNN
+	1    2600 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 2500
+Wire Wire Line
+	3050 2600 3050 2500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47D1B
+P 2950 2800
+AR Path="/61A47D1B" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47D1B" Ref="Q3"  Part="1" 
+F 0 "Q3" H 3155 2846 50  0000 L CNN
+F 1 "IRF7404" H 3155 2755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3150 2725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 2950 2800 50  0001 L CNN
+	1    2950 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47D21
+P 2500 3000
+AR Path="/61A47D21" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47D21" Ref="Q1"  Part="1" 
+F 0 "Q1" H 2704 3046 50  0000 L CNN
+F 1 "2N7002" H 2704 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2700 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2500 3000 50  0001 L CNN
+	1    2500 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 2800
+Wire Wire Line
+	2600 2800 2750 2800
+Wire Wire Line
+	2600 2500 3050 2500
+$Comp
+L power:GND #PWR?
+U 1 1 61A47D2A
+P 2600 3300
+AR Path="/61A47D2A" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47D2A" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 2600 3050 50  0001 C CNN
+F 1 "GND" H 2605 3127 50  0000 C CNN
+F 2 "" H 2600 3300 50  0001 C CNN
+F 3 "" H 2600 3300 50  0001 C CNN
+	1    2600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3000 2250 3000
+$Comp
+L Device:R R?
+U 1 1 61A47D31
+P 2250 3150
+AR Path="/61A47D31" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D31" Ref="R3"  Part="1" 
+F 0 "R3" H 2150 3150 50  0000 C CNN
+F 1 "10K" V 2250 3150 50  0000 C CNN
+F 2 "" V 2180 3150 50  0001 C CNN
+F 3 "~" H 2250 3150 50  0001 C CNN
+	1    2250 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3300 2600 3300
+Wire Wire Line
+	2600 3300 2600 3200
+Connection ~ 2600 3300
+Connection ~ 2250 3000
+Wire Wire Line
+	2250 3000 2300 3000
+$Comp
+L power:+12V #PWR?
+U 1 1 61A47D3D
+P 4600 2500
+AR Path="/61A47D3D" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47D3D" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 4600 2350 50  0001 C CNN
+F 1 "+12V" V 4615 2628 50  0000 L CNN
+F 2 "" H 4600 2500 50  0001 C CNN
+F 3 "" H 4600 2500 50  0001 C CNN
+	1    4600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47D43
+P 3600 3000
+AR Path="/61A47D43" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D43" Ref="R7"  Part="1" 
+F 0 "R7" V 3500 3000 50  0000 C CNN
+F 1 "100R" V 3600 3000 50  0000 C CNN
+F 2 "" V 3530 3000 50  0001 C CNN
+F 3 "~" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47D49
+P 4150 2650
+AR Path="/61A47D49" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D49" Ref="R11"  Part="1" 
+F 0 "R11" H 4050 2650 50  0000 C CNN
+F 1 "10K" V 4150 2650 50  0000 C CNN
+F 2 "" V 4080 2650 50  0001 C CNN
+F 3 "~" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 2500
+Wire Wire Line
+	4600 2600 4600 2500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47D51
+P 4500 2800
+AR Path="/61A47D51" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47D51" Ref="Q7"  Part="1" 
+F 0 "Q7" H 4705 2846 50  0000 L CNN
+F 1 "IRF7404" H 4705 2755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4700 2725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4500 2800 50  0001 L CNN
+	1    4500 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47D57
+P 4050 3000
+AR Path="/61A47D57" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47D57" Ref="Q5"  Part="1" 
+F 0 "Q5" H 4254 3046 50  0000 L CNN
+F 1 "2N7002" H 4254 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4050 3000 50  0001 L CNN
+	1    4050 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 2800
+Wire Wire Line
+	4150 2800 4300 2800
+Wire Wire Line
+	4150 2500 4600 2500
+$Comp
+L power:GND #PWR?
+U 1 1 61A47D60
+P 4150 3300
+AR Path="/61A47D60" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47D60" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 4150 3050 50  0001 C CNN
+F 1 "GND" H 4155 3127 50  0000 C CNN
+F 2 "" H 4150 3300 50  0001 C CNN
+F 3 "" H 4150 3300 50  0001 C CNN
+	1    4150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3000 3800 3000
+$Comp
+L Device:R R?
+U 1 1 61A47D67
+P 3800 3150
+AR Path="/61A47D67" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D67" Ref="R9"  Part="1" 
+F 0 "R9" H 3700 3150 50  0000 C CNN
+F 1 "10K" V 3800 3150 50  0000 C CNN
+F 2 "" V 3730 3150 50  0001 C CNN
+F 3 "~" H 3800 3150 50  0001 C CNN
+	1    3800 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3300 4150 3300
+Wire Wire Line
+	4150 3300 4150 3200
+Connection ~ 4150 3300
+Connection ~ 3800 3000
+Wire Wire Line
+	3800 3000 3850 3000
+$Comp
+L Device:R R?
+U 1 1 61A47D73
+P 5150 3000
+AR Path="/61A47D73" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D73" Ref="R13"  Part="1" 
+F 0 "R13" V 5050 3000 50  0000 C CNN
+F 1 "100R" V 5150 3000 50  0000 C CNN
+F 2 "" V 5080 3000 50  0001 C CNN
+F 3 "~" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47D79
+P 5700 2650
+AR Path="/61A47D79" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D79" Ref="R16"  Part="1" 
+F 0 "R16" H 5600 2650 50  0000 C CNN
+F 1 "10K" V 5700 2650 50  0000 C CNN
+F 2 "" V 5630 2650 50  0001 C CNN
+F 3 "~" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2600 6150 2500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47D80
+P 6050 2800
+AR Path="/61A47D80" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47D80" Ref="Q10"  Part="1" 
+F 0 "Q10" H 6255 2846 50  0000 L CNN
+F 1 "IRF7404" H 6255 2755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6250 2725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 6050 2800 50  0001 L CNN
+	1    6050 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47D86
+P 5600 3000
+AR Path="/61A47D86" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47D86" Ref="Q9"  Part="1" 
+F 0 "Q9" H 5804 3046 50  0000 L CNN
+F 1 "2N7002" H 5804 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5800 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5600 3000 50  0001 L CNN
+	1    5600 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 2800
+Wire Wire Line
+	5700 2800 5850 2800
+Wire Wire Line
+	5700 2500 6150 2500
+$Comp
+L power:GND #PWR?
+U 1 1 61A47D8F
+P 5700 3300
+AR Path="/61A47D8F" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47D8F" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 5700 3050 50  0001 C CNN
+F 1 "GND" H 5705 3127 50  0000 C CNN
+F 2 "" H 5700 3300 50  0001 C CNN
+F 3 "" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3000 5350 3000
+$Comp
+L Device:R R?
+U 1 1 61A47D96
+P 5350 3150
+AR Path="/61A47D96" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47D96" Ref="R14"  Part="1" 
+F 0 "R14" H 5250 3150 50  0000 C CNN
+F 1 "10K" V 5350 3150 50  0000 C CNN
+F 2 "" V 5280 3150 50  0001 C CNN
+F 3 "~" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3300 5700 3300
+Wire Wire Line
+	5700 3300 5700 3200
+Connection ~ 5700 3300
+Connection ~ 5350 3000
+Wire Wire Line
+	5350 3000 5400 3000
+$Comp
+L power:+BATT #PWR?
+U 1 1 61A47DA1
+P 6150 2500
+AR Path="/61A47DA1" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47DA1" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 6150 2350 50  0001 C CNN
+F 1 "+BATT" H 6165 2673 50  0000 C CNN
+F 2 "" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6150 2500
+$Comp
+L Device:R R?
+U 1 1 61A47DA9
+P 6700 3000
+AR Path="/61A47DA9" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47DA9" Ref="R18"  Part="1" 
+F 0 "R18" V 6600 3000 50  0000 C CNN
+F 1 "100R" V 6700 3000 50  0000 C CNN
+F 2 "" V 6630 3000 50  0001 C CNN
+F 3 "~" H 6700 3000 50  0001 C CNN
+	1    6700 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47DAF
+P 7250 2650
+AR Path="/61A47DAF" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47DAF" Ref="R21"  Part="1" 
+F 0 "R21" H 7150 2650 50  0000 C CNN
+F 1 "10K" V 7250 2650 50  0000 C CNN
+F 2 "" V 7180 2650 50  0001 C CNN
+F 3 "~" H 7250 2650 50  0001 C CNN
+	1    7250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2600 7700 2500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47DB6
+P 7600 2800
+AR Path="/61A47DB6" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47DB6" Ref="Q13"  Part="1" 
+F 0 "Q13" H 7805 2846 50  0000 L CNN
+F 1 "IRF7404" H 7805 2755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7800 2725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7600 2800 50  0001 L CNN
+	1    7600 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47DBC
+P 7150 3000
+AR Path="/61A47DBC" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47DBC" Ref="Q12"  Part="1" 
+F 0 "Q12" H 7354 3046 50  0000 L CNN
+F 1 "2N7002" H 7354 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7350 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7150 3000 50  0001 L CNN
+	1    7150 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 2800
+Wire Wire Line
+	7250 2800 7400 2800
+Wire Wire Line
+	7250 2500 7700 2500
+$Comp
+L power:GND #PWR?
+U 1 1 61A47DC5
+P 7250 3300
+AR Path="/61A47DC5" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47DC5" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 7250 3050 50  0001 C CNN
+F 1 "GND" H 7255 3127 50  0000 C CNN
+F 2 "" H 7250 3300 50  0001 C CNN
+F 3 "" H 7250 3300 50  0001 C CNN
+	1    7250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 3000 6900 3000
+$Comp
+L Device:R R?
+U 1 1 61A47DCC
+P 6900 3150
+AR Path="/61A47DCC" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47DCC" Ref="R19"  Part="1" 
+F 0 "R19" H 6800 3150 50  0000 C CNN
+F 1 "10K" V 6900 3150 50  0000 C CNN
+F 2 "" V 6830 3150 50  0001 C CNN
+F 3 "~" H 6900 3150 50  0001 C CNN
+	1    6900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3300 7250 3300
+Wire Wire Line
+	7250 3300 7250 3200
+Connection ~ 7250 3300
+Connection ~ 6900 3000
+Wire Wire Line
+	6900 3000 6950 3000
+$Comp
+L power:+BATT #PWR?
+U 1 1 61A47DD7
+P 7700 2500
+AR Path="/61A47DD7" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47DD7" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 7700 2350 50  0001 C CNN
+F 1 "+BATT" H 7715 2673 50  0000 C CNN
+F 2 "" H 7700 2500 50  0001 C CNN
+F 3 "" H 7700 2500 50  0001 C CNN
+	1    7700 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 2500
+$Comp
+L Device:R R?
+U 1 1 61A47DDF
+P 8250 3000
+AR Path="/61A47DDF" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47DDF" Ref="R23"  Part="1" 
+F 0 "R23" V 8150 3000 50  0000 C CNN
+F 1 "100R" V 8250 3000 50  0000 C CNN
+F 2 "" V 8180 3000 50  0001 C CNN
+F 3 "~" H 8250 3000 50  0001 C CNN
+	1    8250 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47DE5
+P 8800 2650
+AR Path="/61A47DE5" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47DE5" Ref="R26"  Part="1" 
+F 0 "R26" H 8700 2650 50  0000 C CNN
+F 1 "10K" V 8800 2650 50  0000 C CNN
+F 2 "" V 8730 2650 50  0001 C CNN
+F 3 "~" H 8800 2650 50  0001 C CNN
+	1    8800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2600 9250 2500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47DEC
+P 9150 2800
+AR Path="/61A47DEC" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47DEC" Ref="Q16"  Part="1" 
+F 0 "Q16" H 9355 2846 50  0000 L CNN
+F 1 "IRF7404" H 9355 2755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9350 2725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 9150 2800 50  0001 L CNN
+	1    9150 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47DF2
+P 8700 3000
+AR Path="/61A47DF2" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47DF2" Ref="Q15"  Part="1" 
+F 0 "Q15" H 8904 3046 50  0000 L CNN
+F 1 "2N7002" H 8904 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8900 2925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 8700 3000 50  0001 L CNN
+	1    8700 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 8800 2800
+Wire Wire Line
+	8800 2800 8950 2800
+Wire Wire Line
+	8800 2500 9250 2500
+$Comp
+L power:GND #PWR?
+U 1 1 61A47DFB
+P 8800 3300
+AR Path="/61A47DFB" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47DFB" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 8800 3050 50  0001 C CNN
+F 1 "GND" H 8805 3127 50  0000 C CNN
+F 2 "" H 8800 3300 50  0001 C CNN
+F 3 "" H 8800 3300 50  0001 C CNN
+	1    8800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3000 8450 3000
+$Comp
+L Device:R R?
+U 1 1 61A47E02
+P 8450 3150
+AR Path="/61A47E02" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E02" Ref="R24"  Part="1" 
+F 0 "R24" H 8350 3150 50  0000 C CNN
+F 1 "10K" V 8450 3150 50  0000 C CNN
+F 2 "" V 8380 3150 50  0001 C CNN
+F 3 "~" H 8450 3150 50  0001 C CNN
+	1    8450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3300 8800 3300
+Wire Wire Line
+	8800 3300 8800 3200
+Connection ~ 8800 3300
+Connection ~ 8450 3000
+Wire Wire Line
+	8450 3000 8500 3000
+$Comp
+L power:+5V #PWR?
+U 1 1 61A47E0D
+P 9250 2500
+AR Path="/61A47E0D" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47E0D" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 9250 2350 50  0001 C CNN
+F 1 "+5V" V 9265 2628 50  0000 L CNN
+F 2 "" H 9250 2500 50  0001 C CNN
+F 3 "" H 9250 2500 50  0001 C CNN
+	1    9250 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9250 2500
+$Comp
+L Device:R R?
+U 1 1 61A47E14
+P 2050 4050
+AR Path="/61A47E14" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E14" Ref="R2"  Part="1" 
+F 0 "R2" V 1950 4050 50  0000 C CNN
+F 1 "100R" V 2050 4050 50  0000 C CNN
+F 2 "" V 1980 4050 50  0001 C CNN
+F 3 "~" H 2050 4050 50  0001 C CNN
+	1    2050 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47E1A
+P 2600 3700
+AR Path="/61A47E1A" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E1A" Ref="R6"  Part="1" 
+F 0 "R6" H 2500 3700 50  0000 C CNN
+F 1 "10K" V 2600 3700 50  0000 C CNN
+F 2 "" V 2530 3700 50  0001 C CNN
+F 3 "~" H 2600 3700 50  0001 C CNN
+	1    2600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3650 3050 3550
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47E21
+P 2950 3850
+AR Path="/61A47E21" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47E21" Ref="Q4"  Part="1" 
+F 0 "Q4" H 3155 3896 50  0000 L CNN
+F 1 "IRF7404" H 3155 3805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3150 3775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 2950 3850 50  0001 L CNN
+	1    2950 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47E27
+P 2500 4050
+AR Path="/61A47E27" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47E27" Ref="Q2"  Part="1" 
+F 0 "Q2" H 2704 4096 50  0000 L CNN
+F 1 "2N7002" H 2704 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2700 3975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2500 4050 50  0001 L CNN
+	1    2500 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 3850
+Wire Wire Line
+	2600 3850 2750 3850
+Wire Wire Line
+	2600 3550 3050 3550
+$Comp
+L power:GND #PWR?
+U 1 1 61A47E30
+P 2600 4350
+AR Path="/61A47E30" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47E30" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 2600 4100 50  0001 C CNN
+F 1 "GND" H 2605 4177 50  0000 C CNN
+F 2 "" H 2600 4350 50  0001 C CNN
+F 3 "" H 2600 4350 50  0001 C CNN
+	1    2600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4050 2250 4050
+$Comp
+L Device:R R?
+U 1 1 61A47E37
+P 2250 4200
+AR Path="/61A47E37" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E37" Ref="R4"  Part="1" 
+F 0 "R4" H 2150 4200 50  0000 C CNN
+F 1 "10K" V 2250 4200 50  0000 C CNN
+F 2 "" V 2180 4200 50  0001 C CNN
+F 3 "~" H 2250 4200 50  0001 C CNN
+	1    2250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4350 2600 4350
+Wire Wire Line
+	2600 4350 2600 4250
+Connection ~ 2600 4350
+Connection ~ 2250 4050
+Wire Wire Line
+	2250 4050 2300 4050
+$Comp
+L power:+5V #PWR?
+U 1 1 61A47E42
+P 3050 3550
+AR Path="/61A47E42" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47E42" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 3050 3400 50  0001 C CNN
+F 1 "+5V" V 3065 3678 50  0000 L CNN
+F 2 "" H 3050 3550 50  0001 C CNN
+F 3 "" H 3050 3550 50  0001 C CNN
+	1    3050 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 3550
+$Comp
+L Device:R R?
+U 1 1 61A47E4A
+P 3600 4050
+AR Path="/61A47E4A" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E4A" Ref="R8"  Part="1" 
+F 0 "R8" V 3500 4050 50  0000 C CNN
+F 1 "100R" V 3600 4050 50  0000 C CNN
+F 2 "" V 3530 4050 50  0001 C CNN
+F 3 "~" H 3600 4050 50  0001 C CNN
+	1    3600 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47E50
+P 4150 3700
+AR Path="/61A47E50" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E50" Ref="R12"  Part="1" 
+F 0 "R12" H 4050 3700 50  0000 C CNN
+F 1 "10K" V 4150 3700 50  0000 C CNN
+F 2 "" V 4080 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3650 4600 3550
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47E57
+P 4500 3850
+AR Path="/61A47E57" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47E57" Ref="Q8"  Part="1" 
+F 0 "Q8" H 4705 3896 50  0000 L CNN
+F 1 "IRF7404" H 4705 3805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4700 3775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4500 3850 50  0001 L CNN
+	1    4500 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A47E5D
+P 4050 4050
+AR Path="/61A47E5D" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47E5D" Ref="Q6"  Part="1" 
+F 0 "Q6" H 4254 4096 50  0000 L CNN
+F 1 "2N7002" H 4254 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4250 3975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4050 4050 50  0001 L CNN
+	1    4050 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 3850
+Wire Wire Line
+	4150 3850 4300 3850
+Wire Wire Line
+	4150 3550 4600 3550
+$Comp
+L power:GND #PWR?
+U 1 1 61A47E66
+P 4150 4350
+AR Path="/61A47E66" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47E66" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 4150 4100 50  0001 C CNN
+F 1 "GND" H 4155 4177 50  0000 C CNN
+F 2 "" H 4150 4350 50  0001 C CNN
+F 3 "" H 4150 4350 50  0001 C CNN
+	1    4150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4050 3800 4050
+$Comp
+L Device:R R?
+U 1 1 61A47E6D
+P 3800 4200
+AR Path="/61A47E6D" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E6D" Ref="R10"  Part="1" 
+F 0 "R10" H 3700 4200 50  0000 C CNN
+F 1 "10K" V 3800 4200 50  0000 C CNN
+F 2 "" V 3730 4200 50  0001 C CNN
+F 3 "~" H 3800 4200 50  0001 C CNN
+	1    3800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4350 4150 4350
+Wire Wire Line
+	4150 4350 4150 4250
+Connection ~ 4150 4350
+Connection ~ 3800 4050
+Wire Wire Line
+	3800 4050 3850 4050
+$Comp
+L power:+5V #PWR?
+U 1 1 61A47E78
+P 4600 3550
+AR Path="/61A47E78" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47E78" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 4600 3400 50  0001 C CNN
+F 1 "+5V" V 4615 3678 50  0000 L CNN
+F 2 "" H 4600 3550 50  0001 C CNN
+F 3 "" H 4600 3550 50  0001 C CNN
+	1    4600 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 3550
+$Comp
+L Device:R R?
+U 1 1 61A47E7F
+P 5550 3850
+AR Path="/61A47E7F" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E7F" Ref="R15"  Part="1" 
+F 0 "R15" V 5450 3850 50  0000 C CNN
+F 1 "100R" V 5550 3850 50  0000 C CNN
+F 2 "" V 5480 3850 50  0001 C CNN
+F 3 "~" H 5550 3850 50  0001 C CNN
+	1    5550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47E85
+P 5800 3700
+AR Path="/61A47E85" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E85" Ref="R17"  Part="1" 
+F 0 "R17" H 5700 3700 50  0000 C CNN
+F 1 "10K" V 5800 3700 50  0000 C CNN
+F 2 "" V 5730 3700 50  0001 C CNN
+F 3 "~" H 5800 3700 50  0001 C CNN
+	1    5800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3650 6150 3550
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47E8C
+P 6050 3850
+AR Path="/61A47E8C" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47E8C" Ref="Q11"  Part="1" 
+F 0 "Q11" H 6255 3896 50  0000 L CNN
+F 1 "IRF7404" H 6255 3805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6250 3775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 6050 3850 50  0001 L CNN
+	1    6050 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5700 3850 5800 3850
+Connection ~ 6150 3550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A47E94
+P 7700 3550
+AR Path="/61A47E94" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47E94" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 7700 3400 50  0001 C CNN
+F 1 "+3.3V" V 7715 3678 50  0000 L CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47E9A
+P 7100 3850
+AR Path="/61A47E9A" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47E9A" Ref="R20"  Part="1" 
+F 0 "R20" V 7000 3850 50  0000 C CNN
+F 1 "100R" V 7100 3850 50  0000 C CNN
+F 2 "" V 7030 3850 50  0001 C CNN
+F 3 "~" H 7100 3850 50  0001 C CNN
+	1    7100 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47EA0
+P 7350 3700
+AR Path="/61A47EA0" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47EA0" Ref="R22"  Part="1" 
+F 0 "R22" H 7250 3700 50  0000 C CNN
+F 1 "10K" V 7350 3700 50  0000 C CNN
+F 2 "" V 7280 3700 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3650 7700 3550
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47EA7
+P 7600 3850
+AR Path="/61A47EA7" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47EA7" Ref="Q14"  Part="1" 
+F 0 "Q14" H 7805 3896 50  0000 L CNN
+F 1 "IRF7404" H 7805 3805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7800 3775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7600 3850 50  0001 L CNN
+	1    7600 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7250 3850 7350 3850
+Connection ~ 7700 3550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61A47EB0
+P 9250 3550
+AR Path="/61A47EB0" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A47EB0" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 9250 3400 50  0001 C CNN
+F 1 "+3.3V" V 9265 3678 50  0000 L CNN
+F 2 "" H 9250 3550 50  0001 C CNN
+F 3 "" H 9250 3550 50  0001 C CNN
+	1    9250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47EB6
+P 8650 3850
+AR Path="/61A47EB6" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47EB6" Ref="R25"  Part="1" 
+F 0 "R25" V 8550 3850 50  0000 C CNN
+F 1 "100R" V 8650 3850 50  0000 C CNN
+F 2 "" V 8580 3850 50  0001 C CNN
+F 3 "~" H 8650 3850 50  0001 C CNN
+	1    8650 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A47EBC
+P 8900 3700
+AR Path="/61A47EBC" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A47EBC" Ref="R27"  Part="1" 
+F 0 "R27" H 8800 3700 50  0000 C CNN
+F 1 "10K" V 8900 3700 50  0000 C CNN
+F 2 "" V 8830 3700 50  0001 C CNN
+F 3 "~" H 8900 3700 50  0001 C CNN
+	1    8900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3650 9250 3550
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A47EC3
+P 9150 3850
+AR Path="/61A47EC3" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A47EC3" Ref="Q17"  Part="1" 
+F 0 "Q17" H 9355 3896 50  0000 L CNN
+F 1 "IRF7404" H 9355 3805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9350 3775 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 9150 3850 50  0001 L CNN
+	1    9150 3850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8800 3850 8900 3850
+Connection ~ 9250 3550
+Wire Wire Line
+	8900 3550 9250 3550
+Connection ~ 8900 3850
+Wire Wire Line
+	8900 3850 8950 3850
+Wire Wire Line
+	5800 3550 6150 3550
+Connection ~ 5800 3850
+Wire Wire Line
+	5800 3850 5850 3850
+Wire Wire Line
+	7350 3550 7700 3550
+Connection ~ 7350 3850
+Wire Wire Line
+	7350 3850 7400 3850
+Text GLabel 3050 3000 3    50   Input ~ 0
+SW1
+Text GLabel 4600 3000 3    50   Input ~ 0
+SW2
+Text GLabel 6150 3000 3    50   Input ~ 0
+SW3
+Text GLabel 7700 3000 3    50   Input ~ 0
+SW4
+Text GLabel 9250 3000 3    50   Input ~ 0
+SW5
+Text GLabel 9250 4050 3    50   Input ~ 0
+SW10
+Text GLabel 7700 4050 3    50   Input ~ 0
+SW9
+Text GLabel 6150 4050 3    50   Input ~ 0
+SW8
+Text GLabel 4600 4050 3    50   Input ~ 0
+SW7
+Text GLabel 3050 4050 3    50   Input ~ 0
+SW6
+Text GLabel 1900 3000 0    50   Input ~ 0
+SIG1
+Text GLabel 3450 3000 0    50   Input ~ 0
+SIG2
+Text GLabel 5000 3000 0    50   Input ~ 0
+SIG3
+Text GLabel 6550 3000 0    50   Input ~ 0
+SIG4
+Text GLabel 8100 3000 0    50   Input ~ 0
+SIG5
+Text GLabel 1900 4050 0    50   Input ~ 0
+SIG6
+Text GLabel 3450 4050 0    50   Input ~ 0
+SIG7
+Text GLabel 5400 3850 0    50   Input ~ 0
+SIG8
+Text GLabel 6950 3850 0    50   Input ~ 0
+SIG9
+Text GLabel 8500 3850 0    50   Input ~ 0
+SIG10
+$EndSCHEMATC
