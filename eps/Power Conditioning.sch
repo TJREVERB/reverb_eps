@@ -349,10 +349,6 @@ Wire Wire Line
 Wire Wire Line
 	5300 2550 5200 2550
 Connection ~ 6250 2350
-Text Label 3700 3350 2    50   ~ 0
-PCM_IN
-Text Label 3700 2150 2    50   ~ 0
-PCM_IN
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6194BCE2
@@ -397,4 +393,8 @@ F 3 "" H 1950 2600 50  0001 C CNN
 	1    1950 2600
 	1    0    0    -1  
 $EndComp
+Text GLabel 3700 2150 0    50   Input ~ 0
+PCM_IN_FILT
+Text GLabel 3700 3350 0    50   Input ~ 0
+PCM_IN_FILT
 $EndSCHEMATC
