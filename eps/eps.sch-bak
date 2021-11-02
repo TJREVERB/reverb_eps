@@ -351,14 +351,114 @@ Distributes bus powers to PDM outputs. \nReads PDM telemetry\n
 Text Notes 5450 5050 0    50   ~ 0
 Regulates solar panel voltage\nReads telemetry from panels\n
 $Comp
-L MCU_ST_STM32F4:STM32F411CEUx U4
-U 1 1 61A79014
-P 8750 2750
-F 0 "U4" H 8700 4431 50  0000 C CNN
-F 1 "STM32F411CEUx" H 8700 4340 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 8150 1250 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00115249.pdf" H 8750 2750 50  0001 C CNN
-	1    8750 2750
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 61A4AF8D
+P 9550 2600
+F 0 "U?" H 9500 1011 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 9500 920 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 8950 1200 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 9550 2600 50  0001 C CNN
+	1    9550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:CD74HC4067M U?
+U 1 1 61A4E99D
+P 6000 1900
+F 0 "U?" H 6000 3081 50  0000 C CNN
+F 1 "CD74HC4067M" H 6000 2990 50  0000 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 6900 900 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 5650 2750 50  0001 C CNN
+	1    6000 1900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 1200 2    50   Input ~ 0
+IBCR_OUT
+Text GLabel 6500 1400 2    50   Input ~ 0
+IBATV
+Text GLabel 6500 1500 2    50   Input ~ 0
+I5V
+Text GLabel 6500 1600 2    50   Input ~ 0
+I3V3
+Text GLabel 6500 1300 2    50   Input ~ 0
+I12V
+Text GLabel 6500 1700 2    50   Input ~ 0
+ISW1
+Text GLabel 6500 1800 2    50   Input ~ 0
+ISW2
+Text GLabel 6500 1900 2    50   Input ~ 0
+ISW3
+Text GLabel 6500 2000 2    50   Input ~ 0
+ISW4
+Text GLabel 6500 2100 2    50   Input ~ 0
+ISW5
+Text GLabel 6500 2200 2    50   Input ~ 0
+ISW6
+Text GLabel 6500 2300 2    50   Input ~ 0
+ISW7
+Text GLabel 6500 2400 2    50   Input ~ 0
+ISW8
+Text GLabel 6500 2500 2    50   Input ~ 0
+ISW9
+Text GLabel 6500 2600 2    50   Input ~ 0
+ISW10
+$Comp
+L Device:R R?
+U 1 1 61A6406C
+P 7750 2200
+F 0 "R?" H 7820 2246 50  0000 L CNN
+F 1 "100K" H 7820 2155 50  0000 L CNN
+F 2 "" V 7680 2200 50  0001 C CNN
+F 3 "~" H 7750 2200 50  0001 C CNN
+	1    7750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2050 7750 2000
+Text GLabel 7750 1700 1    50   Input ~ 0
+3V3RAW
+$Comp
+L power:GND #PWR?
+U 1 1 61A65B64
+P 7750 2350
+F 0 "#PWR?" H 7750 2100 50  0001 C CNN
+F 1 "GND" H 7755 2177 50  0000 C CNN
+F 2 "" H 7750 2350 50  0001 C CNN
+F 3 "" H 7750 2350 50  0001 C CNN
+	1    7750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH1
+U 1 1 61A667A8
+P 7750 1850
+F 0 "TH1" H 7848 1896 50  0000 L CNN
+F 1 "100K NTC" H 7848 1805 50  0000 L CNN
+F 2 "" H 7750 1900 50  0001 C CNN
+F 3 "~" H 7750 1900 50  0001 C CNN
+	1    7750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2000 7550 2000
+Connection ~ 7750 2000
+Text Label 7550 2000 2    50   ~ 0
+BRDTMP
+Text Label 6500 2700 0    50   ~ 0
+BRDTMP
+Text GLabel 5650 900  0    50   Input ~ 0
+3V3RAW
+Wire Wire Line
+	6000 900  5650 900 
+$Comp
+L power:GND #PWR?
+U 1 1 61A6DD8E
+P 6000 3000
+F 0 "#PWR?" H 6000 2750 50  0001 C CNN
+F 1 "GND" H 6005 2827 50  0000 C CNN
+F 2 "" H 6000 3000 50  0001 C CNN
+F 3 "" H 6000 3000 50  0001 C CNN
+	1    6000 3000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
