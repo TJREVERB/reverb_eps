@@ -503,7 +503,7 @@ F 3 "" H 2800 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2450 3150 0    50   ~ 0
-FIX_5V
+FIX_3V3
 Wire Wire Line
 	2250 3150 2450 3150
 $Comp
@@ -555,18 +555,7 @@ F 3 "" H 1950 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 850  2850 0    50   ~ 0
-Low current constant-on 5V line for constant VCC
-$Comp
-L Regulator_Linear:LM1117-5.0 U6
-U 1 1 6183C32C
-P 1950 3150
-F 0 "U6" H 1950 3392 50  0000 C CNN
-F 1 "LM1117-5.0" H 1950 3301 50  0000 C CNN
-F 2 "" H 1950 3150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 1950 3150 50  0001 C CNN
-	1    1950 3150
-	1    0    0    -1  
-$EndComp
+Low current constant-on 3V3 line for constant VCC
 $Comp
 L Transistor_FET:IRF4905 Q21
 U 1 1 6184BF9C
@@ -672,7 +661,7 @@ Text Notes 4900 3850 0    50   ~ 0
 5v BUCK
 Text Notes 6600 4350 0    50   ~ 0
 3A CURRENT LIMIT (LATCHING W/ RESET PIN)
-Text Notes 3800 6050 0    50   ~ 0
+Text Notes 4750 6400 0    50   ~ 0
 6A CURRENT LIMIT (LATCHING W/ RESET PIN)
 Text Notes 5850 650  0    50   ~ 0
 uC and i2c node powered from 3v3raw to be able to reset ocp
@@ -1336,12 +1325,12 @@ F2 "pulse" I L 4400 4150 50
 F3 "gate" I L 4400 4050 50 
 $EndSheet
 $Sheet
-S 3950 6350 650  300 
+S 4300 6600 650  300 
 U 619D4C5F
 F0 "BAT RESET" 50
 F1 "Pulse500ms.sch" 50
-F2 "pulse" I L 3950 6500 50 
-F3 "gate" I L 3950 6400 50 
+F2 "pulse" I L 4300 6750 50 
+F3 "gate" I L 4300 6650 50 
 $EndSheet
 Text Label 4300 2000 2    50   ~ 0
 3v3gate
@@ -1357,4 +1346,68 @@ Text GLabel 4400 2100 0    50   Input ~ 0
 3V3RESETPLS
 Text GLabel 4400 4150 0    50   Input ~ 0
 5VRESETPLS
+$Comp
+L Regulator_Linear:LM1117-3.3 U6
+U 1 1 61827DCE
+P 1950 3150
+F 0 "U6" H 1950 3392 50  0000 C CNN
+F 1 "LM1117-3.3" H 1950 3301 50  0000 C CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 6750 0    50   Input ~ 0
+BATRESETPLS
+$Comp
+L Transistor_FET:2N7002 Q27
+U 1 1 618500FB
+P 4200 5950
+F 0 "Q27" H 4405 5996 50  0000 L CNN
+F 1 "2N7002" H 4405 5905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4400 5875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4200 5950 50  0001 L CNN
+	1    4200 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5350 4500 5500
+Wire Wire Line
+	4500 5500 4300 5500
+Wire Wire Line
+	4300 5500 4300 5750
+$Comp
+L power:GND #PWR051
+U 1 1 6186D3AF
+P 4300 6150
+F 0 "#PWR051" H 4300 5900 50  0001 C CNN
+F 1 "GND" H 4305 5977 50  0000 C CNN
+F 2 "" H 4300 6150 50  0001 C CNN
+F 3 "" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6650 3900 6650
+Wire Wire Line
+	3900 6650 3900 5950
+Wire Wire Line
+	3900 5950 4000 5950
+Text Label 3900 6650 2    50   ~ 0
+BATGATE
+$Comp
+L Device:R_Small R60
+U 1 1 618945E2
+P 4000 6050
+F 0 "R60" H 4059 6096 50  0000 L CNN
+F 1 "10K" H 4059 6005 50  0000 L CNN
+F 2 "" H 4000 6050 50  0001 C CNN
+F 3 "~" H 4000 6050 50  0001 C CNN
+	1    4000 6050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 5950
+Wire Wire Line
+	4000 6150 4300 6150
+Connection ~ 4300 6150
 $EndSCHEMATC
