@@ -75,9 +75,9 @@ P 1750 1200
 AR Path="/61A47D1B" Ref="Q?"  Part="1" 
 AR Path="/61928B56/61A47D1B" Ref="Q3"  Part="1" 
 F 0 "Q3" H 1955 1246 50  0000 L CNN
-F 1 "IRF7404" H 1955 1155 50  0000 L CNN
+F 1 "IRF7425" H 1955 1155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 1125 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 1750 1200 50  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 1200 50  0001 L CNN
 	1    1750 1200
 	1    0    0    1   
 $EndComp
@@ -178,19 +178,6 @@ Connection ~ 4950 900
 Wire Wire Line
 	4950 1000 4950 900 
 $Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47D51
-P 4850 1200
-AR Path="/61A47D51" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47D51" Ref="Q7"  Part="1" 
-F 0 "Q7" H 5055 1246 50  0000 L CNN
-F 1 "IRF7404" H 5055 1155 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 1125 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4850 1200 50  0001 L CNN
-	1    4850 1200
-	1    0    0    1   
-$EndComp
-$Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 61A47D57
 P 4400 1400
@@ -272,19 +259,6 @@ F 3 "~" H 7600 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8050 1000 8050 900 
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47D80
-P 7950 1200
-AR Path="/61A47D80" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47D80" Ref="Q10"  Part="1" 
-F 0 "Q10" H 8155 1246 50  0000 L CNN
-F 1 "IRF7404" H 8155 1155 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 1125 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7950 1200 50  0001 L CNN
-	1    7950 1200
-	1    0    0    1   
-$EndComp
 $Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 61A47D86
@@ -382,19 +356,6 @@ $EndComp
 Wire Wire Line
 	11150 1000 11150 900 
 $Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47DB6
-P 11050 1200
-AR Path="/61A47DB6" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47DB6" Ref="Q13"  Part="1" 
-F 0 "Q13" H 11255 1246 50  0000 L CNN
-F 1 "IRF7404" H 11255 1155 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 1125 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 11050 1200 50  0001 L CNN
-	1    11050 1200
-	1    0    0    1   
-$EndComp
-$Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 61A47DBC
 P 10600 1400
@@ -490,19 +451,6 @@ F 3 "~" H 1400 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 2650 1850 2550
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47DEC
-P 1750 2850
-AR Path="/61A47DEC" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47DEC" Ref="Q16"  Part="1" 
-F 0 "Q16" H 1955 2896 50  0000 L CNN
-F 1 "IRF7404" H 1955 2805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 2775 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 1750 2850 50  0001 L CNN
-	1    1750 2850
-	1    0    0    1   
-$EndComp
 $Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 61A47DF2
@@ -600,19 +548,6 @@ $EndComp
 Wire Wire Line
 	4950 2650 4950 2550
 $Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47E21
-P 4850 2850
-AR Path="/61A47E21" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47E21" Ref="Q4"  Part="1" 
-F 0 "Q4" H 5055 2896 50  0000 L CNN
-F 1 "IRF7404" H 5055 2805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 2775 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4850 2850 50  0001 L CNN
-	1    4850 2850
-	1    0    0    1   
-$EndComp
-$Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 61A47E27
 P 4400 3050
@@ -709,19 +644,6 @@ $EndComp
 Wire Wire Line
 	8050 2650 8050 2550
 $Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47E57
-P 7950 2850
-AR Path="/61A47E57" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47E57" Ref="Q8"  Part="1" 
-F 0 "Q8" H 8155 2896 50  0000 L CNN
-F 1 "IRF7404" H 8155 2805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 2775 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 7950 2850 50  0001 L CNN
-	1    7950 2850
-	1    0    0    1   
-$EndComp
-$Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 61A47E5D
 P 7500 3050
@@ -817,19 +739,6 @@ F 3 "~" H 10800 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11150 2850 11150 2750
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47E8C
-P 11050 3050
-AR Path="/61A47E8C" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47E8C" Ref="Q11"  Part="1" 
-F 0 "Q11" H 11255 3096 50  0000 L CNN
-F 1 "IRF7404" H 11255 3005 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 2975 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 11050 3050 50  0001 L CNN
-	1    11050 3050
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	10700 3050 10800 3050
 Connection ~ 11150 2750
@@ -874,19 +783,6 @@ F 3 "~" H 1500 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 4350 1850 4250
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47EA7
-P 1750 4550
-AR Path="/61A47EA7" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47EA7" Ref="Q14"  Part="1" 
-F 0 "Q14" H 1955 4596 50  0000 L CNN
-F 1 "IRF7404" H 1955 4505 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 4475 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 1750 4550 50  0001 L CNN
-	1    1750 4550
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	1400 4550 1500 4550
 Connection ~ 1850 4250
@@ -931,19 +827,6 @@ F 3 "~" H 4600 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4950 4350 4950 4250
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61A47EC3
-P 4850 4550
-AR Path="/61A47EC3" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47EC3" Ref="Q17"  Part="1" 
-F 0 "Q17" H 5055 4596 50  0000 L CNN
-F 1 "IRF7404" H 5055 4505 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 4475 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 4850 4550 50  0001 L CNN
-	1    4850 4550
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4500 4550 4600 4550
 Connection ~ 4950 4250
@@ -1161,7 +1044,6 @@ Wire Wire Line
 Connection ~ 6000 1700
 Text GLabel 6450 1700 2    50   Input ~ 0
 ISW2
-Connection ~ 4950 1400
 Text GLabel 9550 1700 2    50   Input ~ 0
 ISW3
 Connection ~ 9100 1700
@@ -1244,7 +1126,6 @@ F 3 "~" H 8050 1700 50  0001 C CNN
 $EndComp
 Text GLabel 8050 1850 3    50   Input ~ 0
 SW3
-Connection ~ 8050 1400
 $Comp
 L Device:R R85
 U 1 1 618DD149
@@ -1325,7 +1206,6 @@ Wire Wire Line
 Connection ~ 12200 1700
 Text GLabel 12650 1700 2    50   Input ~ 0
 ISW4
-Connection ~ 11150 1400
 $Comp
 L Device:R R62
 U 1 1 618FDEBF
@@ -1406,7 +1286,6 @@ Wire Wire Line
 Connection ~ 2900 3350
 Text GLabel 3350 3350 2    50   Input ~ 0
 ISW5
-Connection ~ 1850 3050
 $Comp
 L Device:R R71
 U 1 1 619176EA
@@ -1487,7 +1366,6 @@ Wire Wire Line
 Connection ~ 6000 3350
 Text GLabel 6450 3350 2    50   Input ~ 0
 ISW6
-Connection ~ 4950 3050
 $Comp
 L Device:R R80
 U 1 1 61930B28
@@ -1648,7 +1526,6 @@ Wire Wire Line
 Connection ~ 12200 3550
 Text GLabel 12650 3550 2    50   Input ~ 0
 ISW8
-Connection ~ 11150 3250
 $Comp
 L Device:R R63
 U 1 1 6196C6C1
@@ -1809,7 +1686,122 @@ Wire Wire Line
 Connection ~ 6000 5050
 Text GLabel 6450 5050 2    50   Input ~ 0
 ISW10
-Connection ~ 8050 3050
-Connection ~ 1850 4750
-Connection ~ 4950 4750
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 6189DFDF
+P 7950 1200
+AR Path="/6189DFDF" Ref="Q?"  Part="1" 
+AR Path="/61928B56/6189DFDF" Ref="Q17"  Part="1" 
+F 0 "Q17" H 8155 1246 50  0000 L CNN
+F 1 "IRF7425" H 8155 1155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7950 1200 50  0001 L CNN
+	1    7950 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 618A6429
+P 4850 1200
+AR Path="/618A6429" Ref="Q?"  Part="1" 
+AR Path="/61928B56/618A6429" Ref="Q4"  Part="1" 
+F 0 "Q4" H 5055 1246 50  0000 L CNN
+F 1 "IRF7425" H 5055 1155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 1200 50  0001 L CNN
+	1    4850 1200
+	1    0    0    1   
+$EndComp
+Connection ~ 8050 1400
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 618CBBBC
+P 11050 1200
+AR Path="/618CBBBC" Ref="Q?"  Part="1" 
+AR Path="/61928B56/618CBBBC" Ref="Q20"  Part="1" 
+F 0 "Q20" H 11255 1246 50  0000 L CNN
+F 1 "IRF7425" H 11255 1155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 11050 1200 50  0001 L CNN
+	1    11050 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 618DAEC3
+P 1750 2850
+AR Path="/618DAEC3" Ref="Q?"  Part="1" 
+AR Path="/61928B56/618DAEC3" Ref="Q11"  Part="1" 
+F 0 "Q11" H 1955 2896 50  0000 L CNN
+F 1 "IRF7425" H 1955 2805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 2775 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 2850 50  0001 L CNN
+	1    1750 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 618E9BFD
+P 4850 2850
+AR Path="/618E9BFD" Ref="Q?"  Part="1" 
+AR Path="/61928B56/618E9BFD" Ref="Q14"  Part="1" 
+F 0 "Q14" H 5055 2896 50  0000 L CNN
+F 1 "IRF7425" H 5055 2805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 2775 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 2850 50  0001 L CNN
+	1    4850 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 618F85D4
+P 7950 2850
+AR Path="/618F85D4" Ref="Q?"  Part="1" 
+AR Path="/61928B56/618F85D4" Ref="Q19"  Part="1" 
+F 0 "Q19" H 8155 2896 50  0000 L CNN
+F 1 "IRF7425" H 8155 2805 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 2775 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7950 2850 50  0001 L CNN
+	1    7950 2850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 619062E6
+P 11050 3050
+AR Path="/619062E6" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619062E6" Ref="Q21"  Part="1" 
+F 0 "Q21" H 11255 3096 50  0000 L CNN
+F 1 "IRF7425" H 11255 3005 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 2975 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 11050 3050 50  0001 L CNN
+	1    11050 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61914CEA
+P 1750 4550
+AR Path="/61914CEA" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61914CEA" Ref="Q13"  Part="1" 
+F 0 "Q13" H 1955 4596 50  0000 L CNN
+F 1 "IRF7425" H 1955 4505 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 4475 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 4550 50  0001 L CNN
+	1    1750 4550
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61922CA9
+P 4850 4550
+AR Path="/61922CA9" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61922CA9" Ref="Q16"  Part="1" 
+F 0 "Q16" H 5055 4596 50  0000 L CNN
+F 1 "IRF7425" H 5055 4505 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 4475 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 4550 50  0001 L CNN
+	1    4850 4550
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

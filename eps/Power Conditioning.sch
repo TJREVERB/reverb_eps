@@ -557,17 +557,6 @@ $EndComp
 Text Notes 850  2850 0    50   ~ 0
 Low current constant-on 3V3 line for constant VCC
 $Comp
-L Transistor_FET:IRF4905 Q21
-U 1 1 6184BF9C
-P 7400 1150
-F 0 "Q21" V 7742 1150 50  0000 C CNN
-F 1 "IRF4905" V 7651 1150 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7600 1075 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf4905.pdf?fileId=5546d462533600a4015355e32165197c" H 7400 1150 50  0001 L CNN
-	1    7400 1150
-	0    1    -1   0   
-$EndComp
-$Comp
 L Device:R R42
 U 1 1 6185218E
 P 7700 1450
@@ -593,17 +582,6 @@ Connection ~ 8000 1500
 Connection ~ 8300 1800
 Wire Wire Line
 	8300 1800 8000 1800
-$Comp
-L Transistor_FET:IRF4905 Q20
-U 1 1 618793BE
-P 7000 3200
-F 0 "Q20" V 7342 3200 50  0000 C CNN
-F 1 "IRF4905" V 7251 3200 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7200 3125 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf4905.pdf?fileId=5546d462533600a4015355e32165197c" H 7000 3200 50  0001 L CNN
-	1    7000 3200
-	0    1    -1   0   
-$EndComp
 $Comp
 L Device:R R37
 U 1 1 618793D5
@@ -930,7 +908,6 @@ F 3 "" H 7400 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 1350 7400 1400
-Connection ~ 7400 1350
 Connection ~ 8750 1050
 Connection ~ 9050 1050
 Wire Wire Line
@@ -1006,20 +983,8 @@ F 3 "" H 7300 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 3450 7000 3400
-Connection ~ 7000 3400
 Wire Wire Line
 	7200 3100 8350 3100
-$Comp
-L Transistor_FET:IRF4905 Q19
-U 1 1 61B04E59
-P 4200 4900
-F 0 "Q19" V 4542 4900 50  0000 C CNN
-F 1 "IRF4905" V 4451 4900 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4400 4825 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf4905.pdf?fileId=5546d462533600a4015355e32165197c" H 4200 4900 50  0001 L CNN
-	1    4200 4900
-	0    1    -1   0   
-$EndComp
 $Comp
 L Device:R R32
 U 1 1 61B04E5F
@@ -1202,7 +1167,6 @@ F 3 "" H 4500 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 5150 4200 5100
-Connection ~ 4200 5100
 Wire Wire Line
 	4400 4800 5550 4800
 Text GLabel 4800 5550 3    50   Input ~ 0
@@ -1410,4 +1374,38 @@ Connection ~ 4000 5950
 Wire Wire Line
 	4000 6150 4300 6150
 Connection ~ 4300 6150
+$Comp
+L Transistor_FET:IRF7404 Q10
+U 1 1 6185D3C6
+P 7400 1150
+F 0 "Q10" V 7742 1150 50  0000 C CNN
+F 1 "IRF7425" V 7651 1150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7600 1075 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7400 1150 50  0001 L CNN
+	1    7400 1150
+	0    1    -1   0   
+$EndComp
+Connection ~ 7400 1350
+$Comp
+L Transistor_FET:IRF7404 Q8
+U 1 1 6187CD62
+P 7000 3200
+F 0 "Q8" V 7342 3200 50  0000 C CNN
+F 1 "IRF7425" V 7251 3200 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7200 3125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7000 3200 50  0001 L CNN
+	1    7000 3200
+	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q7
+U 1 1 6188B152
+P 4200 4900
+F 0 "Q7" V 4542 4900 50  0000 C CNN
+F 1 "IRF7425" V 4451 4900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4400 4825 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4200 4900 50  0001 L CNN
+	1    4200 4900
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
