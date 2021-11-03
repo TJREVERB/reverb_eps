@@ -351,21 +351,21 @@ Distributes bus powers to PDM outputs. \nReads PDM telemetry\n
 Text Notes 5450 5050 0    50   ~ 0
 Regulates solar panel voltage\nReads telemetry from panels\n
 $Comp
-L MCU_ST_STM32F1:STM32F103C8Tx U?
+L MCU_ST_STM32F1:STM32F103C8Tx U22
 U 1 1 61A4AF8D
 P 9550 2600
-F 0 "U?" H 9500 1011 50  0000 C CNN
-F 1 "STM32F103C8Tx" H 9500 920 50  0000 C CNN
+F 0 "U22" H 9500 1000 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 9500 900 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 8950 1200 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 9550 2600 50  0001 C CNN
 	1    9550 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:CD74HC4067M U?
+L 74xx:CD74HC4067M U4
 U 1 1 61A4E99D
 P 6000 1900
-F 0 "U?" H 6000 3081 50  0000 C CNN
+F 0 "U4" H 6000 3081 50  0000 C CNN
 F 1 "CD74HC4067M" H 6000 2990 50  0000 C CNN
 F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 6900 900 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 5650 2750 50  0001 C CNN
@@ -403,10 +403,10 @@ ISW9
 Text GLabel 6500 2600 2    50   Input ~ 0
 ISW10
 $Comp
-L Device:R R?
+L Device:R R91
 U 1 1 61A6406C
 P 7750 2200
-F 0 "R?" H 7820 2246 50  0000 L CNN
+F 0 "R91" H 7820 2246 50  0000 L CNN
 F 1 "100K" H 7820 2155 50  0000 L CNN
 F 2 "" V 7680 2200 50  0001 C CNN
 F 3 "~" H 7750 2200 50  0001 C CNN
@@ -418,10 +418,10 @@ Wire Wire Line
 Text GLabel 7750 1700 1    50   Input ~ 0
 3V3RAW
 $Comp
-L power:GND #PWR?
+L power:GND #PWR053
 U 1 1 61A65B64
 P 7750 2350
-F 0 "#PWR?" H 7750 2100 50  0001 C CNN
+F 0 "#PWR053" H 7750 2100 50  0001 C CNN
 F 1 "GND" H 7755 2177 50  0000 C CNN
 F 2 "" H 7750 2350 50  0001 C CNN
 F 3 "" H 7750 2350 50  0001 C CNN
@@ -451,10 +451,10 @@ Text GLabel 5650 900  0    50   Input ~ 0
 Wire Wire Line
 	6000 900  5650 900 
 $Comp
-L power:GND #PWR?
+L power:GND #PWR052
 U 1 1 61A6DD8E
 P 6000 3000
-F 0 "#PWR?" H 6000 2750 50  0001 C CNN
+F 0 "#PWR052" H 6000 2750 50  0001 C CNN
 F 1 "GND" H 6005 2827 50  0000 C CNN
 F 2 "" H 6000 3000 50  0001 C CNN
 F 3 "" H 6000 3000 50  0001 C CNN
@@ -463,4 +463,70 @@ F 3 "" H 6000 3000 50  0001 C CNN
 $EndComp
 Text Label 5500 1400 2    50   ~ 0
 AMUX1
+Wire Wire Line
+	9350 1100 9450 1100
+Wire Wire Line
+	9750 1100 9750 900 
+Connection ~ 9750 1100
+Connection ~ 9450 1100
+Wire Wire Line
+	9450 1100 9550 1100
+Connection ~ 9550 1100
+Wire Wire Line
+	9550 1100 9650 1100
+Connection ~ 9650 1100
+Wire Wire Line
+	9650 1100 9750 1100
+Text GLabel 9750 900  1    50   Input ~ 0
+3V3RAW
+Wire Wire Line
+	9650 4100 9550 4100
+Wire Wire Line
+	9050 4100 9050 4400
+Connection ~ 9350 4100
+Wire Wire Line
+	9350 4100 9050 4100
+Connection ~ 9450 4100
+Wire Wire Line
+	9450 4100 9350 4100
+Connection ~ 9550 4100
+Wire Wire Line
+	9550 4100 9450 4100
+$Comp
+L power:GND #PWR054
+U 1 1 618365FA
+P 9050 4400
+F 0 "#PWR054" H 9050 4150 50  0001 C CNN
+F 1 "GND" H 9055 4227 50  0000 C CNN
+F 2 "" H 9050 4400 50  0001 C CNN
+F 3 "" H 9050 4400 50  0001 C CNN
+	1    9050 4400
+	1    0    0    -1  
+$EndComp
+Text Label 8850 1300 2    50   ~ 0
+RESET
+$Comp
+L Power_Supervisor:MAX6370 U24
+U 1 1 6183955A
+P 7700 3600
+F 0 "U24" H 8144 3646 50  0000 L CNN
+F 1 "MAX6370" H 8144 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-8" H 8350 3150 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6369-MAX6374.pdf" H 7850 4100 50  0001 C CNN
+	1    7700 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 3100 1    50   Input ~ 0
+3V3RAW
+$Comp
+L power:GND #PWR055
+U 1 1 6183BB41
+P 7700 4100
+F 0 "#PWR055" H 7700 3850 50  0001 C CNN
+F 1 "GND" H 7705 3927 50  0000 C CNN
+F 2 "" H 7700 4100 50  0001 C CNN
+F 3 "" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
