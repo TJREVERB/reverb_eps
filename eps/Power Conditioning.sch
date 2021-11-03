@@ -348,17 +348,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4365fa.
 	1    1950 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:IRLZ44N Q18
-U 1 1 6181C665
-P 1950 950
-F 0 "Q18" V 2292 950 50  0000 C CNN
-F 1 "IRLZ44N" V 2201 950 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2200 875 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 1950 950 50  0001 L CNN
-	1    1950 950 
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1950 1400 1950 1150
 Text GLabel 1100 850  0    50   Input ~ 0
@@ -1407,5 +1396,16 @@ F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4400 4825 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4200 4900 50  0001 L CNN
 	1    4200 4900
 	0    1    -1   0   
+$EndComp
+$Comp
+L Transistor_FET:IRF8302M Q18
+U 1 1 6193A157
+P 1950 950
+F 0 "Q18" V 2300 900 50  0000 L CNN
+F 1 "IRF8302M" V 2200 750 50  0000 L CNN
+F 2 "Package_DirectFET:DirectFET_MX" H 1950 950 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/irf8302mpbf.pdf?fileId=5546d462533600a40153560d16e41d5b" H 1950 950 50  0001 L CNN
+	1    1950 950 
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
