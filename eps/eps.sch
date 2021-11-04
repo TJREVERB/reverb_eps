@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "Stopgap EPS for TJREVERB"
 Date "2021-10-22"
 Rev "0.1"
@@ -203,19 +203,19 @@ F 3 "" H 2500 4650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Sheet
-S 5450 3650 1500 450 
+S 4200 3750 1500 450 
 U 619279C9
 F0 "PCM" 50
 F1 "Power Conditioning.sch" 50
 $EndSheet
 $Sheet
-S 5450 4300 1500 350 
+S 4200 4400 1500 350 
 U 61928B56
 F0 "PDM" 50
 F1 "Power Distribution.sch" 50
 $EndSheet
 $Sheet
-S 5450 4850 1500 250 
+S 4200 4950 1500 250 
 U 61929CC0
 F0 "BCR" 50
 F1 "BCR.sch" 50
@@ -344,347 +344,319 @@ Text GLabel 2750 2050 2    50   Input ~ 0
 SW2
 Text GLabel 2750 1950 2    50   Input ~ 0
 SW1
-Text Notes 5450 4000 0    50   ~ 0
+Text Notes 4200 4100 0    50   ~ 0
 Regulates BatV to 3.3V, 5V, 12V buses\nIncludes OCP/UVP and resets\nReads bus telemetry
-Text Notes 5450 4550 0    50   ~ 0
+Text Notes 4200 4650 0    50   ~ 0
 Distributes bus powers to PDM outputs. \nReads PDM telemetry\n
-Text Notes 5450 5050 0    50   ~ 0
+Text Notes 4200 5150 0    50   ~ 0
 Regulates solar panel voltage\nReads telemetry from panels\n
 $Comp
 L MCU_ST_STM32F1:STM32F103C8Tx U22
 U 1 1 61A4AF8D
-P 10500 2800
-F 0 "U22" H 10450 1200 50  0000 C CNN
-F 1 "STM32F103C8Tx" H 10450 1100 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 9900 1400 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 10500 2800 50  0001 C CNN
-	1    10500 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:CD74HC4067M U4
-U 1 1 61A4E99D
-P 6000 1900
-F 0 "U4" H 6000 3081 50  0000 C CNN
-F 1 "CD74HC4067M" H 6000 2990 50  0000 C CNN
-F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 6900 900 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" H 5650 2750 50  0001 C CNN
-	1    6000 1900
-	1    0    0    -1  
-$EndComp
-Text GLabel 6500 1200 2    50   Input ~ 0
-IBCR_OUT
-Text GLabel 6500 1400 2    50   Input ~ 0
-IBATV
-Text GLabel 6500 1500 2    50   Input ~ 0
-I5V
-Text GLabel 6500 1600 2    50   Input ~ 0
-I3V3
-Text GLabel 6500 1300 2    50   Input ~ 0
-I12V
-Text GLabel 6500 1700 2    50   Input ~ 0
-ISW1
-Text GLabel 6500 1800 2    50   Input ~ 0
-ISW2
-Text GLabel 6500 1900 2    50   Input ~ 0
-ISW3
-Text GLabel 6500 2000 2    50   Input ~ 0
-ISW4
-Text GLabel 6500 2100 2    50   Input ~ 0
-ISW5
-Text GLabel 6500 2200 2    50   Input ~ 0
-ISW6
-Text GLabel 6500 2300 2    50   Input ~ 0
-ISW7
-Text GLabel 6500 2400 2    50   Input ~ 0
-ISW8
-Text GLabel 6500 2500 2    50   Input ~ 0
-ISW9
-Text GLabel 6500 2600 2    50   Input ~ 0
-ISW10
-$Comp
-L Device:R R91
-U 1 1 61A6406C
-P 7400 2200
-F 0 "R91" H 7470 2246 50  0000 L CNN
-F 1 "100K" H 7470 2155 50  0000 L CNN
-F 2 "" V 7330 2200 50  0001 C CNN
-F 3 "~" H 7400 2200 50  0001 C CNN
-	1    7400 2200
+P 9250 2900
+F 0 "U22" H 9200 1300 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 9200 1200 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 8650 1500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 9250 2900 50  0001 C CNN
+	1    9250 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 2050 7400 2000
-Text GLabel 7400 1700 1    50   Input ~ 0
-3V3RAW
-$Comp
-L power:GND #PWR053
-U 1 1 61A65B64
-P 7400 2350
-F 0 "#PWR053" H 7400 2100 50  0001 C CNN
-F 1 "GND" H 7405 2177 50  0000 C CNN
-F 2 "" H 7400 2350 50  0001 C CNN
-F 3 "" H 7400 2350 50  0001 C CNN
-	1    7400 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Thermistor_NTC TH1
-U 1 1 61A667A8
-P 7400 1850
-F 0 "TH1" H 7498 1896 50  0000 L CNN
-F 1 "100K NTC" H 7498 1805 50  0000 L CNN
-F 2 "" H 7400 1900 50  0001 C CNN
-F 3 "~" H 7400 1900 50  0001 C CNN
-	1    7400 1850
-	1    0    0    -1  
-$EndComp
+	9050 1400 9150 1400
+Connection ~ 9150 1400
 Wire Wire Line
-	7400 2000 7200 2000
-Connection ~ 7400 2000
-Text Label 7200 2000 2    50   ~ 0
-BRDTMP
-Text Label 6500 2700 0    50   ~ 0
-BRDTMP
-Text GLabel 5650 900  1    50   Input ~ 0
-3V3RAW
-$Comp
-L power:GND #PWR052
-U 1 1 61A6DD8E
-P 6000 3000
-F 0 "#PWR052" H 6000 2750 50  0001 C CNN
-F 1 "GND" H 6005 2827 50  0000 C CNN
-F 2 "" H 6000 3000 50  0001 C CNN
-F 3 "" H 6000 3000 50  0001 C CNN
-	1    6000 3000
-	1    0    0    -1  
-$EndComp
-Text Label 5500 1400 2    50   ~ 0
-AMUX
+	9150 1400 9250 1400
+Connection ~ 9250 1400
 Wire Wire Line
-	10300 1300 10400 1300
-Connection ~ 10400 1300
-Wire Wire Line
-	10400 1300 10500 1300
-Connection ~ 10500 1300
-Wire Wire Line
-	10500 1300 10600 1300
-Connection ~ 10600 1300
-Wire Wire Line
-	10600 1300 10700 1300
-Text GLabel 10300 1200 1    50   Input ~ 0
+	9250 1400 9350 1400
+Text GLabel 9050 1200 1    50   Input ~ 0
 3V3RAW
 Wire Wire Line
-	10600 4300 10500 4300
-Connection ~ 10300 4300
+	9350 4400 9250 4400
+Connection ~ 9050 4400
 Wire Wire Line
-	10300 4300 10000 4300
-Connection ~ 10400 4300
+	9050 4400 8750 4400
+Connection ~ 9150 4400
 Wire Wire Line
-	10400 4300 10300 4300
-Connection ~ 10500 4300
+	9150 4400 9050 4400
+Connection ~ 9250 4400
 Wire Wire Line
-	10500 4300 10400 4300
+	9250 4400 9150 4400
 $Comp
 L power:GND #PWR054
 U 1 1 618365FA
-P 10000 4400
-F 0 "#PWR054" H 10000 4150 50  0001 C CNN
-F 1 "GND" H 10005 4227 50  0000 C CNN
-F 2 "" H 10000 4400 50  0001 C CNN
-F 3 "" H 10000 4400 50  0001 C CNN
-	1    10000 4400
+P 8750 4500
+F 0 "#PWR054" H 8750 4250 50  0001 C CNN
+F 1 "GND" H 8755 4327 50  0000 C CNN
+F 2 "" H 8750 4500 50  0001 C CNN
+F 3 "" H 8750 4500 50  0001 C CNN
+	1    8750 4500
 	1    0    0    -1  
 $EndComp
-Text Label 9800 1500 2    50   ~ 0
+Text Label 8550 1600 2    50   ~ 0
 RESET
-Text GLabel 8900 1200 1    50   Input ~ 0
+Text GLabel 7650 1300 1    50   Input ~ 0
 3V3RAW
 $Comp
 L power:GND #PWR055
 U 1 1 6183BB41
-P 8900 2250
-F 0 "#PWR055" H 8900 2000 50  0001 C CNN
-F 1 "GND" H 8905 2077 50  0000 C CNN
-F 2 "" H 8900 2250 50  0001 C CNN
-F 3 "" H 8900 2250 50  0001 C CNN
-	1    8900 2250
+P 7650 2350
+F 0 "#PWR055" H 7650 2100 50  0001 C CNN
+F 1 "GND" H 7655 2177 50  0000 C CNN
+F 2 "" H 7650 2350 50  0001 C CNN
+F 3 "" H 7650 2350 50  0001 C CNN
+	1    7650 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Power_Supervisor:MAX6369 U24
 U 1 1 6182C0FB
-P 8900 1700
-F 0 "U24" H 9200 1750 50  0000 L CNN
-F 1 "MAX6369" H 9200 1650 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-8" H 9550 1250 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6369-MAX6374.pdf" H 9050 2200 50  0001 C CNN
-	1    8900 1700
+P 7650 1800
+F 0 "U24" H 7950 1850 50  0000 L CNN
+F 1 "MAX6369" H 7950 1750 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-8" H 8300 1350 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX6369-MAX6374.pdf" H 7800 2300 50  0001 C CNN
+	1    7650 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 2600 9550 2600
+	8550 2700 8300 2700
 Wire Wire Line
-	9550 1500 9800 1500
+	8300 1600 8550 1600
 Wire Wire Line
-	9300 1500 9550 1500
-Connection ~ 9550 1500
+	8050 1600 8300 1600
+Connection ~ 8300 1600
 $Comp
 L Device:R R94
 U 1 1 61835554
-P 9550 1350
-F 0 "R94" H 9600 1350 50  0000 L CNN
-F 1 "10K" V 9550 1250 50  0000 L CNN
-F 2 "" V 9480 1350 50  0001 C CNN
-F 3 "~" H 9550 1350 50  0001 C CNN
-	1    9550 1350
+P 8300 1450
+F 0 "R94" H 8350 1450 50  0000 L CNN
+F 1 "10K" V 8300 1350 50  0000 L CNN
+F 2 "" V 8230 1450 50  0001 C CNN
+F 3 "~" H 8300 1450 50  0001 C CNN
+	1    8300 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 2600 9550 1500
+	8300 2700 8300 1600
 Wire Wire Line
-	8500 1900 8300 1900
+	7250 2000 7050 2000
 Wire Wire Line
-	8500 1800 8300 1800
+	7250 1900 7050 1900
 Wire Wire Line
-	8300 1200 8900 1200
+	7050 1300 7650 1300
 Wire Wire Line
-	8300 1800 8300 1200
-Connection ~ 8300 1800
+	7050 1900 7050 1300
+Connection ~ 7050 1900
 Wire Wire Line
-	8300 1900 8300 1800
+	7050 2000 7050 1900
 $Comp
 L Device:R R92
 U 1 1 6183E67E
-P 8100 1550
-F 0 "R92" H 8150 1550 50  0000 L CNN
-F 1 "10K" V 8100 1450 50  0000 L CNN
-F 2 "" V 8030 1550 50  0001 C CNN
-F 3 "~" H 8100 1550 50  0001 C CNN
-	1    8100 1550
+P 6850 1650
+F 0 "R92" H 6900 1650 50  0000 L CNN
+F 1 "10K" V 6850 1550 50  0000 L CNN
+F 2 "" V 6780 1650 50  0001 C CNN
+F 3 "~" H 6850 1650 50  0001 C CNN
+	1    6850 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 1700 8100 1700
+	7250 1800 6850 1800
 Wire Wire Line
-	8100 1400 8100 1200
+	6850 1500 6850 1300
 Wire Wire Line
-	8100 1200 8300 1200
-Connection ~ 8300 1200
+	6850 1300 7050 1300
+Connection ~ 7050 1300
 Wire Wire Line
-	8500 1500 8400 1500
+	7250 1600 7150 1600
 Wire Wire Line
-	8400 1500 8400 1950
+	7150 1600 7150 2050
 $Comp
 L Device:R R93
 U 1 1 61841811
-P 8400 2100
-F 0 "R93" H 8450 2100 50  0000 L CNN
-F 1 "50K" V 8400 2000 50  0000 L CNN
-F 2 "" V 8330 2100 50  0001 C CNN
-F 3 "~" H 8400 2100 50  0001 C CNN
-	1    8400 2100
+P 7150 2200
+F 0 "R93" H 7200 2200 50  0000 L CNN
+F 1 "50K" V 7150 2100 50  0000 L CNN
+F 2 "" V 7080 2200 50  0001 C CNN
+F 3 "~" H 7150 2200 50  0001 C CNN
+	1    7150 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 2250 8900 2250
+	7150 2350 7650 2350
 Wire Wire Line
-	8900 2250 8900 2200
-Connection ~ 8900 2250
-Text Label 8400 1650 1    50   ~ 0
+	7650 2350 7650 2300
+Connection ~ 7650 2350
+Text Label 7150 1750 1    50   ~ 0
 HNDSHK
-Text Label 9800 2700 2    50   ~ 0
+Text Label 8550 2800 2    50   ~ 0
 HNDSHK
 $Comp
 L Device:C C23
 U 1 1 61846028
-P 8000 2100
-F 0 "C23" H 8115 2146 50  0000 L CNN
-F 1 "0.1uF" H 8115 2055 50  0000 L CNN
-F 2 "" H 8038 1950 50  0001 C CNN
-F 3 "~" H 8000 2100 50  0001 C CNN
-	1    8000 2100
+P 6750 2200
+F 0 "C23" H 6865 2246 50  0000 L CNN
+F 1 "0.1uF" H 6865 2155 50  0000 L CNN
+F 2 "" H 6788 2050 50  0001 C CNN
+F 3 "~" H 6750 2200 50  0001 C CNN
+	1    6750 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 1200 8000 1200
+	6850 1300 6750 1300
 Wire Wire Line
-	8000 1200 8000 1950
-Connection ~ 8100 1200
+	6750 1300 6750 2050
+Connection ~ 6850 1300
 Wire Wire Line
-	8000 2250 8400 2250
-Connection ~ 8400 2250
-Text Label 8100 1700 2    50   ~ 0
+	6750 2350 7150 2350
+Connection ~ 7150 2350
+Text Label 6850 1800 2    50   ~ 0
 TSET
-Text Label 9800 2900 2    50   ~ 0
+Text Label 8550 3000 2    50   ~ 0
 TSET
-Text Notes 7600 800  0    50   ~ 0
+Text Notes 6350 900  0    50   ~ 0
 HW watchdog to prevent latchup events.\nTSET selects timeout between 10s (low) or 60s (high, default)\nMCU also has a software watchdog for communications timeout\n
-Text Label 5500 1800 2    50   ~ 0
-SEL0
-Text Label 5500 1900 2    50   ~ 0
-SEL1
-Text Label 5500 2100 2    50   ~ 0
-SEL3
-Text Label 5500 2000 2    50   ~ 0
-SEL2
-Text Label 5500 2500 2    50   ~ 0
-MUX0EN
-$Comp
-L Device:D_Zener D3
-U 1 1 61854C24
-P 5250 1550
-F 0 "D3" V 5204 1630 50  0000 L CNN
-F 1 "1N4728" V 5295 1630 50  0000 L CNN
-F 2 "" H 5250 1550 50  0001 C CNN
-F 3 "~" H 5250 1550 50  0001 C CNN
-	1    5250 1550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	5500 1400 5250 1400
+	9050 1400 9050 1300
+Connection ~ 9050 1400
+Wire Wire Line
+	9050 1300 8300 1300
+Wire Wire Line
+	8750 4400 8750 4500
 $Comp
-L power:GND #PWR057
-U 1 1 61856682
-P 5250 1700
-F 0 "#PWR057" H 5250 1450 50  0001 C CNN
-F 1 "GND" H 5255 1527 50  0000 C CNN
-F 2 "" H 5250 1700 50  0001 C CNN
-F 3 "" H 5250 1700 50  0001 C CNN
-	1    5250 1700
+L power:VCC #PWR071
+U 1 1 6188B315
+P 9450 1000
+F 0 "#PWR071" H 9450 850 50  0001 C CNN
+F 1 "VCC" H 9465 1173 50  0000 C CNN
+F 2 "" H 9450 1000 50  0001 C CNN
+F 3 "" H 9450 1000 50  0001 C CNN
+	1    9450 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 8950 750  0    50   ~ 0
+VDDA powered from linear \nregulator to prevent noise
+$Comp
+L Device:C C29
+U 1 1 6191CBF2
+P 10400 1150
+F 0 "C29" H 10515 1196 50  0000 L CNN
+F 1 "1uF" H 10515 1105 50  0000 L CNN
+F 2 "" H 10438 1000 50  0001 C CNN
+F 3 "~" H 10400 1150 50  0001 C CNN
+	1    10400 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C24
-U 1 1 61858FEC
-P 5000 1050
-F 0 "C24" H 5115 1096 50  0000 L CNN
-F 1 "0.1uF" H 5115 1005 50  0000 L CNN
-F 2 "" H 5038 900 50  0001 C CNN
-F 3 "~" H 5000 1050 50  0001 C CNN
-	1    5000 1050
+L Device:C C28
+U 1 1 6191E494
+P 9950 1150
+F 0 "C28" H 10065 1196 50  0000 L CNN
+F 1 "0.1uF" H 10065 1105 50  0000 L CNN
+F 2 "" H 9988 1000 50  0001 C CNN
+F 3 "~" H 9950 1150 50  0001 C CNN
+	1    9950 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR056
-U 1 1 61859B4A
-P 5000 1200
-F 0 "#PWR056" H 5000 950 50  0001 C CNN
-F 1 "GND" H 5005 1027 50  0000 C CNN
-F 2 "" H 5000 1200 50  0001 C CNN
-F 3 "" H 5000 1200 50  0001 C CNN
-	1    5000 1200
+L Transistor_FET:IRF7404 Q?
+U 1 1 6192EE6D
+P 9350 1200
+AR Path="/619279C9/6192EE6D" Ref="Q?"  Part="1" 
+AR Path="/6192EE6D" Ref="Q43"  Part="1" 
+F 0 "Q43" V 9692 1200 50  0000 C CNN
+F 1 "IRF7425" V 9601 1200 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9550 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 9350 1200 50  0001 L CNN
+	1    9350 1200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9450 1000 9950 1000
+Connection ~ 9450 1000
+Connection ~ 9950 1000
+Wire Wire Line
+	9950 1000 10400 1000
+Wire Wire Line
+	9150 1200 9050 1200
+Wire Wire Line
+	9050 1200 9050 1300
+Connection ~ 9050 1300
+Wire Wire Line
+	9950 1300 10400 1300
+Wire Wire Line
+	10400 1300 10400 1450
+Connection ~ 10400 1300
+$Comp
+L power:GND #PWR081
+U 1 1 61956015
+P 10400 1450
+F 0 "#PWR081" H 10400 1200 50  0001 C CNN
+F 1 "GND" H 10405 1277 50  0000 C CNN
+F 2 "" H 10400 1450 50  0001 C CNN
+F 3 "" H 10400 1450 50  0001 C CNN
+	1    10400 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7900 3300 1    50   Input ~ 0
+3V3RAW
+$Comp
+L Device:C C27
+U 1 1 6195B2B7
+P 8100 3450
+F 0 "C27" H 8215 3496 50  0000 L CNN
+F 1 "1uF" H 8215 3405 50  0000 L CNN
+F 2 "" H 8138 3300 50  0001 C CNN
+F 3 "~" H 8100 3450 50  0001 C CNN
+	1    8100 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 6195B2BD
+P 7650 3450
+F 0 "C26" H 7765 3496 50  0000 L CNN
+F 1 "0.1uF" H 7765 3405 50  0000 L CNN
+F 2 "" H 7688 3300 50  0001 C CNN
+F 3 "~" H 7650 3450 50  0001 C CNN
+	1    7650 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 900  6000 900 
-Text Notes 3750 1650 0    50   ~ 0
-3v3 clamp zener diode, protect ADC
+	7650 3300 8100 3300
 Wire Wire Line
-	10300 1300 10300 1200
-Connection ~ 10300 1300
+	7650 3600 7900 3600
+$Comp
+L power:GND #PWR080
+U 1 1 6195B2C9
+P 7900 3600
+F 0 "#PWR080" H 7900 3350 50  0001 C CNN
+F 1 "GND" H 7905 3427 50  0000 C CNN
+F 2 "" H 7900 3600 50  0001 C CNN
+F 3 "" H 7900 3600 50  0001 C CNN
+	1    7900 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7900 3600
 Wire Wire Line
-	10300 1200 9550 1200
-Wire Wire Line
-	10000 4300 10000 4400
+	7900 3600 8100 3600
+$Sheet
+S 5850 4200 1350 1000
+U 61970EEC
+F0 "AnalogTelemetry" 50
+F1 "Telem.sch" 50
+F2 "SEL0" I L 5850 4500 50 
+F3 "SEL1" I L 5850 4600 50 
+F4 "SEL2" I L 5850 4700 50 
+F5 "SEL3" I L 5850 4800 50 
+F6 "MUX0EN" I L 5850 4900 50 
+F7 "MUX1EN" I L 5850 5000 50 
+F8 "AMUX" I L 5850 5100 50 
+F9 "SER" I R 7200 4500 50 
+F10 "SRCLK" I R 7200 4600 50 
+F11 "RCLK" I R 7200 4700 50 
+$EndSheet
+Text Notes 5850 4400 0    50   ~ 0
+Reads and muxs analog telemetry\nreadouts
 $EndSCHEMATC

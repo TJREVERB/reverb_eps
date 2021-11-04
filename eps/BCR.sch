@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Battery_Management:LT3652EMSE U23
 U 1 1 61832F84
-P 4100 2100
-F 0 "U23" H 4100 2781 50  0000 C CNN
-F 1 "LT3652EMSE" H 4100 2690 50  0000 C CNN
-F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 4100 1500 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.pdf" H 4700 1300 50  0001 C CNN
-	1    4100 2100
+P 4550 2200
+F 0 "U23" H 4550 2881 50  0000 C CNN
+F 1 "LT3652EMSE" H 4550 2790 50  0000 C CNN
+F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 4550 1600 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.pdf" H 5150 1400 50  0001 C CNN
+	1    4550 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -47,10 +47,10 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3652fe.
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J1
 U 1 1 6182DEA2
 P 2200 2100
-F 0 "J?" H 2308 2481 50  0000 C CNN
+F 0 "J1" H 2308 2481 50  0000 C CNN
 F 1 "SA1A" H 2308 2390 50  0000 C CNN
 F 2 "" H 2200 2100 50  0001 C CNN
 F 3 "~" H 2200 2100 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "~" H 2200 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J2
 U 1 1 6182F03D
 P 2200 2850
-F 0 "J?" H 2308 3231 50  0000 C CNN
+F 0 "J2" H 2308 3231 50  0000 C CNN
 F 1 "SA1B" H 2308 3140 50  0000 C CNN
 F 2 "" H 2200 2850 50  0001 C CNN
 F 3 "~" H 2200 2850 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "~" H 2200 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J3
 U 1 1 61831EC4
 P 2200 4050
-F 0 "J?" H 2308 4431 50  0000 C CNN
+F 0 "J3" H 2308 4431 50  0000 C CNN
 F 1 "SA2A" H 2308 4340 50  0000 C CNN
 F 2 "" H 2200 4050 50  0001 C CNN
 F 3 "~" H 2200 4050 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "~" H 2200 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J4
 U 1 1 61831ECA
 P 2200 4800
-F 0 "J?" H 2308 5181 50  0000 C CNN
+F 0 "J4" H 2308 5181 50  0000 C CNN
 F 1 "SA2B" H 2308 5090 50  0000 C CNN
 F 2 "" H 2200 4800 50  0001 C CNN
 F 3 "~" H 2200 4800 50  0001 C CNN
@@ -91,10 +91,10 @@ F 3 "~" H 2200 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J5
 U 1 1 618337DD
 P 2200 5800
-F 0 "J?" H 2308 6181 50  0000 C CNN
+F 0 "J5" H 2308 6181 50  0000 C CNN
 F 1 "SA3A" H 2308 6090 50  0000 C CNN
 F 2 "" H 2200 5800 50  0001 C CNN
 F 3 "~" H 2200 5800 50  0001 C CNN
@@ -102,14 +102,134 @@ F 3 "~" H 2200 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J6
 U 1 1 618337E3
 P 2200 6550
-F 0 "J?" H 2308 6931 50  0000 C CNN
+F 0 "J6" H 2308 6931 50  0000 C CNN
 F 1 "SA3B" H 2308 6840 50  0000 C CNN
 F 2 "" H 2200 6550 50  0001 C CNN
 F 3 "~" H 2200 6550 50  0001 C CNN
 	1    2200 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2000 2600 2000
+Wire Wire Line
+	2600 2000 2600 2200
+Wire Wire Line
+	2400 2200 2600 2200
+Connection ~ 2600 2200
+Wire Wire Line
+	2600 2200 2600 2350
+Wire Wire Line
+	2400 2750 2600 2750
+Wire Wire Line
+	2600 2750 2600 2950
+Wire Wire Line
+	2400 2950 2600 2950
+Connection ~ 2600 2950
+Wire Wire Line
+	2600 2950 2600 3100
+Wire Wire Line
+	2400 3950 2600 3950
+Wire Wire Line
+	2600 3950 2600 4150
+Wire Wire Line
+	2400 4150 2600 4150
+Connection ~ 2600 4150
+Wire Wire Line
+	2600 4150 2600 4300
+Wire Wire Line
+	2400 4700 2600 4700
+Wire Wire Line
+	2600 4700 2600 4900
+Wire Wire Line
+	2400 4900 2600 4900
+Connection ~ 2600 4900
+Wire Wire Line
+	2600 4900 2600 5050
+Wire Wire Line
+	2400 5700 2600 5700
+Wire Wire Line
+	2600 5700 2600 5900
+Wire Wire Line
+	2400 5900 2600 5900
+Connection ~ 2600 5900
+Wire Wire Line
+	2600 5900 2600 6050
+Wire Wire Line
+	2400 6450 2600 6450
+Wire Wire Line
+	2600 6450 2600 6650
+Wire Wire Line
+	2400 6650 2600 6650
+Connection ~ 2600 6650
+Wire Wire Line
+	2600 6650 2600 6800
+$Comp
+L power:GND #PWR?
+U 1 1 61A89BE8
+P 2600 2350
+F 0 "#PWR?" H 2600 2100 50  0001 C CNN
+F 1 "GND" H 2605 2177 50  0000 C CNN
+F 2 "" H 2600 2350 50  0001 C CNN
+F 3 "" H 2600 2350 50  0001 C CNN
+	1    2600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A8A4F9
+P 2600 3100
+F 0 "#PWR?" H 2600 2850 50  0001 C CNN
+F 1 "GND" H 2605 2927 50  0000 C CNN
+F 2 "" H 2600 3100 50  0001 C CNN
+F 3 "" H 2600 3100 50  0001 C CNN
+	1    2600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A8A8F0
+P 2600 4300
+F 0 "#PWR?" H 2600 4050 50  0001 C CNN
+F 1 "GND" H 2605 4127 50  0000 C CNN
+F 2 "" H 2600 4300 50  0001 C CNN
+F 3 "" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A8ABF9
+P 2600 5050
+F 0 "#PWR?" H 2600 4800 50  0001 C CNN
+F 1 "GND" H 2605 4877 50  0000 C CNN
+F 2 "" H 2600 5050 50  0001 C CNN
+F 3 "" H 2600 5050 50  0001 C CNN
+	1    2600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A8AF32
+P 2600 6050
+F 0 "#PWR?" H 2600 5800 50  0001 C CNN
+F 1 "GND" H 2605 5877 50  0000 C CNN
+F 2 "" H 2600 6050 50  0001 C CNN
+F 3 "" H 2600 6050 50  0001 C CNN
+	1    2600 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A8B411
+P 2600 6800
+F 0 "#PWR?" H 2600 6550 50  0001 C CNN
+F 1 "GND" H 2605 6627 50  0000 C CNN
+F 2 "" H 2600 6800 50  0001 C CNN
+F 3 "" H 2600 6800 50  0001 C CNN
+	1    2600 6800
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
