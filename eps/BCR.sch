@@ -533,11 +533,120 @@ Text GLabel 4200 4800 2    50   Input ~ 0
 VBCR3IN
 Wire Wire Line
 	5450 2550 5450 3000
-Wire Wire Line
-	5450 3000 6000 3000
 Connection ~ 5450 3000
 Wire Wire Line
 	5450 3000 5450 3450
-Text GLabel 6000 3000 2    50   Input ~ 0
+Text GLabel 6900 3000 2    50   Input ~ 0
 BCR_OUT
+$Comp
+L Device:R R?
+U 1 1 61877BC1
+P 6400 3000
+AR Path="/61928B56/61877BC1" Ref="R?"  Part="1" 
+AR Path="/61929CC0/6194502F/61877BC1" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61964B2B/61877BC1" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61964D92/61877BC1" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61877BC1" Ref="R202"  Part="1" 
+F 0 "R202" V 6500 3100 50  0000 R CNN
+F 1 "20m" V 6400 3100 50  0000 R CNN
+F 2 "" V 6330 3000 50  0001 C CNN
+F 3 "~" H 6400 3000 50  0001 C CNN
+	1    6400 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Current:LT6106 U?
+U 1 1 61877BC7
+P 6400 2250
+AR Path="/61928B56/61877BC7" Ref="U?"  Part="1" 
+AR Path="/61929CC0/6194502F/61877BC7" Ref="U?"  Part="1" 
+AR Path="/61929CC0/61964B2B/61877BC7" Ref="U?"  Part="1" 
+AR Path="/61929CC0/61964D92/61877BC7" Ref="U?"  Part="1" 
+AR Path="/61929CC0/61877BC7" Ref="U45"  Part="1" 
+F 0 "U45" H 6744 2296 50  0000 L CNN
+F 1 "LT6106" H 6744 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6400 2250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 6450 2450 50  0001 C CNN
+	1    6400 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61877BCD
+P 6700 2350
+AR Path="/61928B56/61877BCD" Ref="#PWR?"  Part="1" 
+AR Path="/61929CC0/6194502F/61877BCD" Ref="#PWR?"  Part="1" 
+AR Path="/61929CC0/61964B2B/61877BCD" Ref="#PWR?"  Part="1" 
+AR Path="/61929CC0/61964D92/61877BCD" Ref="#PWR?"  Part="1" 
+AR Path="/61929CC0/61877BCD" Ref="#PWR0185"  Part="1" 
+F 0 "#PWR0185" H 6700 2100 50  0001 C CNN
+F 1 "GND" H 6705 2177 50  0000 C CNN
+F 2 "" H 6700 2350 50  0001 C CNN
+F 3 "" H 6700 2350 50  0001 C CNN
+	1    6700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61877BD3
+P 6550 1950
+AR Path="/61928B56/61877BD3" Ref="R?"  Part="1" 
+AR Path="/61929CC0/6194502F/61877BD3" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61964B2B/61877BD3" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61964D92/61877BD3" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61877BD3" Ref="R204"  Part="1" 
+F 0 "R204" V 6450 1850 50  0000 L CNN
+F 1 "1K" V 6550 1900 50  0000 L CNN
+F 2 "" V 6480 1950 50  0001 C CNN
+F 3 "~" H 6550 1950 50  0001 C CNN
+	1    6550 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 1950 6700 2350
+Connection ~ 6700 2350
+Wire Wire Line
+	6100 3000 6100 2350
+$Comp
+L Device:R R?
+U 1 1 61877BDC
+P 6500 2700
+AR Path="/61928B56/61877BDC" Ref="R?"  Part="1" 
+AR Path="/61929CC0/6194502F/61877BDC" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61964B2B/61877BDC" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61964D92/61877BDC" Ref="R?"  Part="1" 
+AR Path="/61929CC0/61877BDC" Ref="R203"  Part="1" 
+F 0 "R203" H 6650 2700 50  0000 C CNN
+F 1 "100R" V 6500 2700 50  0000 C CNN
+F 2 "" V 6430 2700 50  0001 C CNN
+F 3 "~" H 6500 2700 50  0001 C CNN
+	1    6500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2550 6300 2900
+Wire Wire Line
+	6300 2900 6550 2900
+Wire Wire Line
+	6550 2900 6550 3000
+Wire Wire Line
+	6500 2850 6250 2850
+Wire Wire Line
+	6250 2850 6250 3000
+Wire Wire Line
+	6250 3000 6100 3000
+Connection ~ 6250 3000
+Text Notes 6750 2250 0    50   ~ 0
+200mV/A\n
+Wire Wire Line
+	6550 3000 6900 3000
+Connection ~ 6100 3000
+Connection ~ 6550 3000
+Wire Wire Line
+	6400 1950 6150 1950
+Connection ~ 6400 1950
+Text GLabel 6150 1950 0    50   Input ~ 0
+IBCR_OUT
+Wire Wire Line
+	5450 3000 6100 3000
 $EndSCHEMATC

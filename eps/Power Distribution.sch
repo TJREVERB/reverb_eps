@@ -16,14 +16,14 @@ $EndDescr
 $Comp
 L power:+3.3V #PWR?
 U 1 1 61A47D07
-P 11150 2750
+P 11150 2700
 AR Path="/61A47D07" Ref="#PWR?"  Part="1" 
 AR Path="/61928B56/61A47D07" Ref="#PWR026"  Part="1" 
-F 0 "#PWR026" H 11150 2600 50  0001 C CNN
-F 1 "+3.3V" V 11165 2878 50  0000 L CNN
-F 2 "" H 11150 2750 50  0001 C CNN
-F 3 "" H 11150 2750 50  0001 C CNN
-	1    11150 2750
+F 0 "#PWR026" H 11150 2550 50  0001 C CNN
+F 1 "+3.3V" V 11165 2828 50  0000 L CNN
+F 2 "" H 11150 2700 50  0001 C CNN
+F 3 "" H 11150 2700 50  0001 C CNN
+	1    11150 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -76,466 +76,31 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 61A47D2A
-P 1400 1700
+P 850 1700
 AR Path="/61A47D2A" Ref="#PWR?"  Part="1" 
 AR Path="/61928B56/61A47D2A" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 1400 1450 50  0001 C CNN
-F 1 "GND" H 1405 1527 50  0000 C CNN
-F 2 "" H 1400 1700 50  0001 C CNN
-F 3 "" H 1400 1700 50  0001 C CNN
-	1    1400 1700
+F 0 "#PWR016" H 850 1450 50  0001 C CNN
+F 1 "GND" H 855 1527 50  0000 C CNN
+F 2 "" H 850 1700 50  0001 C CNN
+F 3 "" H 850 1700 50  0001 C CNN
+	1    850  1700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 1700 1400 1600
-$Comp
-L Device:R R?
-U 1 1 61A47DDF
-P 850 3050
-AR Path="/61A47DDF" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47DDF" Ref="R23"  Part="1" 
-F 0 "R23" V 750 3050 50  0000 C CNN
-F 1 "100R" V 850 3050 50  0000 C CNN
-F 2 "" V 780 3050 50  0001 C CNN
-F 3 "~" H 850 3050 50  0001 C CNN
-	1    850  3050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47DE5
-P 1400 2700
-AR Path="/61A47DE5" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47DE5" Ref="R26"  Part="1" 
-F 0 "R26" H 1300 2700 50  0000 C CNN
-F 1 "10K" V 1400 2700 50  0000 C CNN
-F 2 "" V 1330 2700 50  0001 C CNN
-F 3 "~" H 1400 2700 50  0001 C CNN
-	1    1400 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 2650 1850 2550
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 61A47DF2
-P 1300 3050
-AR Path="/61A47DF2" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47DF2" Ref="Q15"  Part="1" 
-F 0 "Q15" H 1504 3096 50  0000 L CNN
-F 1 "2N7002" H 1504 3005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 2975 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1300 3050 50  0001 L CNN
-	1    1300 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 1400 2850
-Wire Wire Line
-	1400 2850 1550 2850
-Wire Wire Line
-	1400 2550 1850 2550
-$Comp
-L power:GND #PWR?
-U 1 1 61A47DFB
-P 1400 3350
-AR Path="/61A47DFB" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47DFB" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 1400 3100 50  0001 C CNN
-F 1 "GND" H 1405 3177 50  0000 C CNN
-F 2 "" H 1400 3350 50  0001 C CNN
-F 3 "" H 1400 3350 50  0001 C CNN
-	1    1400 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 3050 1050 3050
-$Comp
-L Device:R R?
-U 1 1 61A47E02
-P 1050 3200
-AR Path="/61A47E02" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E02" Ref="R24"  Part="1" 
-F 0 "R24" H 950 3200 50  0000 C CNN
-F 1 "10K" V 1050 3200 50  0000 C CNN
-F 2 "" V 980 3200 50  0001 C CNN
-F 3 "~" H 1050 3200 50  0001 C CNN
-	1    1050 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 3350 1400 3350
-Wire Wire Line
-	1400 3350 1400 3250
-Connection ~ 1400 3350
-Connection ~ 1050 3050
-Wire Wire Line
-	1050 3050 1100 3050
 $Comp
 L power:+5V #PWR?
 U 1 1 61A47E0D
-P 1850 2550
+P 1850 2700
 AR Path="/61A47E0D" Ref="#PWR?"  Part="1" 
 AR Path="/61928B56/61A47E0D" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 1850 2400 50  0001 C CNN
-F 1 "+5V" V 1865 2678 50  0000 L CNN
-F 2 "" H 1850 2550 50  0001 C CNN
-F 3 "" H 1850 2550 50  0001 C CNN
-	1    1850 2550
+F 0 "#PWR031" H 1850 2550 50  0001 C CNN
+F 1 "+5V" V 1865 2828 50  0000 L CNN
+F 2 "" H 1850 2700 50  0001 C CNN
+F 3 "" H 1850 2700 50  0001 C CNN
+	1    1850 2700
 	1    0    0    -1  
 $EndComp
-Connection ~ 1850 2550
-$Comp
-L Device:R R?
-U 1 1 61A47E14
-P 3950 3050
-AR Path="/61A47E14" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E14" Ref="R2"  Part="1" 
-F 0 "R2" V 3850 3050 50  0000 C CNN
-F 1 "100R" V 3950 3050 50  0000 C CNN
-F 2 "" V 3880 3050 50  0001 C CNN
-F 3 "~" H 3950 3050 50  0001 C CNN
-	1    3950 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47E1A
-P 4500 2700
-AR Path="/61A47E1A" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E1A" Ref="R6"  Part="1" 
-F 0 "R6" H 4400 2700 50  0000 C CNN
-F 1 "10K" V 4500 2700 50  0000 C CNN
-F 2 "" V 4430 2700 50  0001 C CNN
-F 3 "~" H 4500 2700 50  0001 C CNN
-	1    4500 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 2650 4950 2550
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 61A47E27
-P 4400 3050
-AR Path="/61A47E27" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47E27" Ref="Q2"  Part="1" 
-F 0 "Q2" H 4604 3096 50  0000 L CNN
-F 1 "2N7002" H 4604 3005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 2975 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 3050 50  0001 L CNN
-	1    4400 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 4500 2850
-Wire Wire Line
-	4500 2850 4650 2850
-Wire Wire Line
-	4500 2550 4950 2550
-$Comp
-L power:GND #PWR?
-U 1 1 61A47E30
-P 4500 3350
-AR Path="/61A47E30" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47E30" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 4500 3100 50  0001 C CNN
-F 1 "GND" H 4505 3177 50  0000 C CNN
-F 2 "" H 4500 3350 50  0001 C CNN
-F 3 "" H 4500 3350 50  0001 C CNN
-	1    4500 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 3050 4150 3050
-$Comp
-L Device:R R?
-U 1 1 61A47E37
-P 4150 3200
-AR Path="/61A47E37" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E37" Ref="R4"  Part="1" 
-F 0 "R4" H 4050 3200 50  0000 C CNN
-F 1 "10K" V 4150 3200 50  0000 C CNN
-F 2 "" V 4080 3200 50  0001 C CNN
-F 3 "~" H 4150 3200 50  0001 C CNN
-	1    4150 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 3350 4500 3350
-Wire Wire Line
-	4500 3350 4500 3250
-Connection ~ 4500 3350
-Connection ~ 4150 3050
-Wire Wire Line
-	4150 3050 4200 3050
-$Comp
-L power:+5V #PWR?
-U 1 1 61A47E42
-P 4950 2550
-AR Path="/61A47E42" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47E42" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 4950 2400 50  0001 C CNN
-F 1 "+5V" V 4965 2678 50  0000 L CNN
-F 2 "" H 4950 2550 50  0001 C CNN
-F 3 "" H 4950 2550 50  0001 C CNN
-	1    4950 2550
-	1    0    0    -1  
-$EndComp
-Connection ~ 4950 2550
-$Comp
-L Device:R R?
-U 1 1 61A47E4A
-P 7050 3050
-AR Path="/61A47E4A" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E4A" Ref="R8"  Part="1" 
-F 0 "R8" V 6950 3050 50  0000 C CNN
-F 1 "100R" V 7050 3050 50  0000 C CNN
-F 2 "" V 6980 3050 50  0001 C CNN
-F 3 "~" H 7050 3050 50  0001 C CNN
-	1    7050 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47E50
-P 7600 2700
-AR Path="/61A47E50" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E50" Ref="R12"  Part="1" 
-F 0 "R12" H 7500 2700 50  0000 C CNN
-F 1 "10K" V 7600 2700 50  0000 C CNN
-F 2 "" V 7530 2700 50  0001 C CNN
-F 3 "~" H 7600 2700 50  0001 C CNN
-	1    7600 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 2650 8050 2550
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 61A47E5D
-P 7500 3050
-AR Path="/61A47E5D" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47E5D" Ref="Q6"  Part="1" 
-F 0 "Q6" H 7704 3096 50  0000 L CNN
-F 1 "2N7002" H 7704 3005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 2975 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7500 3050 50  0001 L CNN
-	1    7500 3050
-	1    0    0    -1  
-$EndComp
-Connection ~ 7600 2850
-Wire Wire Line
-	7600 2850 7750 2850
-Wire Wire Line
-	7600 2550 8050 2550
-$Comp
-L power:GND #PWR?
-U 1 1 61A47E66
-P 7600 3350
-AR Path="/61A47E66" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47E66" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 7600 3100 50  0001 C CNN
-F 1 "GND" H 7605 3177 50  0000 C CNN
-F 2 "" H 7600 3350 50  0001 C CNN
-F 3 "" H 7600 3350 50  0001 C CNN
-	1    7600 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 3050 7250 3050
-$Comp
-L Device:R R?
-U 1 1 61A47E6D
-P 7250 3200
-AR Path="/61A47E6D" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E6D" Ref="R10"  Part="1" 
-F 0 "R10" H 7150 3200 50  0000 C CNN
-F 1 "10K" V 7250 3200 50  0000 C CNN
-F 2 "" V 7180 3200 50  0001 C CNN
-F 3 "~" H 7250 3200 50  0001 C CNN
-	1    7250 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 3350 7600 3350
-Wire Wire Line
-	7600 3350 7600 3250
-Connection ~ 7600 3350
-Connection ~ 7250 3050
-Wire Wire Line
-	7250 3050 7300 3050
-$Comp
-L power:+5V #PWR?
-U 1 1 61A47E78
-P 8050 2550
-AR Path="/61A47E78" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47E78" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 8050 2400 50  0001 C CNN
-F 1 "+5V" V 8065 2678 50  0000 L CNN
-F 2 "" H 8050 2550 50  0001 C CNN
-F 3 "" H 8050 2550 50  0001 C CNN
-	1    8050 2550
-	1    0    0    -1  
-$EndComp
-Connection ~ 8050 2550
-$Comp
-L Device:R R?
-U 1 1 61A47E7F
-P 10550 3050
-AR Path="/61A47E7F" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E7F" Ref="R15"  Part="1" 
-F 0 "R15" V 10450 3050 50  0000 C CNN
-F 1 "100R" V 10550 3050 50  0000 C CNN
-F 2 "" V 10480 3050 50  0001 C CNN
-F 3 "~" H 10550 3050 50  0001 C CNN
-	1    10550 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47E85
-P 10800 2900
-AR Path="/61A47E85" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E85" Ref="R17"  Part="1" 
-F 0 "R17" H 10700 2900 50  0000 C CNN
-F 1 "10K" V 10800 2900 50  0000 C CNN
-F 2 "" V 10730 2900 50  0001 C CNN
-F 3 "~" H 10800 2900 50  0001 C CNN
-	1    10800 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11150 2850 11150 2750
-Wire Wire Line
-	10700 3050 10800 3050
-Connection ~ 11150 2750
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61A47E94
-P 1850 4250
-AR Path="/61A47E94" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47E94" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 1850 4100 50  0001 C CNN
-F 1 "+3.3V" V 1865 4378 50  0000 L CNN
-F 2 "" H 1850 4250 50  0001 C CNN
-F 3 "" H 1850 4250 50  0001 C CNN
-	1    1850 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47E9A
-P 1250 4550
-AR Path="/61A47E9A" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47E9A" Ref="R20"  Part="1" 
-F 0 "R20" V 1150 4550 50  0000 C CNN
-F 1 "100R" V 1250 4550 50  0000 C CNN
-F 2 "" V 1180 4550 50  0001 C CNN
-F 3 "~" H 1250 4550 50  0001 C CNN
-	1    1250 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47EA0
-P 1500 4400
-AR Path="/61A47EA0" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47EA0" Ref="R22"  Part="1" 
-F 0 "R22" H 1400 4400 50  0000 C CNN
-F 1 "10K" V 1500 4400 50  0000 C CNN
-F 2 "" V 1430 4400 50  0001 C CNN
-F 3 "~" H 1500 4400 50  0001 C CNN
-	1    1500 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 4350 1850 4250
-Wire Wire Line
-	1400 4550 1500 4550
-Connection ~ 1850 4250
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61A47EB0
-P 4950 4250
-AR Path="/61A47EB0" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47EB0" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 4950 4100 50  0001 C CNN
-F 1 "+3.3V" V 4965 4378 50  0000 L CNN
-F 2 "" H 4950 4250 50  0001 C CNN
-F 3 "" H 4950 4250 50  0001 C CNN
-	1    4950 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47EB6
-P 4350 4550
-AR Path="/61A47EB6" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47EB6" Ref="R25"  Part="1" 
-F 0 "R25" V 4250 4550 50  0000 C CNN
-F 1 "100R" V 4350 4550 50  0000 C CNN
-F 2 "" V 4280 4550 50  0001 C CNN
-F 3 "~" H 4350 4550 50  0001 C CNN
-	1    4350 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47EBC
-P 4600 4400
-AR Path="/61A47EBC" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47EBC" Ref="R27"  Part="1" 
-F 0 "R27" H 4500 4400 50  0000 C CNN
-F 1 "10K" V 4600 4400 50  0000 C CNN
-F 2 "" V 4530 4400 50  0001 C CNN
-F 3 "~" H 4600 4400 50  0001 C CNN
-	1    4600 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 4350 4950 4250
-Wire Wire Line
-	4500 4550 4600 4550
-Connection ~ 4950 4250
-Wire Wire Line
-	4600 4250 4950 4250
-Connection ~ 4600 4550
-Wire Wire Line
-	4600 4550 4650 4550
-Wire Wire Line
-	10800 2750 11150 2750
-Connection ~ 10800 3050
-Wire Wire Line
-	10800 3050 10850 3050
-Wire Wire Line
-	1500 4250 1850 4250
-Connection ~ 1500 4550
-Wire Wire Line
-	1500 4550 1550 4550
 Text GLabel 1850 1850 3    50   Input ~ 0
 SW1
-Text GLabel 1850 3500 3    50   Input ~ 0
-SW5
-Text GLabel 4950 5200 3    50   Input ~ 0
-SW10
-Text GLabel 1850 5200 3    50   Input ~ 0
-SW9
-Text GLabel 11150 3700 3    50   Input ~ 0
-SW8
-Text GLabel 8050 3500 3    50   Input ~ 0
-SW7
-Text GLabel 4950 3500 3    50   Input ~ 0
-SW6
-Text GLabel 700  3050 0    50   Input ~ 0
-SIG5
-Text GLabel 3800 3050 0    50   Input ~ 0
-SIG6
-Text GLabel 6900 3050 0    50   Input ~ 0
-SIG7
-Text GLabel 10400 3050 0    50   Input ~ 0
-SIG8
-Text GLabel 1100 4550 0    50   Input ~ 0
-SIG9
-Text GLabel 4200 4550 0    50   Input ~ 0
-SIG10
 $Comp
 L Device:R R61
 U 1 1 6183124C
@@ -550,570 +115,12 @@ $EndComp
 Wire Wire Line
 	1850 1550 1850 1400
 $Comp
-L Device:R R62
-U 1 1 618FDEBF
-P 1850 3350
-F 0 "R62" H 1800 3350 50  0000 R CNN
-F 1 "20m" V 1850 3450 50  0000 R CNN
-F 2 "" V 1780 3350 50  0001 C CNN
-F 3 "~" H 1850 3350 50  0001 C CNN
-	1    1850 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U13
-U 1 1 618FDEC5
-P 2600 3350
-F 0 "U13" H 2944 3396 50  0000 L CNN
-F 1 "LT6106" H 2944 3305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2600 3350 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 2650 3550 50  0001 C CNN
-	1    2600 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 618FDECB
-P 2500 3650
-F 0 "#PWR0109" H 2500 3400 50  0001 C CNN
-F 1 "GND" H 2505 3477 50  0000 C CNN
-F 2 "" H 2500 3650 50  0001 C CNN
-F 3 "" H 2500 3650 50  0001 C CNN
-	1    2500 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R68
-U 1 1 618FDED1
-P 2900 3500
-F 0 "R68" H 2950 3500 50  0000 L CNN
-F 1 "1K" V 2900 3450 50  0000 L CNN
-F 2 "" V 2830 3500 50  0001 C CNN
-F 3 "~" H 2900 3500 50  0001 C CNN
-	1    2900 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 3650 2500 3650
-Connection ~ 2500 3650
-Wire Wire Line
-	1850 3050 2500 3050
-$Comp
-L Device:R R65
-U 1 1 618FDEDA
-P 2150 3450
-F 0 "R65" V 2050 3450 50  0000 C CNN
-F 1 "100R" V 2150 3450 50  0000 C CNN
-F 2 "" V 2080 3450 50  0001 C CNN
-F 3 "~" H 2150 3450 50  0001 C CNN
-	1    2150 3450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2300 3250 1950 3250
-Wire Wire Line
-	1950 3250 1950 3500
-Wire Wire Line
-	1950 3500 1850 3500
-Wire Wire Line
-	2000 3450 2000 3200
-Wire Wire Line
-	2000 3200 1850 3200
-Wire Wire Line
-	1850 3200 1850 3050
-Connection ~ 1850 3200
-Text Notes 3000 3650 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	2900 3350 3350 3350
-Connection ~ 2900 3350
-Text GLabel 3350 3350 2    50   Input ~ 0
-ISW5
-$Comp
-L Device:R R71
-U 1 1 619176EA
-P 4950 3350
-F 0 "R71" H 4900 3350 50  0000 R CNN
-F 1 "20m" V 4950 3450 50  0000 R CNN
-F 2 "" V 4880 3350 50  0001 C CNN
-F 3 "~" H 4950 3350 50  0001 C CNN
-	1    4950 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U16
-U 1 1 619176F0
-P 5700 3350
-F 0 "U16" H 6044 3396 50  0000 L CNN
-F 1 "LT6106" H 6044 3305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5700 3350 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 5750 3550 50  0001 C CNN
-	1    5700 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 619176F6
-P 5600 3650
-F 0 "#PWR0110" H 5600 3400 50  0001 C CNN
-F 1 "GND" H 5605 3477 50  0000 C CNN
-F 2 "" H 5600 3650 50  0001 C CNN
-F 3 "" H 5600 3650 50  0001 C CNN
-	1    5600 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R77
-U 1 1 619176FC
-P 6000 3500
-F 0 "R77" H 6050 3500 50  0000 L CNN
-F 1 "1K" V 6000 3450 50  0000 L CNN
-F 2 "" V 5930 3500 50  0001 C CNN
-F 3 "~" H 6000 3500 50  0001 C CNN
-	1    6000 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 3650 5600 3650
-Connection ~ 5600 3650
-Wire Wire Line
-	4950 3050 5600 3050
-$Comp
-L Device:R R74
-U 1 1 61917705
-P 5250 3450
-F 0 "R74" V 5150 3450 50  0000 C CNN
-F 1 "100R" V 5250 3450 50  0000 C CNN
-F 2 "" V 5180 3450 50  0001 C CNN
-F 3 "~" H 5250 3450 50  0001 C CNN
-	1    5250 3450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 3250 5050 3250
-Wire Wire Line
-	5050 3250 5050 3500
-Wire Wire Line
-	5050 3500 4950 3500
-Wire Wire Line
-	5100 3450 5100 3200
-Wire Wire Line
-	5100 3200 4950 3200
-Wire Wire Line
-	4950 3200 4950 3050
-Connection ~ 4950 3200
-Text Notes 6100 3650 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	6000 3350 6450 3350
-Connection ~ 6000 3350
-Text GLabel 6450 3350 2    50   Input ~ 0
-ISW6
-$Comp
-L Device:R R80
-U 1 1 61930B28
-P 8050 3350
-F 0 "R80" H 8000 3350 50  0000 R CNN
-F 1 "20m" V 8050 3450 50  0000 R CNN
-F 2 "" V 7980 3350 50  0001 C CNN
-F 3 "~" H 8050 3350 50  0001 C CNN
-	1    8050 3350
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U19
-U 1 1 61930B2E
-P 8800 3350
-F 0 "U19" H 9144 3396 50  0000 L CNN
-F 1 "LT6106" H 9144 3305 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8800 3350 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 8850 3550 50  0001 C CNN
-	1    8800 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0111
-U 1 1 61930B34
-P 8700 3650
-F 0 "#PWR0111" H 8700 3400 50  0001 C CNN
-F 1 "GND" H 8705 3477 50  0000 C CNN
-F 2 "" H 8700 3650 50  0001 C CNN
-F 3 "" H 8700 3650 50  0001 C CNN
-	1    8700 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R84
-U 1 1 61930B3A
-P 9100 3500
-F 0 "R84" H 9150 3500 50  0000 L CNN
-F 1 "1K" V 9100 3450 50  0000 L CNN
-F 2 "" V 9030 3500 50  0001 C CNN
-F 3 "~" H 9100 3500 50  0001 C CNN
-	1    9100 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 3650 8700 3650
-Connection ~ 8700 3650
-Wire Wire Line
-	8050 3050 8700 3050
-$Comp
-L Device:R R82
-U 1 1 61930B43
-P 8350 3450
-F 0 "R82" V 8250 3450 50  0000 C CNN
-F 1 "100R" V 8350 3450 50  0000 C CNN
-F 2 "" V 8280 3450 50  0001 C CNN
-F 3 "~" H 8350 3450 50  0001 C CNN
-	1    8350 3450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8500 3250 8150 3250
-Wire Wire Line
-	8150 3250 8150 3500
-Wire Wire Line
-	8150 3500 8050 3500
-Wire Wire Line
-	8200 3450 8200 3200
-Wire Wire Line
-	8200 3200 8050 3200
-Wire Wire Line
-	8050 3200 8050 3050
-Connection ~ 8050 3200
-Text Notes 9200 3650 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	9100 3350 9550 3350
-Connection ~ 9100 3350
-Text GLabel 9550 3350 2    50   Input ~ 0
-ISW7
-$Comp
-L Device:R R86
-U 1 1 619484C4
-P 11150 3550
-F 0 "R86" H 11100 3550 50  0000 R CNN
-F 1 "20m" V 11150 3650 50  0000 R CNN
-F 2 "" V 11080 3550 50  0001 C CNN
-F 3 "~" H 11150 3550 50  0001 C CNN
-	1    11150 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U21
-U 1 1 619484CA
-P 11900 3550
-F 0 "U21" H 12244 3596 50  0000 L CNN
-F 1 "LT6106" H 12244 3505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 11900 3550 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 11950 3750 50  0001 C CNN
-	1    11900 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 619484D0
-P 11800 3850
-F 0 "#PWR0112" H 11800 3600 50  0001 C CNN
-F 1 "GND" H 11805 3677 50  0000 C CNN
-F 2 "" H 11800 3850 50  0001 C CNN
-F 3 "" H 11800 3850 50  0001 C CNN
-	1    11800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R90
-U 1 1 619484D6
-P 12200 3700
-F 0 "R90" H 12250 3700 50  0000 L CNN
-F 1 "1K" V 12200 3650 50  0000 L CNN
-F 2 "" V 12130 3700 50  0001 C CNN
-F 3 "~" H 12200 3700 50  0001 C CNN
-	1    12200 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12200 3850 11800 3850
-Connection ~ 11800 3850
-Wire Wire Line
-	11150 3250 11800 3250
-$Comp
-L Device:R R88
-U 1 1 619484DF
-P 11450 3650
-F 0 "R88" V 11350 3650 50  0000 C CNN
-F 1 "100R" V 11450 3650 50  0000 C CNN
-F 2 "" V 11380 3650 50  0001 C CNN
-F 3 "~" H 11450 3650 50  0001 C CNN
-	1    11450 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11600 3450 11250 3450
-Wire Wire Line
-	11250 3450 11250 3700
-Wire Wire Line
-	11250 3700 11150 3700
-Wire Wire Line
-	11300 3650 11300 3400
-Wire Wire Line
-	11300 3400 11150 3400
-Wire Wire Line
-	11150 3400 11150 3250
-Connection ~ 11150 3400
-Text Notes 12300 3850 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	12200 3550 12650 3550
-Connection ~ 12200 3550
-Text GLabel 12650 3550 2    50   Input ~ 0
-ISW8
-$Comp
-L Device:R R63
-U 1 1 6196C6C1
-P 1850 5050
-F 0 "R63" H 1800 5050 50  0000 R CNN
-F 1 "20m" V 1850 5150 50  0000 R CNN
-F 2 "" V 1780 5050 50  0001 C CNN
-F 3 "~" H 1850 5050 50  0001 C CNN
-	1    1850 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U14
-U 1 1 6196C6C7
-P 2600 5050
-F 0 "U14" H 2944 5096 50  0000 L CNN
-F 1 "LT6106" H 2944 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2600 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 2650 5250 50  0001 C CNN
-	1    2600 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 6196C6CD
-P 2500 5350
-F 0 "#PWR0113" H 2500 5100 50  0001 C CNN
-F 1 "GND" H 2505 5177 50  0000 C CNN
-F 2 "" H 2500 5350 50  0001 C CNN
-F 3 "" H 2500 5350 50  0001 C CNN
-	1    2500 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R69
-U 1 1 6196C6D3
-P 2900 5200
-F 0 "R69" H 2950 5200 50  0000 L CNN
-F 1 "1K" V 2900 5150 50  0000 L CNN
-F 2 "" V 2830 5200 50  0001 C CNN
-F 3 "~" H 2900 5200 50  0001 C CNN
-	1    2900 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 5350 2500 5350
-Connection ~ 2500 5350
-Wire Wire Line
-	1850 4750 2500 4750
-$Comp
-L Device:R R66
-U 1 1 6196C6DC
-P 2150 5150
-F 0 "R66" V 2050 5150 50  0000 C CNN
-F 1 "100R" V 2150 5150 50  0000 C CNN
-F 2 "" V 2080 5150 50  0001 C CNN
-F 3 "~" H 2150 5150 50  0001 C CNN
-	1    2150 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2300 4950 1950 4950
-Wire Wire Line
-	1950 4950 1950 5200
-Wire Wire Line
-	1950 5200 1850 5200
-Wire Wire Line
-	2000 5150 2000 4900
-Wire Wire Line
-	2000 4900 1850 4900
-Wire Wire Line
-	1850 4900 1850 4750
-Connection ~ 1850 4900
-Text Notes 3000 5350 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	2900 5050 3350 5050
-Connection ~ 2900 5050
-Text GLabel 3350 5050 2    50   Input ~ 0
-ISW9
-$Comp
-L Device:R R72
-U 1 1 61987D40
-P 4950 5050
-F 0 "R72" H 4900 5050 50  0000 R CNN
-F 1 "20m" V 4950 5150 50  0000 R CNN
-F 2 "" V 4880 5050 50  0001 C CNN
-F 3 "~" H 4950 5050 50  0001 C CNN
-	1    4950 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U17
-U 1 1 61987D46
-P 5700 5050
-F 0 "U17" H 6044 5096 50  0000 L CNN
-F 1 "LT6106" H 6044 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5700 5050 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 5750 5250 50  0001 C CNN
-	1    5700 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 61987D4C
-P 5600 5350
-F 0 "#PWR0114" H 5600 5100 50  0001 C CNN
-F 1 "GND" H 5605 5177 50  0000 C CNN
-F 2 "" H 5600 5350 50  0001 C CNN
-F 3 "" H 5600 5350 50  0001 C CNN
-	1    5600 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R78
-U 1 1 61987D52
-P 6000 5200
-F 0 "R78" H 6050 5200 50  0000 L CNN
-F 1 "1K" V 6000 5150 50  0000 L CNN
-F 2 "" V 5930 5200 50  0001 C CNN
-F 3 "~" H 6000 5200 50  0001 C CNN
-	1    6000 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 5350 5600 5350
-Connection ~ 5600 5350
-Wire Wire Line
-	4950 4750 5600 4750
-$Comp
-L Device:R R75
-U 1 1 61987D5B
-P 5250 5150
-F 0 "R75" V 5150 5150 50  0000 C CNN
-F 1 "100R" V 5250 5150 50  0000 C CNN
-F 2 "" V 5180 5150 50  0001 C CNN
-F 3 "~" H 5250 5150 50  0001 C CNN
-	1    5250 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 4950 5050 4950
-Wire Wire Line
-	5050 4950 5050 5200
-Wire Wire Line
-	5050 5200 4950 5200
-Wire Wire Line
-	5100 5150 5100 4900
-Wire Wire Line
-	5100 4900 4950 4900
-Wire Wire Line
-	4950 4900 4950 4750
-Connection ~ 4950 4900
-Text Notes 6100 5350 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	6000 5050 6450 5050
-Connection ~ 6000 5050
-Text GLabel 6450 5050 2    50   Input ~ 0
-ISW10
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 618DAEC3
-P 1750 2850
-AR Path="/618DAEC3" Ref="Q?"  Part="1" 
-AR Path="/61928B56/618DAEC3" Ref="Q11"  Part="1" 
-F 0 "Q11" H 1955 2896 50  0000 L CNN
-F 1 "IRF7425" H 1955 2805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 2775 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 2850 50  0001 L CNN
-	1    1750 2850
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 618E9BFD
-P 4850 2850
-AR Path="/618E9BFD" Ref="Q?"  Part="1" 
-AR Path="/61928B56/618E9BFD" Ref="Q14"  Part="1" 
-F 0 "Q14" H 5055 2896 50  0000 L CNN
-F 1 "IRF7425" H 5055 2805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 2775 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 2850 50  0001 L CNN
-	1    4850 2850
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 618F85D4
-P 7950 2850
-AR Path="/618F85D4" Ref="Q?"  Part="1" 
-AR Path="/61928B56/618F85D4" Ref="Q19"  Part="1" 
-F 0 "Q19" H 8155 2896 50  0000 L CNN
-F 1 "IRF7425" H 8155 2805 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 2775 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7950 2850 50  0001 L CNN
-	1    7950 2850
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 619062E6
-P 11050 3050
-AR Path="/619062E6" Ref="Q?"  Part="1" 
-AR Path="/61928B56/619062E6" Ref="Q21"  Part="1" 
-F 0 "Q21" H 11255 3096 50  0000 L CNN
-F 1 "IRF7425" H 11255 3005 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 2975 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 11050 3050 50  0001 L CNN
-	1    11050 3050
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61914CEA
-P 1750 4550
-AR Path="/61914CEA" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61914CEA" Ref="Q13"  Part="1" 
-F 0 "Q13" H 1955 4596 50  0000 L CNN
-F 1 "IRF7425" H 1955 4505 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 4475 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 4550 50  0001 L CNN
-	1    1750 4550
-	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 61922CA9
-P 4850 4550
-AR Path="/61922CA9" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61922CA9" Ref="Q16"  Part="1" 
-F 0 "Q16" H 5055 4596 50  0000 L CNN
-F 1 "IRF7425" H 5055 4505 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 4475 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 4550 50  0001 L CNN
-	1    4850 4550
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 61891863
 P 2750 1250
 AR Path="/619279C9/61891863" Ref="C?"  Part="1" 
-AR Path="/61928B56/61891863" Ref="C?"  Part="1" 
-F 0 "C?" H 2865 1296 50  0000 L CNN
+AR Path="/61928B56/61891863" Ref="C41"  Part="1" 
+F 0 "C41" H 2865 1296 50  0000 L CNN
 F 1 "1uF" H 2865 1205 50  0000 L CNN
 F 2 "" H 2788 1100 50  0001 C CNN
 F 3 "~" H 2750 1250 50  0001 C CNN
@@ -1125,8 +132,8 @@ L power:GND #PWR?
 U 1 1 61891875
 P 2900 1700
 AR Path="/619279C9/61891875" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61891875" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2900 1450 50  0001 C CNN
+AR Path="/61928B56/61891875" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 2900 1450 50  0001 C CNN
 F 1 "GND" H 2905 1527 50  0000 C CNN
 F 2 "" H 2900 1700 50  0001 C CNN
 F 3 "" H 2900 1700 50  0001 C CNN
@@ -1143,8 +150,8 @@ L power:VCC #PWR?
 U 1 1 618B8CAC
 P 2600 650
 AR Path="/619279C9/618B8CAC" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/618B8CAC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2600 500 50  0001 C CNN
+AR Path="/61928B56/618B8CAC" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 2600 500 50  0001 C CNN
 F 1 "VCC" H 2615 823 50  0000 C CNN
 F 2 "" H 2600 650 50  0001 C CNN
 F 3 "" H 2600 650 50  0001 C CNN
@@ -1156,8 +163,8 @@ L Device:R R?
 U 1 1 618CC8CB
 P 2600 800
 AR Path="/619279C9/618CC8CB" Ref="R?"  Part="1" 
-AR Path="/61928B56/618CC8CB" Ref="R?"  Part="1" 
-F 0 "R?" H 2650 800 50  0000 L CNN
+AR Path="/61928B56/618CC8CB" Ref="R18"  Part="1" 
+F 0 "R18" H 2650 800 50  0000 L CNN
 F 1 "10K" V 2600 700 50  0000 L CNN
 F 2 "" V 2530 800 50  0001 C CNN
 F 3 "~" H 2600 800 50  0001 C CNN
@@ -1171,8 +178,8 @@ L Device:R R?
 U 1 1 61891885
 P 2400 2100
 AR Path="/619279C9/61891885" Ref="R?"  Part="1" 
-AR Path="/61928B56/61891885" Ref="R?"  Part="1" 
-F 0 "R?" H 2250 2100 50  0000 L CNN
+AR Path="/61928B56/61891885" Ref="R15"  Part="1" 
+F 0 "R15" H 2250 2100 50  0000 L CNN
 F 1 "15K" V 2400 2000 50  0000 L CNN
 F 2 "" V 2330 2100 50  0001 C CNN
 F 3 "~" H 2400 2100 50  0001 C CNN
@@ -1184,8 +191,8 @@ L Device:R R?
 U 1 1 6189187F
 P 2700 2100
 AR Path="/619279C9/6189187F" Ref="R?"  Part="1" 
-AR Path="/61928B56/6189187F" Ref="R?"  Part="1" 
-F 0 "R?" H 2550 2100 50  0000 L CNN
+AR Path="/61928B56/6189187F" Ref="R21"  Part="1" 
+F 0 "R21" H 2550 2100 50  0000 L CNN
 F 1 "10K" V 2700 2000 50  0000 L CNN
 F 2 "" V 2630 2100 50  0001 C CNN
 F 3 "~" H 2700 2100 50  0001 C CNN
@@ -1208,8 +215,8 @@ L Device:C C?
 U 1 1 6189185C
 P 2900 850
 AR Path="/619279C9/6189185C" Ref="C?"  Part="1" 
-AR Path="/61928B56/6189185C" Ref="C?"  Part="1" 
-F 0 "C?" H 2650 900 50  0000 L CNN
+AR Path="/61928B56/6189185C" Ref="C44"  Part="1" 
+F 0 "C44" H 2650 900 50  0000 L CNN
 F 1 "0.1uF" H 2600 800 50  0000 L CNN
 F 2 "" H 2938 700 50  0001 C CNN
 F 3 "~" H 2900 850 50  0001 C CNN
@@ -1219,298 +226,6 @@ $EndComp
 Wire Wire Line
 	2900 1000 2900 1250
 Connection ~ 2900 1250
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 618CBBBC
-P 11050 1200
-AR Path="/618CBBBC" Ref="Q?"  Part="1" 
-AR Path="/61928B56/618CBBBC" Ref="Q20"  Part="1" 
-F 0 "Q20" H 11255 1246 50  0000 L CNN
-F 1 "IRF7425" H 11255 1155 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 1125 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 11050 1200 50  0001 L CNN
-	1    11050 1200
-	1    0    0    1   
-$EndComp
-Text GLabel 12650 1700 2    50   Input ~ 0
-ISW4
-Connection ~ 12200 1700
-Wire Wire Line
-	12200 1700 12650 1700
-Text Notes 12300 2000 0    50   ~ 0
-200mV/A\n
-Connection ~ 11150 1550
-Wire Wire Line
-	11150 1550 11150 1400
-Wire Wire Line
-	11300 1550 11150 1550
-Wire Wire Line
-	11300 1800 11300 1550
-Wire Wire Line
-	11250 1850 11150 1850
-Wire Wire Line
-	11250 1600 11250 1850
-Wire Wire Line
-	11600 1600 11250 1600
-$Comp
-L Device:R R87
-U 1 1 618DD164
-P 11450 1800
-F 0 "R87" V 11350 1800 50  0000 C CNN
-F 1 "100R" V 11450 1800 50  0000 C CNN
-F 2 "" V 11380 1800 50  0001 C CNN
-F 3 "~" H 11450 1800 50  0001 C CNN
-	1    11450 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11150 1400 11800 1400
-Connection ~ 11800 2000
-Wire Wire Line
-	12200 2000 11800 2000
-$Comp
-L Device:R R89
-U 1 1 618DD15B
-P 12200 1850
-F 0 "R89" H 12250 1850 50  0000 L CNN
-F 1 "1K" V 12200 1800 50  0000 L CNN
-F 2 "" V 12130 1850 50  0001 C CNN
-F 3 "~" H 12200 1850 50  0001 C CNN
-	1    12200 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 618DD155
-P 11800 2000
-F 0 "#PWR0108" H 11800 1750 50  0001 C CNN
-F 1 "GND" H 11805 1827 50  0000 C CNN
-F 2 "" H 11800 2000 50  0001 C CNN
-F 3 "" H 11800 2000 50  0001 C CNN
-	1    11800 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U20
-U 1 1 618DD14F
-P 11900 1700
-F 0 "U20" H 12244 1746 50  0000 L CNN
-F 1 "LT6106" H 12244 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 11900 1700 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 11950 1900 50  0001 C CNN
-	1    11900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R85
-U 1 1 618DD149
-P 11150 1700
-F 0 "R85" H 11100 1700 50  0000 R CNN
-F 1 "20m" V 11150 1800 50  0000 R CNN
-F 2 "" V 11080 1700 50  0001 C CNN
-F 3 "~" H 11150 1700 50  0001 C CNN
-	1    11150 1700
-	-1   0    0    1   
-$EndComp
-Text GLabel 10000 1400 0    50   Input ~ 0
-SIG4
-Text GLabel 11150 1850 3    50   Input ~ 0
-SW4
-Connection ~ 11150 900 
-$Comp
-L power:+BATT #PWR?
-U 1 1 61A47DD7
-P 11150 900
-AR Path="/61A47DD7" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47DD7" Ref="#PWR028"  Part="1" 
-F 0 "#PWR028" H 11150 750 50  0001 C CNN
-F 1 "+BATT" H 11165 1073 50  0000 C CNN
-F 2 "" H 11150 900 50  0001 C CNN
-F 3 "" H 11150 900 50  0001 C CNN
-	1    11150 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 1400 10400 1400
-Connection ~ 10350 1400
-Connection ~ 10700 1700
-Wire Wire Line
-	10700 1700 10700 1600
-Wire Wire Line
-	10350 1700 10700 1700
-$Comp
-L Device:R R?
-U 1 1 61A47DCC
-P 10350 1550
-AR Path="/61A47DCC" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47DCC" Ref="R19"  Part="1" 
-F 0 "R19" H 10250 1550 50  0000 C CNN
-F 1 "10K" V 10350 1550 50  0000 C CNN
-F 2 "" V 10280 1550 50  0001 C CNN
-F 3 "~" H 10350 1550 50  0001 C CNN
-	1    10350 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 1400 10350 1400
-$Comp
-L power:GND #PWR?
-U 1 1 61A47DC5
-P 10700 1700
-AR Path="/61A47DC5" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47DC5" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 10700 1450 50  0001 C CNN
-F 1 "GND" H 10705 1527 50  0000 C CNN
-F 2 "" H 10700 1700 50  0001 C CNN
-F 3 "" H 10700 1700 50  0001 C CNN
-	1    10700 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 900  11150 900 
-Wire Wire Line
-	10700 1200 10850 1200
-Connection ~ 10700 1200
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 61A47DBC
-P 10600 1400
-AR Path="/61A47DBC" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47DBC" Ref="Q12"  Part="1" 
-F 0 "Q12" H 10804 1446 50  0000 L CNN
-F 1 "2N7002" H 10804 1355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 1325 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 10600 1400 50  0001 L CNN
-	1    10600 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11150 1000 11150 900 
-$Comp
-L Device:R R?
-U 1 1 61A47DAF
-P 10700 1050
-AR Path="/61A47DAF" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47DAF" Ref="R21"  Part="1" 
-F 0 "R21" H 10600 1050 50  0000 C CNN
-F 1 "10K" V 10700 1050 50  0000 C CNN
-F 2 "" V 10630 1050 50  0001 C CNN
-F 3 "~" H 10700 1050 50  0001 C CNN
-	1    10700 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47DA9
-P 10150 1400
-AR Path="/61A47DA9" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47DA9" Ref="R18"  Part="1" 
-F 0 "R18" V 10050 1400 50  0000 C CNN
-F 1 "100R" V 10150 1400 50  0000 C CNN
-F 2 "" V 10080 1400 50  0001 C CNN
-F 3 "~" H 10150 1400 50  0001 C CNN
-	1    10150 1400
-	0    1    1    0   
-$EndComp
-Connection ~ 8050 1400
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 6189DFDF
-P 7950 1200
-AR Path="/6189DFDF" Ref="Q?"  Part="1" 
-AR Path="/61928B56/6189DFDF" Ref="Q17"  Part="1" 
-F 0 "Q17" H 8155 1246 50  0000 L CNN
-F 1 "IRF7425" H 8155 1155 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 1125 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7950 1200 50  0001 L CNN
-	1    7950 1200
-	1    0    0    1   
-$EndComp
-Text GLabel 8050 1850 3    50   Input ~ 0
-SW3
-$Comp
-L Device:R R79
-U 1 1 61873501
-P 8050 1700
-F 0 "R79" H 8000 1700 50  0000 R CNN
-F 1 "20m" V 8050 1800 50  0000 R CNN
-F 2 "" V 7980 1700 50  0001 C CNN
-F 3 "~" H 8050 1700 50  0001 C CNN
-	1    8050 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U18
-U 1 1 61873507
-P 8800 1700
-F 0 "U18" H 9144 1746 50  0000 L CNN
-F 1 "LT6106" H 9144 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8800 1700 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 8850 1900 50  0001 C CNN
-	1    8800 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 6187350D
-P 8700 2000
-F 0 "#PWR0107" H 8700 1750 50  0001 C CNN
-F 1 "GND" H 8705 1827 50  0000 C CNN
-F 2 "" H 8700 2000 50  0001 C CNN
-F 3 "" H 8700 2000 50  0001 C CNN
-	1    8700 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R83
-U 1 1 61873513
-P 9100 1850
-F 0 "R83" H 9150 1850 50  0000 L CNN
-F 1 "1K" V 9100 1800 50  0000 L CNN
-F 2 "" V 9030 1850 50  0001 C CNN
-F 3 "~" H 9100 1850 50  0001 C CNN
-	1    9100 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 2000 8700 2000
-Connection ~ 8700 2000
-Wire Wire Line
-	8050 1400 8700 1400
-$Comp
-L Device:R R81
-U 1 1 6187351C
-P 8350 1800
-F 0 "R81" V 8250 1800 50  0000 C CNN
-F 1 "100R" V 8350 1800 50  0000 C CNN
-F 2 "" V 8280 1800 50  0001 C CNN
-F 3 "~" H 8350 1800 50  0001 C CNN
-	1    8350 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8500 1600 8150 1600
-Wire Wire Line
-	8150 1600 8150 1850
-Wire Wire Line
-	8150 1850 8050 1850
-Wire Wire Line
-	8200 1800 8200 1550
-Wire Wire Line
-	8200 1550 8050 1550
-Wire Wire Line
-	8050 1550 8050 1400
-Connection ~ 8050 1550
-Text Notes 9200 2000 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	9100 1700 9550 1700
-Connection ~ 9100 1700
-Text GLabel 9550 1700 2    50   Input ~ 0
-ISW3
-Text GLabel 6900 1400 0    50   Input ~ 0
-SIG3
-Connection ~ 8050 900 
 $Comp
 L power:+BATT #PWR?
 U 1 1 61A47DA1
@@ -1524,288 +239,13 @@ F 3 "" H 8050 900 50  0001 C CNN
 	1    8050 900 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7250 1400 7300 1400
-Connection ~ 7250 1400
-Connection ~ 7600 1700
-Wire Wire Line
-	7600 1700 7600 1600
-Wire Wire Line
-	7250 1700 7600 1700
-$Comp
-L Device:R R?
-U 1 1 61A47D96
-P 7250 1550
-AR Path="/61A47D96" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47D96" Ref="R14"  Part="1" 
-F 0 "R14" H 7150 1550 50  0000 C CNN
-F 1 "10K" V 7250 1550 50  0000 C CNN
-F 2 "" V 7180 1550 50  0001 C CNN
-F 3 "~" H 7250 1550 50  0001 C CNN
-	1    7250 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 1400 7250 1400
-$Comp
-L power:GND #PWR?
-U 1 1 61A47D8F
-P 7600 1700
-AR Path="/61A47D8F" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47D8F" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 7600 1450 50  0001 C CNN
-F 1 "GND" H 7605 1527 50  0000 C CNN
-F 2 "" H 7600 1700 50  0001 C CNN
-F 3 "" H 7600 1700 50  0001 C CNN
-	1    7600 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 900  8050 900 
-Wire Wire Line
-	7600 1200 7750 1200
-Connection ~ 7600 1200
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 61A47D86
-P 7500 1400
-AR Path="/61A47D86" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47D86" Ref="Q9"  Part="1" 
-F 0 "Q9" H 7704 1446 50  0000 L CNN
-F 1 "2N7002" H 7704 1355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 1325 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7500 1400 50  0001 L CNN
-	1    7500 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 1000 8050 900 
-$Comp
-L Device:R R?
-U 1 1 61A47D79
-P 7600 1050
-AR Path="/61A47D79" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47D79" Ref="R16"  Part="1" 
-F 0 "R16" H 7500 1050 50  0000 C CNN
-F 1 "10K" V 7600 1050 50  0000 C CNN
-F 2 "" V 7530 1050 50  0001 C CNN
-F 3 "~" H 7600 1050 50  0001 C CNN
-	1    7600 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47D73
-P 7050 1400
-AR Path="/61A47D73" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47D73" Ref="R13"  Part="1" 
-F 0 "R13" V 6950 1400 50  0000 C CNN
-F 1 "100R" V 7050 1400 50  0000 C CNN
-F 2 "" V 6980 1400 50  0001 C CNN
-F 3 "~" H 7050 1400 50  0001 C CNN
-	1    7050 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:IRF7404 Q?
-U 1 1 618A6429
-P 4850 1200
-AR Path="/618A6429" Ref="Q?"  Part="1" 
-AR Path="/61928B56/618A6429" Ref="Q4"  Part="1" 
-F 0 "Q4" H 5055 1246 50  0000 L CNN
-F 1 "IRF7425" H 5055 1155 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 1125 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 1200 50  0001 L CNN
-	1    4850 1200
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	4950 1550 4950 1400
-$Comp
-L Device:R R70
-U 1 1 61862B53
-P 4950 1700
-F 0 "R70" H 4900 1700 50  0000 R CNN
-F 1 "20m" V 4950 1800 50  0000 R CNN
-F 2 "" V 4880 1700 50  0001 C CNN
-F 3 "~" H 4950 1700 50  0001 C CNN
-	1    4950 1700
-	-1   0    0    1   
-$EndComp
-Text GLabel 3800 1400 0    50   Input ~ 0
-SIG2
-Text GLabel 4950 1850 3    50   Input ~ 0
-SW2
-Wire Wire Line
-	4150 1400 4200 1400
-Connection ~ 4150 1400
-Connection ~ 4500 1700
-Wire Wire Line
-	4500 1700 4500 1600
-Wire Wire Line
-	4150 1700 4500 1700
-$Comp
-L Device:R R?
-U 1 1 61A47D67
-P 4150 1550
-AR Path="/61A47D67" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47D67" Ref="R9"  Part="1" 
-F 0 "R9" H 4050 1550 50  0000 C CNN
-F 1 "10K" V 4150 1550 50  0000 C CNN
-F 2 "" V 4080 1550 50  0001 C CNN
-F 3 "~" H 4150 1550 50  0001 C CNN
-	1    4150 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 1400 4150 1400
-$Comp
-L power:GND #PWR?
-U 1 1 61A47D60
-P 4500 1700
-AR Path="/61A47D60" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47D60" Ref="#PWR020"  Part="1" 
-F 0 "#PWR020" H 4500 1450 50  0001 C CNN
-F 1 "GND" H 4505 1527 50  0000 C CNN
-F 2 "" H 4500 1700 50  0001 C CNN
-F 3 "" H 4500 1700 50  0001 C CNN
-	1    4500 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 900  4950 900 
-Wire Wire Line
-	4500 1200 4650 1200
-Connection ~ 4500 1200
-$Comp
-L Transistor_FET:2N7002 Q?
-U 1 1 61A47D57
-P 4400 1400
-AR Path="/61A47D57" Ref="Q?"  Part="1" 
-AR Path="/61928B56/61A47D57" Ref="Q5"  Part="1" 
-F 0 "Q5" H 4604 1446 50  0000 L CNN
-F 1 "2N7002" H 4604 1355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 1325 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 1400 50  0001 L CNN
-	1    4400 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 1000 4950 900 
-Connection ~ 4950 900 
-$Comp
-L Device:R R?
-U 1 1 61A47D49
-P 4500 1050
-AR Path="/61A47D49" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47D49" Ref="R11"  Part="1" 
-F 0 "R11" H 4400 1050 50  0000 C CNN
-F 1 "10K" V 4500 1050 50  0000 C CNN
-F 2 "" V 4430 1050 50  0001 C CNN
-F 3 "~" H 4500 1050 50  0001 C CNN
-	1    4500 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61A47D43
-P 3950 1400
-AR Path="/61A47D43" Ref="R?"  Part="1" 
-AR Path="/61928B56/61A47D43" Ref="R7"  Part="1" 
-F 0 "R7" V 3850 1400 50  0000 C CNN
-F 1 "100R" V 3950 1400 50  0000 C CNN
-F 2 "" V 3880 1400 50  0001 C CNN
-F 3 "~" H 3950 1400 50  0001 C CNN
-	1    3950 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 61A47D3D
-P 4950 900
-AR Path="/61A47D3D" Ref="#PWR?"  Part="1" 
-AR Path="/61928B56/61A47D3D" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 4950 750 50  0001 C CNN
-F 1 "+12V" V 4965 1028 50  0000 L CNN
-F 2 "" H 4950 900 50  0001 C CNN
-F 3 "" H 4950 900 50  0001 C CNN
-	1    4950 900 
-	1    0    0    -1  
-$EndComp
-Connection ~ 4950 1550
-Text GLabel 6450 1700 2    50   Input ~ 0
-ISW2
-Connection ~ 6000 1700
-Wire Wire Line
-	6000 1700 6450 1700
-Text Notes 6100 2000 0    50   ~ 0
-200mV/A\n
-Wire Wire Line
-	5100 1550 4950 1550
-Wire Wire Line
-	5100 1800 5100 1550
-Wire Wire Line
-	5050 1850 4950 1850
-Wire Wire Line
-	5050 1600 5050 1850
-Wire Wire Line
-	5400 1600 5050 1600
-$Comp
-L Device:R R73
-U 1 1 61862B6E
-P 5250 1800
-F 0 "R73" V 5150 1800 50  0000 C CNN
-F 1 "100R" V 5250 1800 50  0000 C CNN
-F 2 "" V 5180 1800 50  0001 C CNN
-F 3 "~" H 5250 1800 50  0001 C CNN
-	1    5250 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4950 1400 5600 1400
-Connection ~ 5600 2000
-Wire Wire Line
-	6000 2000 5600 2000
-$Comp
-L Device:R R76
-U 1 1 61862B65
-P 6000 1850
-F 0 "R76" H 6050 1850 50  0000 L CNN
-F 1 "1K" V 6000 1800 50  0000 L CNN
-F 2 "" V 5930 1850 50  0001 C CNN
-F 3 "~" H 6000 1850 50  0001 C CNN
-	1    6000 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 61862B5F
-P 5600 2000
-F 0 "#PWR0106" H 5600 1750 50  0001 C CNN
-F 1 "GND" H 5605 1827 50  0000 C CNN
-F 2 "" H 5600 2000 50  0001 C CNN
-F 3 "" H 5600 2000 50  0001 C CNN
-	1    5600 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Current:LT6106 U15
-U 1 1 61862B59
-P 5700 1700
-F 0 "U15" H 6044 1746 50  0000 L CNN
-F 1 "LT6106" H 6044 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5700 1700 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6106fb.pdf" H 5750 1900 50  0001 C CNN
-	1    5700 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L epslib:MAX4373 U?
 U 1 1 61891894
 P 1750 1700
 AR Path="/619279C9/61891894" Ref="U?"  Part="1" 
-AR Path="/61928B56/61891894" Ref="U?"  Part="1" 
-F 0 "U?" V 1750 250 50  0000 C CNN
+AR Path="/61928B56/61891894" Ref="U12"  Part="1" 
+F 0 "U12" V 1750 250 50  0000 C CNN
 F 1 "MAX4373F" V 1650 100 50  0000 C CNN
 F 2 "" H 1750 1700 50  0001 C CNN
 F 3 "" H 1750 1700 50  0001 C CNN
@@ -1834,42 +274,2865 @@ Wire Wire Line
 	2600 650  2300 650 
 Wire Wire Line
 	2300 650  2300 1300
-Connection ~ 1400 1700
-Text GLabel 700  1400 0    50   Input ~ 0
+Text GLabel 550  1400 0    50   Input ~ 0
 SIG1
-Wire Wire Line
-	1050 1400 1100 1400
-Connection ~ 1050 1400
-Wire Wire Line
-	1050 1700 1400 1700
 $Comp
 L Device:R R?
 U 1 1 61A47D31
-P 1050 1550
+P 850 1550
 AR Path="/61A47D31" Ref="R?"  Part="1" 
 AR Path="/61928B56/61A47D31" Ref="R3"  Part="1" 
-F 0 "R3" H 950 1550 50  0000 C CNN
-F 1 "10K" V 1050 1550 50  0000 C CNN
-F 2 "" V 980 1550 50  0001 C CNN
-F 3 "~" H 1050 1550 50  0001 C CNN
-	1    1050 1550
+F 0 "R3" H 750 1550 50  0000 C CNN
+F 1 "10K" V 850 1550 50  0000 C CNN
+F 2 "" V 780 1550 50  0001 C CNN
+F 3 "~" H 850 1550 50  0001 C CNN
+	1    850  1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1000 1400 1050 1400
 $Comp
 L Device:R R?
 U 1 1 61A47D0D
-P 850 1400
+P 700 1400
 AR Path="/61A47D0D" Ref="R?"  Part="1" 
 AR Path="/61928B56/61A47D0D" Ref="R1"  Part="1" 
-F 0 "R1" V 750 1400 50  0000 C CNN
-F 1 "100R" V 850 1400 50  0000 C CNN
-F 2 "" V 780 1400 50  0001 C CNN
-F 3 "~" H 850 1400 50  0001 C CNN
-	1    850  1400
+F 0 "R1" V 600 1400 50  0000 C CNN
+F 1 "100R" V 700 1400 50  0000 C CNN
+F 2 "" V 630 1400 50  0001 C CNN
+F 3 "~" H 700 1400 50  0001 C CNN
+	1    700  1400
 	0    1    1    0   
 $EndComp
 Text Notes 550  350  0    50   ~ 0
 ALL PDMs LIMITED TO 2A
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 6186CDEF
+P 1300 1800
+AR Path="/6186CDEF" Ref="Q?"  Part="1" 
+AR Path="/61928B56/6186CDEF" Ref="Q2"  Part="1" 
+F 0 "Q2" H 1504 1846 50  0000 L CNN
+F 1 "2N7002" H 1504 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 1725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1300 1800 50  0001 L CNN
+	1    1300 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 850  1400
+$Comp
+L power:GND #PWR028
+U 1 1 618849C5
+P 1400 2000
+F 0 "#PWR028" H 1400 1750 50  0001 C CNN
+F 1 "GND" H 1405 1827 50  0000 C CNN
+F 2 "" H 1400 2000 50  0001 C CNN
+F 3 "" H 1400 2000 50  0001 C CNN
+	1    1400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 550  2200 1300
+Wire Wire Line
+	1050 550  1050 750 
+Wire Wire Line
+	1100 1800 1050 1800
+Wire Wire Line
+	850  1400 1100 1400
+Wire Wire Line
+	1050 550  2200 550 
+$Comp
+L power:VCC #PWR?
+U 1 1 618B495F
+P 750 750
+AR Path="/619279C9/618B495F" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/618B495F" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 750 600 50  0001 C CNN
+F 1 "VCC" H 765 923 50  0000 C CNN
+F 2 "" H 750 750 50  0001 C CNN
+F 3 "" H 750 750 50  0001 C CNN
+	1    750  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 618BC6E5
+P 900 750
+F 0 "R8" V 1000 750 50  0000 C CNN
+F 1 "10K" V 900 750 50  0000 C CNN
+F 2 "" V 830 750 50  0001 C CNN
+F 3 "~" H 900 750 50  0001 C CNN
+	1    900  750 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1050 750 
+Wire Wire Line
+	1050 750  1050 1800
+$Comp
+L Device:R R?
+U 1 1 61919031
+P 4500 1050
+AR Path="/61919031" Ref="R?"  Part="1" 
+AR Path="/61928B56/61919031" Ref="R67"  Part="1" 
+F 0 "R67" H 4400 1050 50  0000 C CNN
+F 1 "10K" V 4500 1050 50  0000 C CNN
+F 2 "" V 4430 1050 50  0001 C CNN
+F 3 "~" H 4500 1050 50  0001 C CNN
+	1    4500 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 900 
+Wire Wire Line
+	4950 1000 4950 900 
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61919039
+P 4850 1200
+AR Path="/61919039" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61919039" Ref="Q20"  Part="1" 
+F 0 "Q20" H 5055 1246 50  0000 L CNN
+F 1 "IRF7425" H 5055 1155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 1200 50  0001 L CNN
+	1    4850 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 6191903F
+P 4400 1400
+AR Path="/6191903F" Ref="Q?"  Part="1" 
+AR Path="/61928B56/6191903F" Ref="Q13"  Part="1" 
+F 0 "Q13" H 4604 1446 50  0000 L CNN
+F 1 "2N7002" H 4604 1355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 1325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 1400 50  0001 L CNN
+	1    4400 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 1200
+Wire Wire Line
+	4500 1200 4650 1200
+Wire Wire Line
+	4500 900  4950 900 
+$Comp
+L power:GND #PWR?
+U 1 1 61919048
+P 3950 1700
+AR Path="/61919048" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61919048" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 3950 1450 50  0001 C CNN
+F 1 "GND" H 3955 1527 50  0000 C CNN
+F 2 "" H 3950 1700 50  0001 C CNN
+F 3 "" H 3950 1700 50  0001 C CNN
+	1    3950 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 1850 3    50   Input ~ 0
+SW2
+$Comp
+L Device:R R70
+U 1 1 6191904F
+P 4950 1700
+F 0 "R70" H 5150 1700 50  0000 R CNN
+F 1 "15m" V 4950 1800 50  0000 R CNN
+F 2 "" V 4880 1700 50  0001 C CNN
+F 3 "~" H 4950 1700 50  0001 C CNN
+	1    4950 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 1550 4950 1400
+$Comp
+L Device:C C?
+U 1 1 61919056
+P 5850 1250
+AR Path="/619279C9/61919056" Ref="C?"  Part="1" 
+AR Path="/61928B56/61919056" Ref="C47"  Part="1" 
+F 0 "C47" H 5965 1296 50  0000 L CNN
+F 1 "1uF" H 5965 1205 50  0000 L CNN
+F 2 "" H 5888 1100 50  0001 C CNN
+F 3 "~" H 5850 1250 50  0001 C CNN
+	1    5850 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6191905C
+P 6000 1700
+AR Path="/619279C9/6191905C" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/6191905C" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 6000 1450 50  0001 C CNN
+F 1 "GND" H 6005 1527 50  0000 C CNN
+F 2 "" H 6000 1700 50  0001 C CNN
+F 3 "" H 6000 1700 50  0001 C CNN
+	1    6000 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2100 6000 2100
+Wire Wire Line
+	6000 1700 6000 2100
+Connection ~ 4950 1550
+$Comp
+L power:VCC #PWR?
+U 1 1 61919065
+P 5700 650
+AR Path="/619279C9/61919065" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61919065" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 5700 500 50  0001 C CNN
+F 1 "VCC" H 5715 823 50  0000 C CNN
+F 2 "" H 5700 650 50  0001 C CNN
+F 3 "" H 5700 650 50  0001 C CNN
+	1    5700 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6191906B
+P 5700 800
+AR Path="/619279C9/6191906B" Ref="R?"  Part="1" 
+AR Path="/61928B56/6191906B" Ref="R76"  Part="1" 
+F 0 "R76" H 5750 800 50  0000 L CNN
+F 1 "10K" V 5700 700 50  0000 L CNN
+F 2 "" V 5630 800 50  0001 C CNN
+F 3 "~" H 5700 800 50  0001 C CNN
+	1    5700 800 
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 950  0    50   Input ~ 0
+RSTSW2
+$Comp
+L Device:R R?
+U 1 1 61919072
+P 5500 2100
+AR Path="/619279C9/61919072" Ref="R?"  Part="1" 
+AR Path="/61928B56/61919072" Ref="R73"  Part="1" 
+F 0 "R73" H 5350 2100 50  0000 L CNN
+F 1 "15K" V 5500 2000 50  0000 L CNN
+F 2 "" V 5430 2100 50  0001 C CNN
+F 3 "~" H 5500 2100 50  0001 C CNN
+	1    5500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61919078
+P 5800 2100
+AR Path="/619279C9/61919078" Ref="R?"  Part="1" 
+AR Path="/61928B56/61919078" Ref="R79"  Part="1" 
+F 0 "R79" H 5650 2100 50  0000 L CNN
+F 1 "10K" V 5800 2000 50  0000 L CNN
+F 2 "" V 5730 2100 50  0001 C CNN
+F 3 "~" H 5800 2100 50  0001 C CNN
+	1    5800 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 2100
+Text GLabel 5350 2100 3    50   Input ~ 0
+ISW2
+Connection ~ 6000 1700
+Wire Wire Line
+	5700 950  5700 1250
+Connection ~ 5700 1250
+Wire Wire Line
+	5700 1250 5700 1300
+Wire Wire Line
+	6000 1250 6000 1700
+$Comp
+L Device:C C?
+U 1 1 61919085
+P 6000 850
+AR Path="/619279C9/61919085" Ref="C?"  Part="1" 
+AR Path="/61928B56/61919085" Ref="C50"  Part="1" 
+F 0 "C50" H 5750 900 50  0000 L CNN
+F 1 "0.1uF" H 5700 800 50  0000 L CNN
+F 2 "" H 6038 700 50  0001 C CNN
+F 3 "~" H 6000 850 50  0001 C CNN
+	1    6000 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 1000 6000 1250
+Connection ~ 6000 1250
+$Comp
+L epslib:MAX4373 U?
+U 1 1 6191908D
+P 4850 1700
+AR Path="/619279C9/6191908D" Ref="U?"  Part="1" 
+AR Path="/61928B56/6191908D" Ref="U15"  Part="1" 
+F 0 "U15" V 4850 250 50  0000 C CNN
+F 1 "MAX4373F" V 4750 100 50  0000 C CNN
+F 2 "" H 4850 1700 50  0001 C CNN
+F 3 "" H 4850 1700 50  0001 C CNN
+	1    4850 1700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61919093
+P 4950 900
+AR Path="/61919093" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61919093" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 4950 750 50  0001 C CNN
+F 1 "+12V" V 4965 1028 50  0000 L CNN
+F 2 "" H 4950 900 50  0001 C CNN
+F 3 "" H 4950 900 50  0001 C CNN
+	1    4950 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 700  6000 650 
+Wire Wire Line
+	6000 650  5700 650 
+Connection ~ 5700 650 
+Wire Wire Line
+	5700 650  5400 650 
+Wire Wire Line
+	5400 650  5400 1300
+Text GLabel 3650 1400 0    50   Input ~ 0
+SIG2
+$Comp
+L Device:R R?
+U 1 1 6191909F
+P 3950 1550
+AR Path="/6191909F" Ref="R?"  Part="1" 
+AR Path="/61928B56/6191909F" Ref="R27"  Part="1" 
+F 0 "R27" H 3850 1550 50  0000 C CNN
+F 1 "10K" V 3950 1550 50  0000 C CNN
+F 2 "" V 3880 1550 50  0001 C CNN
+F 3 "~" H 3950 1550 50  0001 C CNN
+	1    3950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619190A5
+P 3800 1400
+AR Path="/619190A5" Ref="R?"  Part="1" 
+AR Path="/61928B56/619190A5" Ref="R24"  Part="1" 
+F 0 "R24" V 3700 1400 50  0000 C CNN
+F 1 "100R" V 3800 1400 50  0000 C CNN
+F 2 "" V 3730 1400 50  0001 C CNN
+F 3 "~" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 619190AB
+P 4400 1800
+AR Path="/619190AB" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619190AB" Ref="Q14"  Part="1" 
+F 0 "Q14" H 4604 1846 50  0000 L CNN
+F 1 "2N7002" H 4604 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 1725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 1800 50  0001 L CNN
+	1    4400 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 1400
+$Comp
+L power:GND #PWR0151
+U 1 1 619190B2
+P 4500 2000
+F 0 "#PWR0151" H 4500 1750 50  0001 C CNN
+F 1 "GND" H 4505 1827 50  0000 C CNN
+F 2 "" H 4500 2000 50  0001 C CNN
+F 3 "" H 4500 2000 50  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 550  5300 1300
+Wire Wire Line
+	4150 550  4150 750 
+Wire Wire Line
+	4200 1800 4150 1800
+Wire Wire Line
+	3950 1400 4200 1400
+Wire Wire Line
+	4150 550  5300 550 
+$Comp
+L power:VCC #PWR?
+U 1 1 619190BD
+P 3850 750
+AR Path="/619279C9/619190BD" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619190BD" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3850 600 50  0001 C CNN
+F 1 "VCC" H 3865 923 50  0000 C CNN
+F 2 "" H 3850 750 50  0001 C CNN
+F 3 "" H 3850 750 50  0001 C CNN
+	1    3850 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R64
+U 1 1 619190C3
+P 4000 750
+F 0 "R64" V 4100 750 50  0000 C CNN
+F 1 "10K" V 4000 750 50  0000 C CNN
+F 2 "" V 3930 750 50  0001 C CNN
+F 3 "~" H 4000 750 50  0001 C CNN
+	1    4000 750 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4150 750 
+Wire Wire Line
+	4150 750  4150 1800
+$Comp
+L Device:R R?
+U 1 1 619632DD
+P 7600 1050
+AR Path="/619632DD" Ref="R?"  Part="1" 
+AR Path="/61928B56/619632DD" Ref="R88"  Part="1" 
+F 0 "R88" H 7500 1050 50  0000 C CNN
+F 1 "10K" V 7600 1050 50  0000 C CNN
+F 2 "" V 7530 1050 50  0001 C CNN
+F 3 "~" H 7600 1050 50  0001 C CNN
+	1    7600 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1000 8050 900 
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 619632E5
+P 7950 1200
+AR Path="/619632E5" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619632E5" Ref="Q55"  Part="1" 
+F 0 "Q55" H 8155 1246 50  0000 L CNN
+F 1 "IRF7425" H 8155 1155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7950 1200 50  0001 L CNN
+	1    7950 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 619632EB
+P 7500 1400
+AR Path="/619632EB" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619632EB" Ref="Q51"  Part="1" 
+F 0 "Q51" H 7704 1446 50  0000 L CNN
+F 1 "2N7002" H 7704 1355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 1325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7500 1400 50  0001 L CNN
+	1    7500 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 1200
+Wire Wire Line
+	7600 1200 7750 1200
+Wire Wire Line
+	7600 900  8050 900 
+$Comp
+L power:GND #PWR?
+U 1 1 619632F4
+P 7050 1700
+AR Path="/619632F4" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619632F4" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 7050 1450 50  0001 C CNN
+F 1 "GND" H 7055 1527 50  0000 C CNN
+F 2 "" H 7050 1700 50  0001 C CNN
+F 3 "" H 7050 1700 50  0001 C CNN
+	1    7050 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 1850 3    50   Input ~ 0
+SW3
+$Comp
+L Device:R R90
+U 1 1 619632FB
+P 8050 1700
+F 0 "R90" H 8250 1700 50  0000 R CNN
+F 1 "15m" V 8050 1800 50  0000 R CNN
+F 2 "" V 7980 1700 50  0001 C CNN
+F 3 "~" H 8050 1700 50  0001 C CNN
+	1    8050 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 1550 8050 1400
+$Comp
+L Device:C C?
+U 1 1 61963302
+P 8950 1250
+AR Path="/619279C9/61963302" Ref="C?"  Part="1" 
+AR Path="/61928B56/61963302" Ref="C53"  Part="1" 
+F 0 "C53" H 9065 1296 50  0000 L CNN
+F 1 "1uF" H 9065 1205 50  0000 L CNN
+F 2 "" H 8988 1100 50  0001 C CNN
+F 3 "~" H 8950 1250 50  0001 C CNN
+	1    8950 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61963308
+P 9100 1700
+AR Path="/619279C9/61963308" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61963308" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 9100 1450 50  0001 C CNN
+F 1 "GND" H 9105 1527 50  0000 C CNN
+F 2 "" H 9100 1700 50  0001 C CNN
+F 3 "" H 9100 1700 50  0001 C CNN
+	1    9100 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 2100 9100 2100
+Wire Wire Line
+	9100 1700 9100 2100
+Connection ~ 8050 1550
+$Comp
+L power:VCC #PWR?
+U 1 1 61963311
+P 8800 650
+AR Path="/619279C9/61963311" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61963311" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 8800 500 50  0001 C CNN
+F 1 "VCC" H 8815 823 50  0000 C CNN
+F 2 "" H 8800 650 50  0001 C CNN
+F 3 "" H 8800 650 50  0001 C CNN
+	1    8800 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61963317
+P 8800 800
+AR Path="/619279C9/61963317" Ref="R?"  Part="1" 
+AR Path="/61928B56/61963317" Ref="R154"  Part="1" 
+F 0 "R154" H 8850 800 50  0000 L CNN
+F 1 "10K" V 8800 700 50  0000 L CNN
+F 2 "" V 8730 800 50  0001 C CNN
+F 3 "~" H 8800 800 50  0001 C CNN
+	1    8800 800 
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 950  0    50   Input ~ 0
+RSTSW3
+$Comp
+L Device:R R?
+U 1 1 6196331E
+P 8600 2100
+AR Path="/619279C9/6196331E" Ref="R?"  Part="1" 
+AR Path="/61928B56/6196331E" Ref="R140"  Part="1" 
+F 0 "R140" H 8450 2100 50  0000 L CNN
+F 1 "15K" V 8600 2000 50  0000 L CNN
+F 2 "" V 8530 2100 50  0001 C CNN
+F 3 "~" H 8600 2100 50  0001 C CNN
+	1    8600 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61963324
+P 8900 2100
+AR Path="/619279C9/61963324" Ref="R?"  Part="1" 
+AR Path="/61928B56/61963324" Ref="R168"  Part="1" 
+F 0 "R168" H 8750 2100 50  0000 L CNN
+F 1 "10K" V 8900 2000 50  0000 L CNN
+F 2 "" V 8830 2100 50  0001 C CNN
+F 3 "~" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8750 2100
+Text GLabel 8450 2100 3    50   Input ~ 0
+ISW3
+Connection ~ 9100 1700
+Wire Wire Line
+	8800 950  8800 1250
+Connection ~ 8800 1250
+Wire Wire Line
+	8800 1250 8800 1300
+Wire Wire Line
+	9100 1250 9100 1700
+$Comp
+L Device:C C?
+U 1 1 61963331
+P 9100 850
+AR Path="/619279C9/61963331" Ref="C?"  Part="1" 
+AR Path="/61928B56/61963331" Ref="C55"  Part="1" 
+F 0 "C55" H 8850 900 50  0000 L CNN
+F 1 "0.1uF" H 8800 800 50  0000 L CNN
+F 2 "" H 9138 700 50  0001 C CNN
+F 3 "~" H 9100 850 50  0001 C CNN
+	1    9100 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 1000 9100 1250
+Connection ~ 9100 1250
+$Comp
+L epslib:MAX4373 U?
+U 1 1 61963339
+P 7950 1700
+AR Path="/619279C9/61963339" Ref="U?"  Part="1" 
+AR Path="/61928B56/61963339" Ref="U18"  Part="1" 
+F 0 "U18" V 7950 250 50  0000 C CNN
+F 1 "MAX4373F" V 7850 100 50  0000 C CNN
+F 2 "" H 7950 1700 50  0001 C CNN
+F 3 "" H 7950 1700 50  0001 C CNN
+	1    7950 1700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9100 700  9100 650 
+Wire Wire Line
+	9100 650  8800 650 
+Connection ~ 8800 650 
+Wire Wire Line
+	8800 650  8500 650 
+Wire Wire Line
+	8500 650  8500 1300
+Text GLabel 6750 1400 0    50   Input ~ 0
+SIG3
+$Comp
+L Device:R R?
+U 1 1 6196334B
+P 7050 1550
+AR Path="/6196334B" Ref="R?"  Part="1" 
+AR Path="/61928B56/6196334B" Ref="R84"  Part="1" 
+F 0 "R84" H 6950 1550 50  0000 C CNN
+F 1 "10K" V 7050 1550 50  0000 C CNN
+F 2 "" V 6980 1550 50  0001 C CNN
+F 3 "~" H 7050 1550 50  0001 C CNN
+	1    7050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61963351
+P 6900 1400
+AR Path="/61963351" Ref="R?"  Part="1" 
+AR Path="/61928B56/61963351" Ref="R82"  Part="1" 
+F 0 "R82" V 6800 1400 50  0000 C CNN
+F 1 "100R" V 6900 1400 50  0000 C CNN
+F 2 "" V 6830 1400 50  0001 C CNN
+F 3 "~" H 6900 1400 50  0001 C CNN
+	1    6900 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61963357
+P 7500 1800
+AR Path="/61963357" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61963357" Ref="Q52"  Part="1" 
+F 0 "Q52" H 7704 1846 50  0000 L CNN
+F 1 "2N7002" H 7704 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 1725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7500 1800 50  0001 L CNN
+	1    7500 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 1400
+$Comp
+L power:GND #PWR0167
+U 1 1 6196335E
+P 7600 2000
+F 0 "#PWR0167" H 7600 1750 50  0001 C CNN
+F 1 "GND" H 7605 1827 50  0000 C CNN
+F 2 "" H 7600 2000 50  0001 C CNN
+F 3 "" H 7600 2000 50  0001 C CNN
+	1    7600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 550  8400 1300
+Wire Wire Line
+	7250 550  7250 750 
+Wire Wire Line
+	7300 1800 7250 1800
+Wire Wire Line
+	7050 1400 7300 1400
+Wire Wire Line
+	7250 550  8400 550 
+$Comp
+L power:VCC #PWR?
+U 1 1 61963369
+P 6950 750
+AR Path="/619279C9/61963369" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61963369" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 6950 600 50  0001 C CNN
+F 1 "VCC" H 6965 923 50  0000 C CNN
+F 2 "" H 6950 750 50  0001 C CNN
+F 3 "" H 6950 750 50  0001 C CNN
+	1    6950 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R86
+U 1 1 6196336F
+P 7100 750
+F 0 "R86" V 7200 750 50  0000 C CNN
+F 1 "10K" V 7100 750 50  0000 C CNN
+F 2 "" V 7030 750 50  0001 C CNN
+F 3 "~" H 7100 750 50  0001 C CNN
+	1    7100 750 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7250 750 
+Wire Wire Line
+	7250 750  7250 1800
+Connection ~ 8050 900 
+$Comp
+L power:+BATT #PWR?
+U 1 1 619AE415
+P 11150 900
+AR Path="/619AE415" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619AE415" Ref="#PWR0180"  Part="1" 
+F 0 "#PWR0180" H 11150 750 50  0001 C CNN
+F 1 "+BATT" H 11165 1073 50  0000 C CNN
+F 2 "" H 11150 900 50  0001 C CNN
+F 3 "" H 11150 900 50  0001 C CNN
+	1    11150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619AE41B
+P 10700 1050
+AR Path="/619AE41B" Ref="R?"  Part="1" 
+AR Path="/61928B56/619AE41B" Ref="R186"  Part="1" 
+F 0 "R186" H 10600 1050 50  0000 C CNN
+F 1 "10K" V 10700 1050 50  0000 C CNN
+F 2 "" V 10630 1050 50  0001 C CNN
+F 3 "~" H 10700 1050 50  0001 C CNN
+	1    10700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 1000 11150 900 
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 619AE422
+P 11050 1200
+AR Path="/619AE422" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619AE422" Ref="Q61"  Part="1" 
+F 0 "Q61" H 11255 1246 50  0000 L CNN
+F 1 "IRF7425" H 11255 1155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 1125 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 11050 1200 50  0001 L CNN
+	1    11050 1200
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 619AE428
+P 10600 1400
+AR Path="/619AE428" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619AE428" Ref="Q57"  Part="1" 
+F 0 "Q57" H 10804 1446 50  0000 L CNN
+F 1 "2N7002" H 10804 1355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 1325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 10600 1400 50  0001 L CNN
+	1    10600 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 10700 1200
+Wire Wire Line
+	10700 1200 10850 1200
+Wire Wire Line
+	10700 900  11150 900 
+$Comp
+L power:GND #PWR?
+U 1 1 619AE431
+P 10150 1700
+AR Path="/619AE431" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619AE431" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 10150 1450 50  0001 C CNN
+F 1 "GND" H 10155 1527 50  0000 C CNN
+F 2 "" H 10150 1700 50  0001 C CNN
+F 3 "" H 10150 1700 50  0001 C CNN
+	1    10150 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 11150 1850 3    50   Input ~ 0
+SW4
+$Comp
+L Device:R R188
+U 1 1 619AE438
+P 11150 1700
+F 0 "R188" H 11350 1700 50  0000 R CNN
+F 1 "15m" V 11150 1800 50  0000 R CNN
+F 2 "" V 11080 1700 50  0001 C CNN
+F 3 "~" H 11150 1700 50  0001 C CNN
+	1    11150 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11150 1550 11150 1400
+$Comp
+L Device:C C?
+U 1 1 619AE43F
+P 12050 1250
+AR Path="/619279C9/619AE43F" Ref="C?"  Part="1" 
+AR Path="/61928B56/619AE43F" Ref="C57"  Part="1" 
+F 0 "C57" H 12165 1296 50  0000 L CNN
+F 1 "1uF" H 12165 1205 50  0000 L CNN
+F 2 "" H 12088 1100 50  0001 C CNN
+F 3 "~" H 12050 1250 50  0001 C CNN
+	1    12050 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619AE445
+P 12200 1700
+AR Path="/619279C9/619AE445" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619AE445" Ref="#PWR0183"  Part="1" 
+F 0 "#PWR0183" H 12200 1450 50  0001 C CNN
+F 1 "GND" H 12205 1527 50  0000 C CNN
+F 2 "" H 12200 1700 50  0001 C CNN
+F 3 "" H 12200 1700 50  0001 C CNN
+	1    12200 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12150 2100 12200 2100
+Wire Wire Line
+	12200 1700 12200 2100
+Connection ~ 11150 1550
+$Comp
+L power:VCC #PWR?
+U 1 1 619AE44E
+P 11900 650
+AR Path="/619279C9/619AE44E" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619AE44E" Ref="#PWR0181"  Part="1" 
+F 0 "#PWR0181" H 11900 500 50  0001 C CNN
+F 1 "VCC" H 11915 823 50  0000 C CNN
+F 2 "" H 11900 650 50  0001 C CNN
+F 3 "" H 11900 650 50  0001 C CNN
+	1    11900 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619AE454
+P 11900 800
+AR Path="/619279C9/619AE454" Ref="R?"  Part="1" 
+AR Path="/61928B56/619AE454" Ref="R192"  Part="1" 
+F 0 "R192" H 11950 800 50  0000 L CNN
+F 1 "10K" V 11900 700 50  0000 L CNN
+F 2 "" V 11830 800 50  0001 C CNN
+F 3 "~" H 11900 800 50  0001 C CNN
+	1    11900 800 
+	1    0    0    -1  
+$EndComp
+Text GLabel 11900 950  0    50   Input ~ 0
+RSTSW4
+$Comp
+L Device:R R?
+U 1 1 619AE45B
+P 11700 2100
+AR Path="/619279C9/619AE45B" Ref="R?"  Part="1" 
+AR Path="/61928B56/619AE45B" Ref="R190"  Part="1" 
+F 0 "R190" H 11550 2100 50  0000 L CNN
+F 1 "15K" V 11700 2000 50  0000 L CNN
+F 2 "" V 11630 2100 50  0001 C CNN
+F 3 "~" H 11700 2100 50  0001 C CNN
+	1    11700 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619AE461
+P 12000 2100
+AR Path="/619279C9/619AE461" Ref="R?"  Part="1" 
+AR Path="/61928B56/619AE461" Ref="R194"  Part="1" 
+F 0 "R194" H 11850 2100 50  0000 L CNN
+F 1 "10K" V 12000 2000 50  0000 L CNN
+F 2 "" V 11930 2100 50  0001 C CNN
+F 3 "~" H 12000 2100 50  0001 C CNN
+	1    12000 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 11850 2100
+Text GLabel 11550 2100 3    50   Input ~ 0
+ISW4
+Connection ~ 12200 1700
+Wire Wire Line
+	11900 950  11900 1250
+Connection ~ 11900 1250
+Wire Wire Line
+	11900 1250 11900 1300
+Wire Wire Line
+	12200 1250 12200 1700
+$Comp
+L Device:C C?
+U 1 1 619AE46E
+P 12200 850
+AR Path="/619279C9/619AE46E" Ref="C?"  Part="1" 
+AR Path="/61928B56/619AE46E" Ref="C59"  Part="1" 
+F 0 "C59" H 11950 900 50  0000 L CNN
+F 1 "0.1uF" H 11900 800 50  0000 L CNN
+F 2 "" H 12238 700 50  0001 C CNN
+F 3 "~" H 12200 850 50  0001 C CNN
+	1    12200 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12200 1000 12200 1250
+Connection ~ 12200 1250
+$Comp
+L epslib:MAX4373 U?
+U 1 1 619AE476
+P 11050 1700
+AR Path="/619279C9/619AE476" Ref="U?"  Part="1" 
+AR Path="/61928B56/619AE476" Ref="U20"  Part="1" 
+F 0 "U20" V 11050 250 50  0000 C CNN
+F 1 "MAX4373F" V 10950 100 50  0000 C CNN
+F 2 "" H 11050 1700 50  0001 C CNN
+F 3 "" H 11050 1700 50  0001 C CNN
+	1    11050 1700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	12200 700  12200 650 
+Wire Wire Line
+	12200 650  11900 650 
+Connection ~ 11900 650 
+Wire Wire Line
+	11900 650  11600 650 
+Wire Wire Line
+	11600 650  11600 1300
+Text GLabel 9850 1400 0    50   Input ~ 0
+SIG4
+$Comp
+L Device:R R?
+U 1 1 619AE482
+P 10150 1550
+AR Path="/619AE482" Ref="R?"  Part="1" 
+AR Path="/61928B56/619AE482" Ref="R182"  Part="1" 
+F 0 "R182" H 10050 1550 50  0000 C CNN
+F 1 "10K" V 10150 1550 50  0000 C CNN
+F 2 "" V 10080 1550 50  0001 C CNN
+F 3 "~" H 10150 1550 50  0001 C CNN
+	1    10150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619AE488
+P 10000 1400
+AR Path="/619AE488" Ref="R?"  Part="1" 
+AR Path="/61928B56/619AE488" Ref="R180"  Part="1" 
+F 0 "R180" V 9900 1400 50  0000 C CNN
+F 1 "100R" V 10000 1400 50  0000 C CNN
+F 2 "" V 9930 1400 50  0001 C CNN
+F 3 "~" H 10000 1400 50  0001 C CNN
+	1    10000 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 619AE48E
+P 10600 1800
+AR Path="/619AE48E" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619AE48E" Ref="Q58"  Part="1" 
+F 0 "Q58" H 10804 1846 50  0000 L CNN
+F 1 "2N7002" H 10804 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 1725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 10600 1800 50  0001 L CNN
+	1    10600 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 10150 1400
+$Comp
+L power:GND #PWR0178
+U 1 1 619AE495
+P 10700 2000
+F 0 "#PWR0178" H 10700 1750 50  0001 C CNN
+F 1 "GND" H 10705 1827 50  0000 C CNN
+F 2 "" H 10700 2000 50  0001 C CNN
+F 3 "" H 10700 2000 50  0001 C CNN
+	1    10700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 550  11500 1300
+Wire Wire Line
+	10350 550  10350 750 
+Wire Wire Line
+	10400 1800 10350 1800
+Wire Wire Line
+	10150 1400 10400 1400
+Wire Wire Line
+	10350 550  11500 550 
+$Comp
+L power:VCC #PWR?
+U 1 1 619AE4A0
+P 10050 750
+AR Path="/619279C9/619AE4A0" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619AE4A0" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 10050 600 50  0001 C CNN
+F 1 "VCC" H 10065 923 50  0000 C CNN
+F 2 "" H 10050 750 50  0001 C CNN
+F 3 "" H 10050 750 50  0001 C CNN
+	1    10050 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R184
+U 1 1 619AE4A6
+P 10200 750
+F 0 "R184" V 10300 750 50  0000 C CNN
+F 1 "10K" V 10200 750 50  0000 C CNN
+F 2 "" V 10130 750 50  0001 C CNN
+F 3 "~" H 10200 750 50  0001 C CNN
+	1    10200 750 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10350 750 
+Wire Wire Line
+	10350 750  10350 1800
+Connection ~ 11150 900 
+$Comp
+L Device:R R?
+U 1 1 619EE63C
+P 1400 2850
+AR Path="/619EE63C" Ref="R?"  Part="1" 
+AR Path="/61928B56/619EE63C" Ref="R11"  Part="1" 
+F 0 "R11" H 1300 2850 50  0000 C CNN
+F 1 "10K" V 1400 2850 50  0000 C CNN
+F 2 "" V 1330 2850 50  0001 C CNN
+F 3 "~" H 1400 2850 50  0001 C CNN
+	1    1400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2800 1850 2700
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 619EE643
+P 1750 3000
+AR Path="/619EE643" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619EE643" Ref="Q11"  Part="1" 
+F 0 "Q11" H 1955 3046 50  0000 L CNN
+F 1 "IRF7425" H 1955 2955 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 2925 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 3000 50  0001 L CNN
+	1    1750 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 619EE649
+P 1300 3200
+AR Path="/619EE649" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619EE649" Ref="Q4"  Part="1" 
+F 0 "Q4" H 1504 3246 50  0000 L CNN
+F 1 "2N7002" H 1504 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 3125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1300 3200 50  0001 L CNN
+	1    1300 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 3000
+Wire Wire Line
+	1400 3000 1550 3000
+Wire Wire Line
+	1400 2700 1850 2700
+$Comp
+L power:GND #PWR?
+U 1 1 619EE652
+P 850 3500
+AR Path="/619EE652" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619EE652" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 850 3250 50  0001 C CNN
+F 1 "GND" H 855 3327 50  0000 C CNN
+F 2 "" H 850 3500 50  0001 C CNN
+F 3 "" H 850 3500 50  0001 C CNN
+	1    850  3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 3650 3    50   Input ~ 0
+SW5
+$Comp
+L Device:R R13
+U 1 1 619EE659
+P 1850 3500
+F 0 "R13" H 2050 3500 50  0000 R CNN
+F 1 "15m" V 1850 3600 50  0000 R CNN
+F 2 "" V 1780 3500 50  0001 C CNN
+F 3 "~" H 1850 3500 50  0001 C CNN
+	1    1850 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 3350 1850 3200
+$Comp
+L Device:C C?
+U 1 1 619EE660
+P 2750 3050
+AR Path="/619279C9/619EE660" Ref="C?"  Part="1" 
+AR Path="/61928B56/619EE660" Ref="C42"  Part="1" 
+F 0 "C42" H 2865 3096 50  0000 L CNN
+F 1 "1uF" H 2865 3005 50  0000 L CNN
+F 2 "" H 2788 2900 50  0001 C CNN
+F 3 "~" H 2750 3050 50  0001 C CNN
+	1    2750 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619EE666
+P 2900 3500
+AR Path="/619279C9/619EE666" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619EE666" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 2900 3250 50  0001 C CNN
+F 1 "GND" H 2905 3327 50  0000 C CNN
+F 2 "" H 2900 3500 50  0001 C CNN
+F 3 "" H 2900 3500 50  0001 C CNN
+	1    2900 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 3900 2900 3900
+Wire Wire Line
+	2900 3500 2900 3900
+Connection ~ 1850 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 619EE66F
+P 2600 2450
+AR Path="/619279C9/619EE66F" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619EE66F" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 2600 2300 50  0001 C CNN
+F 1 "VCC" H 2615 2623 50  0000 C CNN
+F 2 "" H 2600 2450 50  0001 C CNN
+F 3 "" H 2600 2450 50  0001 C CNN
+	1    2600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619EE675
+P 2600 2600
+AR Path="/619279C9/619EE675" Ref="R?"  Part="1" 
+AR Path="/61928B56/619EE675" Ref="R19"  Part="1" 
+F 0 "R19" H 2650 2600 50  0000 L CNN
+F 1 "10K" V 2600 2500 50  0000 L CNN
+F 2 "" V 2530 2600 50  0001 C CNN
+F 3 "~" H 2600 2600 50  0001 C CNN
+	1    2600 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 2750 0    50   Input ~ 0
+RSTSW5
+$Comp
+L Device:R R?
+U 1 1 619EE67C
+P 2400 3900
+AR Path="/619279C9/619EE67C" Ref="R?"  Part="1" 
+AR Path="/61928B56/619EE67C" Ref="R16"  Part="1" 
+F 0 "R16" H 2250 3900 50  0000 L CNN
+F 1 "15K" V 2400 3800 50  0000 L CNN
+F 2 "" V 2330 3900 50  0001 C CNN
+F 3 "~" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619EE682
+P 2700 3900
+AR Path="/619279C9/619EE682" Ref="R?"  Part="1" 
+AR Path="/61928B56/619EE682" Ref="R22"  Part="1" 
+F 0 "R22" H 2550 3900 50  0000 L CNN
+F 1 "10K" V 2700 3800 50  0000 L CNN
+F 2 "" V 2630 3900 50  0001 C CNN
+F 3 "~" H 2700 3900 50  0001 C CNN
+	1    2700 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2550 3900
+Text GLabel 2250 3900 3    50   Input ~ 0
+ISW5
+Connection ~ 2900 3500
+Wire Wire Line
+	2600 2750 2600 3050
+Connection ~ 2600 3050
+Wire Wire Line
+	2600 3050 2600 3100
+Wire Wire Line
+	2900 3050 2900 3500
+$Comp
+L Device:C C?
+U 1 1 619EE68F
+P 2900 2650
+AR Path="/619279C9/619EE68F" Ref="C?"  Part="1" 
+AR Path="/61928B56/619EE68F" Ref="C45"  Part="1" 
+F 0 "C45" H 2650 2700 50  0000 L CNN
+F 1 "0.1uF" H 2600 2600 50  0000 L CNN
+F 2 "" H 2938 2500 50  0001 C CNN
+F 3 "~" H 2900 2650 50  0001 C CNN
+	1    2900 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 2800 2900 3050
+Connection ~ 2900 3050
+$Comp
+L epslib:MAX4373 U?
+U 1 1 619EE697
+P 1750 3500
+AR Path="/619279C9/619EE697" Ref="U?"  Part="1" 
+AR Path="/61928B56/619EE697" Ref="U13"  Part="1" 
+F 0 "U13" V 1750 2050 50  0000 C CNN
+F 1 "MAX4373F" V 1650 1900 50  0000 C CNN
+F 2 "" H 1750 3500 50  0001 C CNN
+F 3 "" H 1750 3500 50  0001 C CNN
+	1    1750 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2900 2500 2900 2450
+Wire Wire Line
+	2900 2450 2600 2450
+Connection ~ 2600 2450
+Wire Wire Line
+	2600 2450 2300 2450
+Wire Wire Line
+	2300 2450 2300 3100
+Text GLabel 550  3200 0    50   Input ~ 0
+SIG5
+$Comp
+L Device:R R?
+U 1 1 619EE6A3
+P 850 3350
+AR Path="/619EE6A3" Ref="R?"  Part="1" 
+AR Path="/61928B56/619EE6A3" Ref="R6"  Part="1" 
+F 0 "R6" H 750 3350 50  0000 C CNN
+F 1 "10K" V 850 3350 50  0000 C CNN
+F 2 "" V 780 3350 50  0001 C CNN
+F 3 "~" H 850 3350 50  0001 C CNN
+	1    850  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619EE6A9
+P 700 3200
+AR Path="/619EE6A9" Ref="R?"  Part="1" 
+AR Path="/61928B56/619EE6A9" Ref="R2"  Part="1" 
+F 0 "R2" V 600 3200 50  0000 C CNN
+F 1 "100R" V 700 3200 50  0000 C CNN
+F 2 "" V 630 3200 50  0001 C CNN
+F 3 "~" H 700 3200 50  0001 C CNN
+	1    700  3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 619EE6AF
+P 1300 3600
+AR Path="/619EE6AF" Ref="Q?"  Part="1" 
+AR Path="/61928B56/619EE6AF" Ref="Q5"  Part="1" 
+F 0 "Q5" H 1504 3646 50  0000 L CNN
+F 1 "2N7002" H 1504 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1300 3600 50  0001 L CNN
+	1    1300 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 850  3200
+$Comp
+L power:GND #PWR029
+U 1 1 619EE6B6
+P 1400 3800
+F 0 "#PWR029" H 1400 3550 50  0001 C CNN
+F 1 "GND" H 1405 3627 50  0000 C CNN
+F 2 "" H 1400 3800 50  0001 C CNN
+F 3 "" H 1400 3800 50  0001 C CNN
+	1    1400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2350 2200 3100
+Wire Wire Line
+	1050 2350 1050 2550
+Wire Wire Line
+	1100 3600 1050 3600
+Wire Wire Line
+	850  3200 1100 3200
+Wire Wire Line
+	1050 2350 2200 2350
+$Comp
+L power:VCC #PWR?
+U 1 1 619EE6C1
+P 750 2550
+AR Path="/619279C9/619EE6C1" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/619EE6C1" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 750 2400 50  0001 C CNN
+F 1 "VCC" H 765 2723 50  0000 C CNN
+F 2 "" H 750 2550 50  0001 C CNN
+F 3 "" H 750 2550 50  0001 C CNN
+	1    750  2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 619EE6C7
+P 900 2550
+F 0 "R9" V 1000 2550 50  0000 C CNN
+F 1 "10K" V 900 2550 50  0000 C CNN
+F 2 "" V 830 2550 50  0001 C CNN
+F 3 "~" H 900 2550 50  0001 C CNN
+	1    900  2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1050 2550
+Wire Wire Line
+	1050 2550 1050 3600
+Connection ~ 1850 2700
+$Comp
+L power:+5V #PWR?
+U 1 1 61A38BD5
+P 4950 2700
+AR Path="/61A38BD5" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A38BD5" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 4950 2550 50  0001 C CNN
+F 1 "+5V" V 4965 2828 50  0000 L CNN
+F 2 "" H 4950 2700 50  0001 C CNN
+F 3 "" H 4950 2700 50  0001 C CNN
+	1    4950 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A38BDC
+P 4500 2850
+AR Path="/61A38BDC" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A38BDC" Ref="R68"  Part="1" 
+F 0 "R68" H 4400 2850 50  0000 C CNN
+F 1 "10K" V 4500 2850 50  0000 C CNN
+F 2 "" V 4430 2850 50  0001 C CNN
+F 3 "~" H 4500 2850 50  0001 C CNN
+	1    4500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2800 4950 2700
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A38BE3
+P 4850 3000
+AR Path="/61A38BE3" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A38BE3" Ref="Q21"  Part="1" 
+F 0 "Q21" H 5055 3046 50  0000 L CNN
+F 1 "IRF7425" H 5055 2955 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 2925 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 3000 50  0001 L CNN
+	1    4850 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A38BE9
+P 4400 3200
+AR Path="/61A38BE9" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A38BE9" Ref="Q15"  Part="1" 
+F 0 "Q15" H 4604 3246 50  0000 L CNN
+F 1 "2N7002" H 4604 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 3125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 3200 50  0001 L CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 3000
+Wire Wire Line
+	4500 3000 4650 3000
+Wire Wire Line
+	4500 2700 4950 2700
+$Comp
+L power:GND #PWR?
+U 1 1 61A38BF2
+P 3950 3500
+AR Path="/61A38BF2" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A38BF2" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 3950 3250 50  0001 C CNN
+F 1 "GND" H 3955 3327 50  0000 C CNN
+F 2 "" H 3950 3500 50  0001 C CNN
+F 3 "" H 3950 3500 50  0001 C CNN
+	1    3950 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 3650 3    50   Input ~ 0
+SW6
+$Comp
+L Device:R R71
+U 1 1 61A38BF9
+P 4950 3500
+F 0 "R71" H 5150 3500 50  0000 R CNN
+F 1 "15m" V 4950 3600 50  0000 R CNN
+F 2 "" V 4880 3500 50  0001 C CNN
+F 3 "~" H 4950 3500 50  0001 C CNN
+	1    4950 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 3350 4950 3200
+$Comp
+L Device:C C?
+U 1 1 61A38C00
+P 5850 3050
+AR Path="/619279C9/61A38C00" Ref="C?"  Part="1" 
+AR Path="/61928B56/61A38C00" Ref="C48"  Part="1" 
+F 0 "C48" H 5965 3096 50  0000 L CNN
+F 1 "1uF" H 5965 3005 50  0000 L CNN
+F 2 "" H 5888 2900 50  0001 C CNN
+F 3 "~" H 5850 3050 50  0001 C CNN
+	1    5850 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A38C06
+P 6000 3500
+AR Path="/619279C9/61A38C06" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A38C06" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 6000 3250 50  0001 C CNN
+F 1 "GND" H 6005 3327 50  0000 C CNN
+F 2 "" H 6000 3500 50  0001 C CNN
+F 3 "" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 3900 6000 3900
+Wire Wire Line
+	6000 3500 6000 3900
+Connection ~ 4950 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 61A38C0F
+P 5700 2450
+AR Path="/619279C9/61A38C0F" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A38C0F" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 5700 2300 50  0001 C CNN
+F 1 "VCC" H 5715 2623 50  0000 C CNN
+F 2 "" H 5700 2450 50  0001 C CNN
+F 3 "" H 5700 2450 50  0001 C CNN
+	1    5700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A38C15
+P 5700 2600
+AR Path="/619279C9/61A38C15" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A38C15" Ref="R77"  Part="1" 
+F 0 "R77" H 5750 2600 50  0000 L CNN
+F 1 "10K" V 5700 2500 50  0000 L CNN
+F 2 "" V 5630 2600 50  0001 C CNN
+F 3 "~" H 5700 2600 50  0001 C CNN
+	1    5700 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 2750 0    50   Input ~ 0
+RSTSW6
+$Comp
+L Device:R R?
+U 1 1 61A38C1C
+P 5500 3900
+AR Path="/619279C9/61A38C1C" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A38C1C" Ref="R74"  Part="1" 
+F 0 "R74" H 5350 3900 50  0000 L CNN
+F 1 "15K" V 5500 3800 50  0000 L CNN
+F 2 "" V 5430 3900 50  0001 C CNN
+F 3 "~" H 5500 3900 50  0001 C CNN
+	1    5500 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A38C22
+P 5800 3900
+AR Path="/619279C9/61A38C22" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A38C22" Ref="R80"  Part="1" 
+F 0 "R80" H 5650 3900 50  0000 L CNN
+F 1 "10K" V 5800 3800 50  0000 L CNN
+F 2 "" V 5730 3900 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 3900
+Text GLabel 5350 3900 3    50   Input ~ 0
+ISW6
+Connection ~ 6000 3500
+Wire Wire Line
+	5700 2750 5700 3050
+Connection ~ 5700 3050
+Wire Wire Line
+	5700 3050 5700 3100
+Wire Wire Line
+	6000 3050 6000 3500
+$Comp
+L Device:C C?
+U 1 1 61A38C2F
+P 6000 2650
+AR Path="/619279C9/61A38C2F" Ref="C?"  Part="1" 
+AR Path="/61928B56/61A38C2F" Ref="C51"  Part="1" 
+F 0 "C51" H 5750 2700 50  0000 L CNN
+F 1 "0.1uF" H 5700 2600 50  0000 L CNN
+F 2 "" H 6038 2500 50  0001 C CNN
+F 3 "~" H 6000 2650 50  0001 C CNN
+	1    6000 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 2800 6000 3050
+Connection ~ 6000 3050
+$Comp
+L epslib:MAX4373 U?
+U 1 1 61A38C37
+P 4850 3500
+AR Path="/619279C9/61A38C37" Ref="U?"  Part="1" 
+AR Path="/61928B56/61A38C37" Ref="U16"  Part="1" 
+F 0 "U16" V 4850 2050 50  0000 C CNN
+F 1 "MAX4373F" V 4750 1900 50  0000 C CNN
+F 2 "" H 4850 3500 50  0001 C CNN
+F 3 "" H 4850 3500 50  0001 C CNN
+	1    4850 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6000 2500 6000 2450
+Wire Wire Line
+	6000 2450 5700 2450
+Connection ~ 5700 2450
+Wire Wire Line
+	5700 2450 5400 2450
+Wire Wire Line
+	5400 2450 5400 3100
+Text GLabel 3650 3200 0    50   Input ~ 0
+SIG6
+$Comp
+L Device:R R?
+U 1 1 61A38C43
+P 3950 3350
+AR Path="/61A38C43" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A38C43" Ref="R62"  Part="1" 
+F 0 "R62" H 3850 3350 50  0000 C CNN
+F 1 "10K" V 3950 3350 50  0000 C CNN
+F 2 "" V 3880 3350 50  0001 C CNN
+F 3 "~" H 3950 3350 50  0001 C CNN
+	1    3950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A38C49
+P 3800 3200
+AR Path="/61A38C49" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A38C49" Ref="R25"  Part="1" 
+F 0 "R25" V 3700 3200 50  0000 C CNN
+F 1 "100R" V 3800 3200 50  0000 C CNN
+F 2 "" V 3730 3200 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A38C4F
+P 4400 3600
+AR Path="/61A38C4F" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A38C4F" Ref="Q16"  Part="1" 
+F 0 "Q16" H 4604 3646 50  0000 L CNN
+F 1 "2N7002" H 4604 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 3600 50  0001 L CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 3200
+$Comp
+L power:GND #PWR0152
+U 1 1 61A38C56
+P 4500 3800
+F 0 "#PWR0152" H 4500 3550 50  0001 C CNN
+F 1 "GND" H 4505 3627 50  0000 C CNN
+F 2 "" H 4500 3800 50  0001 C CNN
+F 3 "" H 4500 3800 50  0001 C CNN
+	1    4500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2350 5300 3100
+Wire Wire Line
+	4150 2350 4150 2550
+Wire Wire Line
+	4200 3600 4150 3600
+Wire Wire Line
+	3950 3200 4200 3200
+Wire Wire Line
+	4150 2350 5300 2350
+$Comp
+L power:VCC #PWR?
+U 1 1 61A38C61
+P 3850 2550
+AR Path="/619279C9/61A38C61" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A38C61" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 3850 2400 50  0001 C CNN
+F 1 "VCC" H 3865 2723 50  0000 C CNN
+F 2 "" H 3850 2550 50  0001 C CNN
+F 3 "" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R65
+U 1 1 61A38C67
+P 4000 2550
+F 0 "R65" V 4100 2550 50  0000 C CNN
+F 1 "10K" V 4000 2550 50  0000 C CNN
+F 2 "" V 3930 2550 50  0001 C CNN
+F 3 "~" H 4000 2550 50  0001 C CNN
+	1    4000 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4150 2550
+Wire Wire Line
+	4150 2550 4150 3600
+Connection ~ 4950 2700
+$Comp
+L power:+5V #PWR?
+U 1 1 61A78446
+P 8050 2700
+AR Path="/61A78446" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A78446" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 8050 2550 50  0001 C CNN
+F 1 "+5V" V 8065 2828 50  0000 L CNN
+F 2 "" H 8050 2700 50  0001 C CNN
+F 3 "" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A7844D
+P 7600 2850
+AR Path="/61A7844D" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A7844D" Ref="R89"  Part="1" 
+F 0 "R89" H 7500 2850 50  0000 C CNN
+F 1 "10K" V 7600 2850 50  0000 C CNN
+F 2 "" V 7530 2850 50  0001 C CNN
+F 3 "~" H 7600 2850 50  0001 C CNN
+	1    7600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2800 8050 2700
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61A78454
+P 7950 3000
+AR Path="/61A78454" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A78454" Ref="Q56"  Part="1" 
+F 0 "Q56" H 8155 3046 50  0000 L CNN
+F 1 "IRF7425" H 8155 2955 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 2925 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 7950 3000 50  0001 L CNN
+	1    7950 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A7845A
+P 7500 3200
+AR Path="/61A7845A" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A7845A" Ref="Q53"  Part="1" 
+F 0 "Q53" H 7704 3246 50  0000 L CNN
+F 1 "2N7002" H 7704 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 3125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7500 3200 50  0001 L CNN
+	1    7500 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 3000
+Wire Wire Line
+	7600 3000 7750 3000
+Wire Wire Line
+	7600 2700 8050 2700
+$Comp
+L power:GND #PWR?
+U 1 1 61A78463
+P 7050 3500
+AR Path="/61A78463" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A78463" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 7050 3250 50  0001 C CNN
+F 1 "GND" H 7055 3327 50  0000 C CNN
+F 2 "" H 7050 3500 50  0001 C CNN
+F 3 "" H 7050 3500 50  0001 C CNN
+	1    7050 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8050 3650 3    50   Input ~ 0
+SW7
+$Comp
+L Device:R R139
+U 1 1 61A7846A
+P 8050 3500
+F 0 "R139" H 8250 3500 50  0000 R CNN
+F 1 "15m" V 8050 3600 50  0000 R CNN
+F 2 "" V 7980 3500 50  0001 C CNN
+F 3 "~" H 8050 3500 50  0001 C CNN
+	1    8050 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 3350 8050 3200
+$Comp
+L Device:C C?
+U 1 1 61A78471
+P 8950 3050
+AR Path="/619279C9/61A78471" Ref="C?"  Part="1" 
+AR Path="/61928B56/61A78471" Ref="C54"  Part="1" 
+F 0 "C54" H 9065 3096 50  0000 L CNN
+F 1 "1uF" H 9065 3005 50  0000 L CNN
+F 2 "" H 8988 2900 50  0001 C CNN
+F 3 "~" H 8950 3050 50  0001 C CNN
+	1    8950 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61A78477
+P 9100 3500
+AR Path="/619279C9/61A78477" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A78477" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 9100 3250 50  0001 C CNN
+F 1 "GND" H 9105 3327 50  0000 C CNN
+F 2 "" H 9100 3500 50  0001 C CNN
+F 3 "" H 9100 3500 50  0001 C CNN
+	1    9100 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 3900 9100 3900
+Wire Wire Line
+	9100 3500 9100 3900
+Connection ~ 8050 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 61A78480
+P 8800 2450
+AR Path="/619279C9/61A78480" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A78480" Ref="#PWR0171"  Part="1" 
+F 0 "#PWR0171" H 8800 2300 50  0001 C CNN
+F 1 "VCC" H 8815 2623 50  0000 C CNN
+F 2 "" H 8800 2450 50  0001 C CNN
+F 3 "" H 8800 2450 50  0001 C CNN
+	1    8800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A78486
+P 8800 2600
+AR Path="/619279C9/61A78486" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A78486" Ref="R167"  Part="1" 
+F 0 "R167" H 8850 2600 50  0000 L CNN
+F 1 "10K" V 8800 2500 50  0000 L CNN
+F 2 "" V 8730 2600 50  0001 C CNN
+F 3 "~" H 8800 2600 50  0001 C CNN
+	1    8800 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8800 2750 0    50   Input ~ 0
+RSTSW7
+$Comp
+L Device:R R?
+U 1 1 61A7848D
+P 8600 3900
+AR Path="/619279C9/61A7848D" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A7848D" Ref="R153"  Part="1" 
+F 0 "R153" H 8450 3900 50  0000 L CNN
+F 1 "15K" V 8600 3800 50  0000 L CNN
+F 2 "" V 8530 3900 50  0001 C CNN
+F 3 "~" H 8600 3900 50  0001 C CNN
+	1    8600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A78493
+P 8900 3900
+AR Path="/619279C9/61A78493" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A78493" Ref="R179"  Part="1" 
+F 0 "R179" H 8750 3900 50  0000 L CNN
+F 1 "10K" V 8900 3800 50  0000 L CNN
+F 2 "" V 8830 3900 50  0001 C CNN
+F 3 "~" H 8900 3900 50  0001 C CNN
+	1    8900 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8750 3900
+Text GLabel 8450 3900 3    50   Input ~ 0
+ISW7
+Connection ~ 9100 3500
+Wire Wire Line
+	8800 2750 8800 3050
+Connection ~ 8800 3050
+Wire Wire Line
+	8800 3050 8800 3100
+Wire Wire Line
+	9100 3050 9100 3500
+$Comp
+L Device:C C?
+U 1 1 61A784A0
+P 9100 2650
+AR Path="/619279C9/61A784A0" Ref="C?"  Part="1" 
+AR Path="/61928B56/61A784A0" Ref="C56"  Part="1" 
+F 0 "C56" H 8850 2700 50  0000 L CNN
+F 1 "0.1uF" H 8800 2600 50  0000 L CNN
+F 2 "" H 9138 2500 50  0001 C CNN
+F 3 "~" H 9100 2650 50  0001 C CNN
+	1    9100 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 2800 9100 3050
+Connection ~ 9100 3050
+$Comp
+L epslib:MAX4373 U?
+U 1 1 61A784A8
+P 7950 3500
+AR Path="/619279C9/61A784A8" Ref="U?"  Part="1" 
+AR Path="/61928B56/61A784A8" Ref="U19"  Part="1" 
+F 0 "U19" V 7950 2050 50  0000 C CNN
+F 1 "MAX4373F" V 7850 1900 50  0000 C CNN
+F 2 "" H 7950 3500 50  0001 C CNN
+F 3 "" H 7950 3500 50  0001 C CNN
+	1    7950 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9100 2500 9100 2450
+Wire Wire Line
+	9100 2450 8800 2450
+Connection ~ 8800 2450
+Wire Wire Line
+	8800 2450 8500 2450
+Wire Wire Line
+	8500 2450 8500 3100
+Text GLabel 6750 3200 0    50   Input ~ 0
+SIG7
+$Comp
+L Device:R R?
+U 1 1 61A784B4
+P 7050 3350
+AR Path="/61A784B4" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A784B4" Ref="R85"  Part="1" 
+F 0 "R85" H 6950 3350 50  0000 C CNN
+F 1 "10K" V 7050 3350 50  0000 C CNN
+F 2 "" V 6980 3350 50  0001 C CNN
+F 3 "~" H 7050 3350 50  0001 C CNN
+	1    7050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A784BA
+P 6900 3200
+AR Path="/61A784BA" Ref="R?"  Part="1" 
+AR Path="/61928B56/61A784BA" Ref="R83"  Part="1" 
+F 0 "R83" V 6800 3200 50  0000 C CNN
+F 1 "100R" V 6900 3200 50  0000 C CNN
+F 2 "" V 6830 3200 50  0001 C CNN
+F 3 "~" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61A784C0
+P 7500 3600
+AR Path="/61A784C0" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61A784C0" Ref="Q54"  Part="1" 
+F 0 "Q54" H 7704 3646 50  0000 L CNN
+F 1 "2N7002" H 7704 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7500 3600 50  0001 L CNN
+	1    7500 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7050 3200
+$Comp
+L power:GND #PWR0168
+U 1 1 61A784C7
+P 7600 3800
+F 0 "#PWR0168" H 7600 3550 50  0001 C CNN
+F 1 "GND" H 7605 3627 50  0000 C CNN
+F 2 "" H 7600 3800 50  0001 C CNN
+F 3 "" H 7600 3800 50  0001 C CNN
+	1    7600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2350 8400 3100
+Wire Wire Line
+	7250 2350 7250 2550
+Wire Wire Line
+	7300 3600 7250 3600
+Wire Wire Line
+	7050 3200 7300 3200
+Wire Wire Line
+	7250 2350 8400 2350
+$Comp
+L power:VCC #PWR?
+U 1 1 61A784D2
+P 6950 2550
+AR Path="/619279C9/61A784D2" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61A784D2" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 6950 2400 50  0001 C CNN
+F 1 "VCC" H 6965 2723 50  0000 C CNN
+F 2 "" H 6950 2550 50  0001 C CNN
+F 3 "" H 6950 2550 50  0001 C CNN
+	1    6950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R87
+U 1 1 61A784D8
+P 7100 2550
+F 0 "R87" V 7200 2550 50  0000 C CNN
+F 1 "10K" V 7100 2550 50  0000 C CNN
+F 2 "" V 7030 2550 50  0001 C CNN
+F 3 "~" H 7100 2550 50  0001 C CNN
+	1    7100 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7250 2550
+Wire Wire Line
+	7250 2550 7250 3600
+Connection ~ 8050 2700
+$Comp
+L Device:R R?
+U 1 1 61ACDCFD
+P 10700 2850
+AR Path="/61ACDCFD" Ref="R?"  Part="1" 
+AR Path="/61928B56/61ACDCFD" Ref="R187"  Part="1" 
+F 0 "R187" H 10600 2850 50  0000 C CNN
+F 1 "10K" V 10700 2850 50  0000 C CNN
+F 2 "" V 10630 2850 50  0001 C CNN
+F 3 "~" H 10700 2850 50  0001 C CNN
+	1    10700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 2800 11150 2700
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61ACDD04
+P 11050 3000
+AR Path="/61ACDD04" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61ACDD04" Ref="Q62"  Part="1" 
+F 0 "Q62" H 11255 3046 50  0000 L CNN
+F 1 "IRF7425" H 11255 2955 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11250 2925 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 11050 3000 50  0001 L CNN
+	1    11050 3000
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61ACDD0A
+P 10600 3200
+AR Path="/61ACDD0A" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61ACDD0A" Ref="Q59"  Part="1" 
+F 0 "Q59" H 10804 3246 50  0000 L CNN
+F 1 "2N7002" H 10804 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 3125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 10600 3200 50  0001 L CNN
+	1    10600 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 10700 3000
+Wire Wire Line
+	10700 3000 10850 3000
+Wire Wire Line
+	10700 2700 11150 2700
+$Comp
+L power:GND #PWR?
+U 1 1 61ACDD13
+P 10150 3500
+AR Path="/61ACDD13" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61ACDD13" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 10150 3250 50  0001 C CNN
+F 1 "GND" H 10155 3327 50  0000 C CNN
+F 2 "" H 10150 3500 50  0001 C CNN
+F 3 "" H 10150 3500 50  0001 C CNN
+	1    10150 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 11150 3650 3    50   Input ~ 0
+SW8
+$Comp
+L Device:R R189
+U 1 1 61ACDD1A
+P 11150 3500
+F 0 "R189" H 11350 3500 50  0000 R CNN
+F 1 "15m" V 11150 3600 50  0000 R CNN
+F 2 "" V 11080 3500 50  0001 C CNN
+F 3 "~" H 11150 3500 50  0001 C CNN
+	1    11150 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11150 3350 11150 3200
+$Comp
+L Device:C C?
+U 1 1 61ACDD21
+P 12050 3050
+AR Path="/619279C9/61ACDD21" Ref="C?"  Part="1" 
+AR Path="/61928B56/61ACDD21" Ref="C58"  Part="1" 
+F 0 "C58" H 12165 3096 50  0000 L CNN
+F 1 "1uF" H 12165 3005 50  0000 L CNN
+F 2 "" H 12088 2900 50  0001 C CNN
+F 3 "~" H 12050 3050 50  0001 C CNN
+	1    12050 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61ACDD27
+P 12200 3500
+AR Path="/619279C9/61ACDD27" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61ACDD27" Ref="#PWR0184"  Part="1" 
+F 0 "#PWR0184" H 12200 3250 50  0001 C CNN
+F 1 "GND" H 12205 3327 50  0000 C CNN
+F 2 "" H 12200 3500 50  0001 C CNN
+F 3 "" H 12200 3500 50  0001 C CNN
+	1    12200 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12150 3900 12200 3900
+Wire Wire Line
+	12200 3500 12200 3900
+Connection ~ 11150 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 61ACDD30
+P 11900 2450
+AR Path="/619279C9/61ACDD30" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61ACDD30" Ref="#PWR0182"  Part="1" 
+F 0 "#PWR0182" H 11900 2300 50  0001 C CNN
+F 1 "VCC" H 11915 2623 50  0000 C CNN
+F 2 "" H 11900 2450 50  0001 C CNN
+F 3 "" H 11900 2450 50  0001 C CNN
+	1    11900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61ACDD36
+P 11900 2600
+AR Path="/619279C9/61ACDD36" Ref="R?"  Part="1" 
+AR Path="/61928B56/61ACDD36" Ref="R193"  Part="1" 
+F 0 "R193" H 11950 2600 50  0000 L CNN
+F 1 "10K" V 11900 2500 50  0000 L CNN
+F 2 "" V 11830 2600 50  0001 C CNN
+F 3 "~" H 11900 2600 50  0001 C CNN
+	1    11900 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 11900 2750 0    50   Input ~ 0
+RSTSW8
+$Comp
+L Device:R R?
+U 1 1 61ACDD3D
+P 11700 3900
+AR Path="/619279C9/61ACDD3D" Ref="R?"  Part="1" 
+AR Path="/61928B56/61ACDD3D" Ref="R191"  Part="1" 
+F 0 "R191" H 11550 3900 50  0000 L CNN
+F 1 "15K" V 11700 3800 50  0000 L CNN
+F 2 "" V 11630 3900 50  0001 C CNN
+F 3 "~" H 11700 3900 50  0001 C CNN
+	1    11700 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61ACDD43
+P 12000 3900
+AR Path="/619279C9/61ACDD43" Ref="R?"  Part="1" 
+AR Path="/61928B56/61ACDD43" Ref="R195"  Part="1" 
+F 0 "R195" H 11850 3900 50  0000 L CNN
+F 1 "10K" V 12000 3800 50  0000 L CNN
+F 2 "" V 11930 3900 50  0001 C CNN
+F 3 "~" H 12000 3900 50  0001 C CNN
+	1    12000 3900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 11850 3900
+Text GLabel 11550 3900 3    50   Input ~ 0
+ISW8
+Connection ~ 12200 3500
+Wire Wire Line
+	11900 2750 11900 3050
+Connection ~ 11900 3050
+Wire Wire Line
+	11900 3050 11900 3100
+Wire Wire Line
+	12200 3050 12200 3500
+$Comp
+L Device:C C?
+U 1 1 61ACDD50
+P 12200 2650
+AR Path="/619279C9/61ACDD50" Ref="C?"  Part="1" 
+AR Path="/61928B56/61ACDD50" Ref="C60"  Part="1" 
+F 0 "C60" H 11950 2700 50  0000 L CNN
+F 1 "0.1uF" H 11900 2600 50  0000 L CNN
+F 2 "" H 12238 2500 50  0001 C CNN
+F 3 "~" H 12200 2650 50  0001 C CNN
+	1    12200 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12200 2800 12200 3050
+Connection ~ 12200 3050
+$Comp
+L epslib:MAX4373 U?
+U 1 1 61ACDD58
+P 11050 3500
+AR Path="/619279C9/61ACDD58" Ref="U?"  Part="1" 
+AR Path="/61928B56/61ACDD58" Ref="U21"  Part="1" 
+F 0 "U21" V 11050 2050 50  0000 C CNN
+F 1 "MAX4373F" V 10950 1900 50  0000 C CNN
+F 2 "" H 11050 3500 50  0001 C CNN
+F 3 "" H 11050 3500 50  0001 C CNN
+	1    11050 3500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	12200 2500 12200 2450
+Wire Wire Line
+	12200 2450 11900 2450
+Connection ~ 11900 2450
+Wire Wire Line
+	11900 2450 11600 2450
+Wire Wire Line
+	11600 2450 11600 3100
+Text GLabel 9850 3200 0    50   Input ~ 0
+SIG8
+$Comp
+L Device:R R?
+U 1 1 61ACDD64
+P 10150 3350
+AR Path="/61ACDD64" Ref="R?"  Part="1" 
+AR Path="/61928B56/61ACDD64" Ref="R183"  Part="1" 
+F 0 "R183" H 10050 3350 50  0000 C CNN
+F 1 "10K" V 10150 3350 50  0000 C CNN
+F 2 "" V 10080 3350 50  0001 C CNN
+F 3 "~" H 10150 3350 50  0001 C CNN
+	1    10150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61ACDD6A
+P 10000 3200
+AR Path="/61ACDD6A" Ref="R?"  Part="1" 
+AR Path="/61928B56/61ACDD6A" Ref="R181"  Part="1" 
+F 0 "R181" V 9900 3200 50  0000 C CNN
+F 1 "100R" V 10000 3200 50  0000 C CNN
+F 2 "" V 9930 3200 50  0001 C CNN
+F 3 "~" H 10000 3200 50  0001 C CNN
+	1    10000 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61ACDD70
+P 10600 3600
+AR Path="/61ACDD70" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61ACDD70" Ref="Q60"  Part="1" 
+F 0 "Q60" H 10804 3646 50  0000 L CNN
+F 1 "2N7002" H 10804 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 3525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 10600 3600 50  0001 L CNN
+	1    10600 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 10150 3200
+$Comp
+L power:GND #PWR0179
+U 1 1 61ACDD77
+P 10700 3800
+F 0 "#PWR0179" H 10700 3550 50  0001 C CNN
+F 1 "GND" H 10705 3627 50  0000 C CNN
+F 2 "" H 10700 3800 50  0001 C CNN
+F 3 "" H 10700 3800 50  0001 C CNN
+	1    10700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 2350 11500 3100
+Wire Wire Line
+	10350 2350 10350 2550
+Wire Wire Line
+	10400 3600 10350 3600
+Wire Wire Line
+	10150 3200 10400 3200
+Wire Wire Line
+	10350 2350 11500 2350
+$Comp
+L power:VCC #PWR?
+U 1 1 61ACDD82
+P 10050 2550
+AR Path="/619279C9/61ACDD82" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61ACDD82" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0175" H 10050 2400 50  0001 C CNN
+F 1 "VCC" H 10065 2723 50  0000 C CNN
+F 2 "" H 10050 2550 50  0001 C CNN
+F 3 "" H 10050 2550 50  0001 C CNN
+	1    10050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R185
+U 1 1 61ACDD88
+P 10200 2550
+F 0 "R185" V 10300 2550 50  0000 C CNN
+F 1 "10K" V 10200 2550 50  0000 C CNN
+F 2 "" V 10130 2550 50  0001 C CNN
+F 3 "~" H 10200 2550 50  0001 C CNN
+	1    10200 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10350 2550
+Wire Wire Line
+	10350 2550 10350 3600
+Connection ~ 11150 2700
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61B314AC
+P 1850 4500
+AR Path="/61B314AC" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B314AC" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 1850 4350 50  0001 C CNN
+F 1 "+3.3V" V 1865 4628 50  0000 L CNN
+F 2 "" H 1850 4500 50  0001 C CNN
+F 3 "" H 1850 4500 50  0001 C CNN
+	1    1850 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B314B3
+P 1400 4650
+AR Path="/61B314B3" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B314B3" Ref="R12"  Part="1" 
+F 0 "R12" H 1300 4650 50  0000 C CNN
+F 1 "10K" V 1400 4650 50  0000 C CNN
+F 2 "" V 1330 4650 50  0001 C CNN
+F 3 "~" H 1400 4650 50  0001 C CNN
+	1    1400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4600 1850 4500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61B314BA
+P 1750 4800
+AR Path="/61B314BA" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61B314BA" Ref="Q12"  Part="1" 
+F 0 "Q12" H 1955 4846 50  0000 L CNN
+F 1 "IRF7425" H 1955 4755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1950 4725 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 1750 4800 50  0001 L CNN
+	1    1750 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61B314C0
+P 1300 5000
+AR Path="/61B314C0" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61B314C0" Ref="Q6"  Part="1" 
+F 0 "Q6" H 1504 5046 50  0000 L CNN
+F 1 "2N7002" H 1504 4955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 4925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1300 5000 50  0001 L CNN
+	1    1300 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1400 4800
+Wire Wire Line
+	1400 4800 1550 4800
+Wire Wire Line
+	1400 4500 1850 4500
+$Comp
+L power:GND #PWR?
+U 1 1 61B314C9
+P 850 5300
+AR Path="/61B314C9" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B314C9" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 850 5050 50  0001 C CNN
+F 1 "GND" H 855 5127 50  0000 C CNN
+F 2 "" H 850 5300 50  0001 C CNN
+F 3 "" H 850 5300 50  0001 C CNN
+	1    850  5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 5450 3    50   Input ~ 0
+SW9
+$Comp
+L Device:R R14
+U 1 1 61B314D0
+P 1850 5300
+F 0 "R14" H 2050 5300 50  0000 R CNN
+F 1 "15m" V 1850 5400 50  0000 R CNN
+F 2 "" V 1780 5300 50  0001 C CNN
+F 3 "~" H 1850 5300 50  0001 C CNN
+	1    1850 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1850 5150 1850 5000
+$Comp
+L Device:C C?
+U 1 1 61B314D7
+P 2750 4850
+AR Path="/619279C9/61B314D7" Ref="C?"  Part="1" 
+AR Path="/61928B56/61B314D7" Ref="C43"  Part="1" 
+F 0 "C43" H 2865 4896 50  0000 L CNN
+F 1 "1uF" H 2865 4805 50  0000 L CNN
+F 2 "" H 2788 4700 50  0001 C CNN
+F 3 "~" H 2750 4850 50  0001 C CNN
+	1    2750 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B314DD
+P 2900 5300
+AR Path="/619279C9/61B314DD" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B314DD" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 2900 5050 50  0001 C CNN
+F 1 "GND" H 2905 5127 50  0000 C CNN
+F 2 "" H 2900 5300 50  0001 C CNN
+F 3 "" H 2900 5300 50  0001 C CNN
+	1    2900 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 5700 2900 5700
+Wire Wire Line
+	2900 5300 2900 5700
+Connection ~ 1850 5150
+$Comp
+L power:VCC #PWR?
+U 1 1 61B314E6
+P 2600 4250
+AR Path="/619279C9/61B314E6" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B314E6" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 2600 4100 50  0001 C CNN
+F 1 "VCC" H 2615 4423 50  0000 C CNN
+F 2 "" H 2600 4250 50  0001 C CNN
+F 3 "" H 2600 4250 50  0001 C CNN
+	1    2600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B314EC
+P 2600 4400
+AR Path="/619279C9/61B314EC" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B314EC" Ref="R20"  Part="1" 
+F 0 "R20" H 2650 4400 50  0000 L CNN
+F 1 "10K" V 2600 4300 50  0000 L CNN
+F 2 "" V 2530 4400 50  0001 C CNN
+F 3 "~" H 2600 4400 50  0001 C CNN
+	1    2600 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 4550 0    50   Input ~ 0
+RSTSW9
+$Comp
+L Device:R R?
+U 1 1 61B314F3
+P 2400 5700
+AR Path="/619279C9/61B314F3" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B314F3" Ref="R17"  Part="1" 
+F 0 "R17" H 2250 5700 50  0000 L CNN
+F 1 "15K" V 2400 5600 50  0000 L CNN
+F 2 "" V 2330 5700 50  0001 C CNN
+F 3 "~" H 2400 5700 50  0001 C CNN
+	1    2400 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B314F9
+P 2700 5700
+AR Path="/619279C9/61B314F9" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B314F9" Ref="R23"  Part="1" 
+F 0 "R23" H 2550 5700 50  0000 L CNN
+F 1 "10K" V 2700 5600 50  0000 L CNN
+F 2 "" V 2630 5700 50  0001 C CNN
+F 3 "~" H 2700 5700 50  0001 C CNN
+	1    2700 5700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2550 5700
+Text GLabel 2250 5700 3    50   Input ~ 0
+ISW9
+Connection ~ 2900 5300
+Wire Wire Line
+	2600 4550 2600 4850
+Connection ~ 2600 4850
+Wire Wire Line
+	2600 4850 2600 4900
+Wire Wire Line
+	2900 4850 2900 5300
+$Comp
+L Device:C C?
+U 1 1 61B31506
+P 2900 4450
+AR Path="/619279C9/61B31506" Ref="C?"  Part="1" 
+AR Path="/61928B56/61B31506" Ref="C46"  Part="1" 
+F 0 "C46" H 2650 4500 50  0000 L CNN
+F 1 "0.1uF" H 2600 4400 50  0000 L CNN
+F 2 "" H 2938 4300 50  0001 C CNN
+F 3 "~" H 2900 4450 50  0001 C CNN
+	1    2900 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 4600 2900 4850
+Connection ~ 2900 4850
+$Comp
+L epslib:MAX4373 U?
+U 1 1 61B3150E
+P 1750 5300
+AR Path="/619279C9/61B3150E" Ref="U?"  Part="1" 
+AR Path="/61928B56/61B3150E" Ref="U14"  Part="1" 
+F 0 "U14" V 1750 3850 50  0000 C CNN
+F 1 "MAX4373F" V 1650 3700 50  0000 C CNN
+F 2 "" H 1750 5300 50  0001 C CNN
+F 3 "" H 1750 5300 50  0001 C CNN
+	1    1750 5300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2900 4300 2900 4250
+Wire Wire Line
+	2900 4250 2600 4250
+Connection ~ 2600 4250
+Wire Wire Line
+	2600 4250 2300 4250
+Wire Wire Line
+	2300 4250 2300 4900
+Text GLabel 550  5000 0    50   Input ~ 0
+SIG9
+$Comp
+L Device:R R?
+U 1 1 61B3151A
+P 850 5150
+AR Path="/61B3151A" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B3151A" Ref="R7"  Part="1" 
+F 0 "R7" H 750 5150 50  0000 C CNN
+F 1 "10K" V 850 5150 50  0000 C CNN
+F 2 "" V 780 5150 50  0001 C CNN
+F 3 "~" H 850 5150 50  0001 C CNN
+	1    850  5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B31520
+P 700 5000
+AR Path="/61B31520" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B31520" Ref="R4"  Part="1" 
+F 0 "R4" V 600 5000 50  0000 C CNN
+F 1 "100R" V 700 5000 50  0000 C CNN
+F 2 "" V 630 5000 50  0001 C CNN
+F 3 "~" H 700 5000 50  0001 C CNN
+	1    700  5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61B31526
+P 1300 5400
+AR Path="/61B31526" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61B31526" Ref="Q9"  Part="1" 
+F 0 "Q9" H 1504 5446 50  0000 L CNN
+F 1 "2N7002" H 1504 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 1300 5400 50  0001 L CNN
+	1    1300 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 850  5000
+$Comp
+L power:GND #PWR030
+U 1 1 61B3152D
+P 1400 5600
+F 0 "#PWR030" H 1400 5350 50  0001 C CNN
+F 1 "GND" H 1405 5427 50  0000 C CNN
+F 2 "" H 1400 5600 50  0001 C CNN
+F 3 "" H 1400 5600 50  0001 C CNN
+	1    1400 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4150 2200 4900
+Wire Wire Line
+	1050 4150 1050 4350
+Wire Wire Line
+	1100 5400 1050 5400
+Wire Wire Line
+	850  5000 1100 5000
+Wire Wire Line
+	1050 4150 2200 4150
+$Comp
+L power:VCC #PWR?
+U 1 1 61B31538
+P 750 4350
+AR Path="/619279C9/61B31538" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B31538" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 750 4200 50  0001 C CNN
+F 1 "VCC" H 765 4523 50  0000 C CNN
+F 2 "" H 750 4350 50  0001 C CNN
+F 3 "" H 750 4350 50  0001 C CNN
+	1    750  4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 61B3153E
+P 900 4350
+F 0 "R10" V 1000 4350 50  0000 C CNN
+F 1 "10K" V 900 4350 50  0000 C CNN
+F 2 "" V 830 4350 50  0001 C CNN
+F 3 "~" H 900 4350 50  0001 C CNN
+	1    900  4350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1050 4350
+Wire Wire Line
+	1050 4350 1050 5400
+Connection ~ 1850 4500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61B89B05
+P 4950 4500
+AR Path="/61B89B05" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B89B05" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 4950 4350 50  0001 C CNN
+F 1 "+3.3V" V 4965 4628 50  0000 L CNN
+F 2 "" H 4950 4500 50  0001 C CNN
+F 3 "" H 4950 4500 50  0001 C CNN
+	1    4950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B89B0C
+P 4500 4650
+AR Path="/61B89B0C" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B89B0C" Ref="R69"  Part="1" 
+F 0 "R69" H 4400 4650 50  0000 C CNN
+F 1 "10K" V 4500 4650 50  0000 C CNN
+F 2 "" V 4430 4650 50  0001 C CNN
+F 3 "~" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4600 4950 4500
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 61B89B13
+P 4850 4800
+AR Path="/61B89B13" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61B89B13" Ref="Q50"  Part="1" 
+F 0 "Q50" H 5055 4846 50  0000 L CNN
+F 1 "IRF7425" H 5055 4755 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5050 4725 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IRF7425-DataSheet-v01_01-EN.pdf?fileId=5546d462533600a4015355fb1c361bdc" V 4850 4800 50  0001 L CNN
+	1    4850 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61B89B19
+P 4400 5000
+AR Path="/61B89B19" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61B89B19" Ref="Q17"  Part="1" 
+F 0 "Q17" H 4604 5046 50  0000 L CNN
+F 1 "2N7002" H 4604 4955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 4925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 5000 50  0001 L CNN
+	1    4400 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4800
+Wire Wire Line
+	4500 4800 4650 4800
+Wire Wire Line
+	4500 4500 4950 4500
+$Comp
+L power:GND #PWR?
+U 1 1 61B89B22
+P 3950 5300
+AR Path="/61B89B22" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B89B22" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 3950 5050 50  0001 C CNN
+F 1 "GND" H 3955 5127 50  0000 C CNN
+F 2 "" H 3950 5300 50  0001 C CNN
+F 3 "" H 3950 5300 50  0001 C CNN
+	1    3950 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 5450 3    50   Input ~ 0
+SW10
+$Comp
+L Device:R R72
+U 1 1 61B89B29
+P 4950 5300
+F 0 "R72" H 5150 5300 50  0000 R CNN
+F 1 "15m" V 4950 5400 50  0000 R CNN
+F 2 "" V 4880 5300 50  0001 C CNN
+F 3 "~" H 4950 5300 50  0001 C CNN
+	1    4950 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 5150 4950 5000
+$Comp
+L Device:C C?
+U 1 1 61B89B30
+P 5850 4850
+AR Path="/619279C9/61B89B30" Ref="C?"  Part="1" 
+AR Path="/61928B56/61B89B30" Ref="C49"  Part="1" 
+F 0 "C49" H 5965 4896 50  0000 L CNN
+F 1 "1uF" H 5965 4805 50  0000 L CNN
+F 2 "" H 5888 4700 50  0001 C CNN
+F 3 "~" H 5850 4850 50  0001 C CNN
+	1    5850 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B89B36
+P 6000 5300
+AR Path="/619279C9/61B89B36" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B89B36" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 6000 5050 50  0001 C CNN
+F 1 "GND" H 6005 5127 50  0000 C CNN
+F 2 "" H 6000 5300 50  0001 C CNN
+F 3 "" H 6000 5300 50  0001 C CNN
+	1    6000 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 5700 6000 5700
+Wire Wire Line
+	6000 5300 6000 5700
+Connection ~ 4950 5150
+$Comp
+L power:VCC #PWR?
+U 1 1 61B89B3F
+P 5700 4250
+AR Path="/619279C9/61B89B3F" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B89B3F" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 5700 4100 50  0001 C CNN
+F 1 "VCC" H 5715 4423 50  0000 C CNN
+F 2 "" H 5700 4250 50  0001 C CNN
+F 3 "" H 5700 4250 50  0001 C CNN
+	1    5700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B89B45
+P 5700 4400
+AR Path="/619279C9/61B89B45" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B89B45" Ref="R78"  Part="1" 
+F 0 "R78" H 5750 4400 50  0000 L CNN
+F 1 "10K" V 5700 4300 50  0000 L CNN
+F 2 "" V 5630 4400 50  0001 C CNN
+F 3 "~" H 5700 4400 50  0001 C CNN
+	1    5700 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 4550 0    50   Input ~ 0
+RSTSW10
+$Comp
+L Device:R R?
+U 1 1 61B89B4C
+P 5500 5700
+AR Path="/619279C9/61B89B4C" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B89B4C" Ref="R75"  Part="1" 
+F 0 "R75" H 5350 5700 50  0000 L CNN
+F 1 "15K" V 5500 5600 50  0000 L CNN
+F 2 "" V 5430 5700 50  0001 C CNN
+F 3 "~" H 5500 5700 50  0001 C CNN
+	1    5500 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B89B52
+P 5800 5700
+AR Path="/619279C9/61B89B52" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B89B52" Ref="R81"  Part="1" 
+F 0 "R81" H 5650 5700 50  0000 L CNN
+F 1 "10K" V 5800 5600 50  0000 L CNN
+F 2 "" V 5730 5700 50  0001 C CNN
+F 3 "~" H 5800 5700 50  0001 C CNN
+	1    5800 5700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 5700
+Text GLabel 5350 5700 3    50   Input ~ 0
+ISW10
+Connection ~ 6000 5300
+Wire Wire Line
+	5700 4550 5700 4850
+Connection ~ 5700 4850
+Wire Wire Line
+	5700 4850 5700 4900
+Wire Wire Line
+	6000 4850 6000 5300
+$Comp
+L Device:C C?
+U 1 1 61B89B5F
+P 6000 4450
+AR Path="/619279C9/61B89B5F" Ref="C?"  Part="1" 
+AR Path="/61928B56/61B89B5F" Ref="C52"  Part="1" 
+F 0 "C52" H 5750 4500 50  0000 L CNN
+F 1 "0.1uF" H 5700 4400 50  0000 L CNN
+F 2 "" H 6038 4300 50  0001 C CNN
+F 3 "~" H 6000 4450 50  0001 C CNN
+	1    6000 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 4600 6000 4850
+Connection ~ 6000 4850
+$Comp
+L epslib:MAX4373 U?
+U 1 1 61B89B67
+P 4850 5300
+AR Path="/619279C9/61B89B67" Ref="U?"  Part="1" 
+AR Path="/61928B56/61B89B67" Ref="U17"  Part="1" 
+F 0 "U17" V 4850 3850 50  0000 C CNN
+F 1 "MAX4373F" V 4750 3700 50  0000 C CNN
+F 2 "" H 4850 5300 50  0001 C CNN
+F 3 "" H 4850 5300 50  0001 C CNN
+	1    4850 5300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6000 4300 6000 4250
+Wire Wire Line
+	6000 4250 5700 4250
+Connection ~ 5700 4250
+Wire Wire Line
+	5700 4250 5400 4250
+Wire Wire Line
+	5400 4250 5400 4900
+Text GLabel 3650 5000 0    50   Input ~ 0
+SIG10
+$Comp
+L Device:R R?
+U 1 1 61B89B73
+P 3950 5150
+AR Path="/61B89B73" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B89B73" Ref="R63"  Part="1" 
+F 0 "R63" H 3850 5150 50  0000 C CNN
+F 1 "10K" V 3950 5150 50  0000 C CNN
+F 2 "" V 3880 5150 50  0001 C CNN
+F 3 "~" H 3950 5150 50  0001 C CNN
+	1    3950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B89B79
+P 3800 5000
+AR Path="/61B89B79" Ref="R?"  Part="1" 
+AR Path="/61928B56/61B89B79" Ref="R26"  Part="1" 
+F 0 "R26" V 3700 5000 50  0000 C CNN
+F 1 "100R" V 3800 5000 50  0000 C CNN
+F 2 "" V 3730 5000 50  0001 C CNN
+F 3 "~" H 3800 5000 50  0001 C CNN
+	1    3800 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61B89B7F
+P 4400 5400
+AR Path="/61B89B7F" Ref="Q?"  Part="1" 
+AR Path="/61928B56/61B89B7F" Ref="Q19"  Part="1" 
+F 0 "Q19" H 4604 5446 50  0000 L CNN
+F 1 "2N7002" H 4604 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 5325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 5400 50  0001 L CNN
+	1    4400 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 5000
+$Comp
+L power:GND #PWR0153
+U 1 1 61B89B86
+P 4500 5600
+F 0 "#PWR0153" H 4500 5350 50  0001 C CNN
+F 1 "GND" H 4505 5427 50  0000 C CNN
+F 2 "" H 4500 5600 50  0001 C CNN
+F 3 "" H 4500 5600 50  0001 C CNN
+	1    4500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4150 5300 4900
+Wire Wire Line
+	4150 4150 4150 4350
+Wire Wire Line
+	4200 5400 4150 5400
+Wire Wire Line
+	3950 5000 4200 5000
+Wire Wire Line
+	4150 4150 5300 4150
+$Comp
+L power:VCC #PWR?
+U 1 1 61B89B91
+P 3850 4350
+AR Path="/619279C9/61B89B91" Ref="#PWR?"  Part="1" 
+AR Path="/61928B56/61B89B91" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 3850 4200 50  0001 C CNN
+F 1 "VCC" H 3865 4523 50  0000 C CNN
+F 2 "" H 3850 4350 50  0001 C CNN
+F 3 "" H 3850 4350 50  0001 C CNN
+	1    3850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R66
+U 1 1 61B89B97
+P 4000 4350
+F 0 "R66" V 4100 4350 50  0000 C CNN
+F 1 "10K" V 4000 4350 50  0000 C CNN
+F 2 "" V 3930 4350 50  0001 C CNN
+F 3 "~" H 4000 4350 50  0001 C CNN
+	1    4000 4350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4150 4350
+Wire Wire Line
+	4150 4350 4150 5400
+Connection ~ 4950 4500
 $EndSCHEMATC
