@@ -461,13 +461,13 @@ Text GLabel 3350 5500 0    50   Input ~ 0
 SDBCR3A
 Text GLabel 3350 5700 0    50   Input ~ 0
 SDBCR3B
-Text GLabel 5450 2350 0    50   Input ~ 0
+Text GLabel 5450 2550 0    50   Input ~ 0
 BCR1OUT
 Text Notes 2700 1400 0    50   ~ 0
 STAT pin indicates which of the panel connectors is feeding BCR.\n(outputs high when the connector is supplying charge)
 Text GLabel 5450 3000 0    50   Input ~ 0
 BCR2OUT
-Text GLabel 5450 4900 0    50   Input ~ 0
+Text GLabel 5450 3450 0    50   Input ~ 0
 BCR3OUT
 Text Notes 1250 5950 1    50   ~ 0
 pin 2 gnd should be connected to BCR power (could be connected to ground plane)\npin 4 gnd is common gnd for sensors and should be connected directly to ADC as an analog gnd
@@ -531,4 +531,13 @@ F13 "VIN" I R 4200 4800 50
 $EndSheet
 Text GLabel 4200 4800 2    50   Input ~ 0
 VBCR3IN
+Wire Wire Line
+	5450 2550 5450 3000
+Wire Wire Line
+	5450 3000 6000 3000
+Connection ~ 5450 3000
+Wire Wire Line
+	5450 3000 5450 3450
+Text GLabel 6000 3000 2    50   Input ~ 0
+BCR_OUT
 $EndSCHEMATC
